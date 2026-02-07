@@ -1,6 +1,12 @@
 "use client";
 
-import {Button, TooltipArrow, TooltipContent, TooltipRoot, TooltipTrigger} from "@heroui/react";
+import {
+  Button,
+  TooltipArrow,
+  TooltipContent,
+  TooltipRoot,
+  TooltipTrigger,
+} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 import {Iconify} from "@/components/iconify";

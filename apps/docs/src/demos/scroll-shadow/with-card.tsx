@@ -1,4 +1,4 @@
-import {Button, Card, ScrollShadow} from "@heroui/react";
+import {Button, Card, ScrollShadow} from "@vx-oss/heroui-v3-react";
 
 export default function WithCard() {
   return (

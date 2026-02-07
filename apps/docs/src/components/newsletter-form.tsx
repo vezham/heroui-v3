@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, FieldError, Form, Input, Label, Spinner, TextField} from "@heroui/react";
+import {Button, FieldError, Form, Input, Label, Spinner, TextField} from "@vx-oss/heroui-v3-react";
 import {AnimatePresence, LazyMotion, domAnimation} from "motion/react";
 import * as m from "motion/react-m";
 import React from "react";

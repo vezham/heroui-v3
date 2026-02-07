@@ -1,4 +1,4 @@
-import {Chip} from "@heroui/react";
+import {Chip} from "@vx-oss/heroui-v3-react";
 
 export function ChipBasic() {
   return (

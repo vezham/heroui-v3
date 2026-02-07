@@ -1,4 +1,4 @@
-import {Description, Label, TextArea, TextField} from "@heroui/react";
+import {Description, Label, TextArea, TextField} from "@vx-oss/heroui-v3-react";
 
 export function TextAreaExample() {
   return (

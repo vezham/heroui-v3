@@ -1,10 +1,10 @@
 "use client";
 
-import type {ScrollShadowVariants} from "@heroui/styles";
+import type {ScrollShadowVariants} from "@vx-oss/heroui-v3-styles";
 import type {RefObject} from "react";
 
-import {scrollShadowVariants} from "@heroui/styles";
 import {mergeRefs} from "@react-aria/utils";
+import {scrollShadowVariants} from "@vx-oss/heroui-v3-styles";
 import {useMemo, useRef} from "react";
 
 import {useSafeLayoutEffect} from "../../hooks/use-safe-layout-effect";

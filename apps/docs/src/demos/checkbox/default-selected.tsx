@@ -1,4 +1,4 @@
-import {Checkbox, Label} from "@heroui/react";
+import {Checkbox, Label} from "@vx-oss/heroui-v3-react";
 
 export function DefaultSelected() {
   return (

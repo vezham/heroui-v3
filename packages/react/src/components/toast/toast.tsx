@@ -1,11 +1,11 @@
 "use client";
 
 import type {ToastContentValue} from "./toast-queue";
-import type {ToastVariants} from "@heroui/styles";
+import type {ToastVariants} from "@vx-oss/heroui-v3-styles";
 import type {CSSProperties, ComponentPropsWithRef} from "react";
 import type {QueuedToast, ToastProps as ToastPrimitiveProps} from "react-aria-components";
 
-import {toastVariants} from "@heroui/styles";
+import {toastVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useCallback, useContext, useEffect, useMemo, useRef} from "react";
 import {
   Text as TextPrimitive,

@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {tooltipVariants} from "@heroui/styles";
+export {tooltipVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {TooltipVariants} from "@heroui/styles";
+export type {TooltipVariants} from "@vx-oss/heroui-v3-styles";

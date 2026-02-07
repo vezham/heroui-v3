@@ -3,8 +3,8 @@
 import type {DateValue} from "@internationalized/date";
 
 import {CircleQuestion} from "@gravity-ui/icons";
-import {DateField, DateInputGroup, Label, ListBox, Select, Tooltip} from "@heroui/react";
 import {parseDate, parseZonedDateTime} from "@internationalized/date";
+import {DateField, DateInputGroup, Label, ListBox, Select, Tooltip} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function Granularity() {

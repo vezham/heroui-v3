@@ -1,9 +1,9 @@
 "use client";
 
-import type {SwitchGroupVariants} from "@heroui/styles";
+import type {SwitchGroupVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {switchGroupVariants} from "@heroui/styles";
+import {switchGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 
 /* -------------------------------------------------------------------------------------------------

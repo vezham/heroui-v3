@@ -1,10 +1,10 @@
 "use client";
 
-import type {ListBoxItemVariants} from "@heroui/styles";
+import type {ListBoxItemVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ListBoxItemRenderProps} from "react-aria-components";
 
-import {listboxItemVariants} from "@heroui/styles";
+import {listboxItemVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {ListBoxItem as ListBoxItemPrimitive} from "react-aria-components";
 

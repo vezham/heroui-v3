@@ -2,7 +2,7 @@
 
 import type {FC} from "react";
 
-import {Button, Link, Popover} from "@heroui/react";
+import {Button, Link, Popover} from "@vx-oss/heroui-v3-react";
 import Image from "next/image";
 
 import {useIsMobileDevice} from "@/hooks/use-is-mobile-device";

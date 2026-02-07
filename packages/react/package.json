@@ -1,5 +1,5 @@
 {
-  "name": "@heroui/react",
+  "name": "@vx-oss/heroui-v3-react",
   "version": "3.0.0-beta.6",
   "description": "🚀 Beautiful and modern React UI library built with Tailwind CSS 4.0.",
   "license": "MIT",
@@ -8,8 +8,8 @@
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "author": "HeroUI <support@heroui.com>",
-  "homepage": "https://heroui.com",
+  "author": "Vx OSS Devs <oss-developers@vezham.com>",
+  "homepage": "https://vezham.com",
   "keywords": [
     "next",
     "next ui",
@@ -37,11 +37,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroui-inc/heroui.git",
+    "url": "https://github.com/vezham/heroui-v3.git",
     "directory": "packages/react"
   },
   "bugs": {
-    "url": "https://github.com/heroui-inc/heroui/issues"
+    "url": "https://github.com/vezham/heroui-v3/issues"
   },
   "scripts": {
     "dev": "rollup -c rollup.config.mjs --watch",
@@ -55,7 +55,7 @@
   },
   "clean-package": "./clean-package.config.json",
   "dependencies": {
-    "@heroui/styles": "workspace:*",
+    "@vx-oss/heroui-v3-styles": "workspace:*",
     "@internationalized/date": "3.10.1",
     "@radix-ui/react-avatar": "1.1.11",
     "@react-aria/ssr": "3.9.10",
@@ -68,7 +68,7 @@
     "tailwind-variants": "3.2.2"
   },
   "devDependencies": {
-    "@heroui/standard": "workspace:*",
+    "@vx-oss/heroui-v3-standard": "workspace:*",
     "@iconify/react": "6.0.2",
     "@react-stately/data": "3.15.0",
     "@storybook/react": "10.1.10",

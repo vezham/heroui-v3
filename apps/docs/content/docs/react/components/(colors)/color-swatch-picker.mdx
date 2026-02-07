@@ -13,7 +13,7 @@ links:
 ## Import
 
 ```tsx
-import { ColorSwatchPicker, parseColor } from '@heroui/react';
+import { ColorSwatchPicker, parseColor } from '@vx-oss/heroui-v3-react';
 ```
 
 ### Usage
@@ -27,7 +27,7 @@ import { ColorSwatchPicker, parseColor } from '@heroui/react';
 Import the ColorSwatchPicker component and access all parts using dot notation.
 
 ```tsx
-import { ColorSwatchPicker } from '@heroui/react';
+import { ColorSwatchPicker } from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <ColorSwatchPicker>
@@ -99,7 +99,7 @@ export default () => (
 You can customize the ColorSwatchPicker using className props:
 
 ```tsx
-import { ColorSwatchPicker } from '@heroui/react';
+import { ColorSwatchPicker } from '@vx-oss/heroui-v3-react';
 
 function CustomColorSwatchPicker() {
   return (
@@ -140,7 +140,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The ColorSwatchPicker component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/color-swatch-picker.css)):
+The ColorSwatchPicker component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/color-swatch-picker.css)):
 
 #### Base & Structure
 - `.color-swatch-picker` - Base container (flex layout)
@@ -208,7 +208,7 @@ Inherits from [React Aria ColorSwatchPicker](https://react-spectrum.adobe.com/re
 The `parseColor` function is re-exported from React Aria Components for convenience:
 
 ```tsx
-import { parseColor } from '@heroui/react';
+import { parseColor } from '@vx-oss/heroui-v3-react';
 
 // Parse hex color
 const red = parseColor('#ff0000');

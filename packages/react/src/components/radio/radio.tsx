@@ -3,7 +3,7 @@
 import type {ComponentPropsWithRef} from "react";
 import type {RadioRenderProps} from "react-aria-components";
 
-import {radioVariants} from "@heroui/styles";
+import {radioVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Radio as RadioPrimitive} from "react-aria-components";
 

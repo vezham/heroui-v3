@@ -1,8 +1,8 @@
 "use client";
 
-import type {Key} from "@heroui/react";
+import type {Key} from "@vx-oss/heroui-v3-react";
 
-import {Description, ErrorMessage, Label, Tag, TagGroup} from "@heroui/react";
+import {Description, ErrorMessage, Label, Tag, TagGroup} from "@vx-oss/heroui-v3-react";
 import {useMemo, useState} from "react";
 
 export function ErrorMessageWithTagGroup() {

@@ -1,5 +1,5 @@
 import {ChevronDown} from "@gravity-ui/icons";
-import {Accordion, cn} from "@heroui/react";
+import {Accordion, cn} from "@vx-oss/heroui-v3-react";
 
 const items = [
   {

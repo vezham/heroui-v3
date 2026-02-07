@@ -1,7 +1,7 @@
 "use client";
 
 import {CircleCheck, CircleInfo} from "@gravity-ui/icons";
-import {Button, Modal} from "@heroui/react";
+import {Button, Modal} from "@vx-oss/heroui-v3-react";
 
 export function CloseMethods() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
-import {Label, ListBox, Select, Spinner} from "@heroui/react";
 import {useAsyncList} from "@react-stately/data";
+import {Label, ListBox, Select, Spinner} from "@vx-oss/heroui-v3-react";
 import {Collection, ListBoxLoadMoreItem} from "react-aria-components";
 
 interface Pokemon {

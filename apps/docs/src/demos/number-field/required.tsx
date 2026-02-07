@@ -1,4 +1,4 @@
-import {Description, Label, NumberField} from "@heroui/react";
+import {Description, Label, NumberField} from "@vx-oss/heroui-v3-react";
 
 export function Required() {
   return (

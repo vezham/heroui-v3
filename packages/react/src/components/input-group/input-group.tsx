@@ -1,9 +1,9 @@
 "use client";
 
-import type {InputGroupVariants} from "@heroui/styles";
+import type {InputGroupVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {inputGroupVariants} from "@heroui/styles";
+import {inputGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Group as GroupPrimitive,

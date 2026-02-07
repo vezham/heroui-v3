@@ -1,6 +1,15 @@
 "use client";
 
-import {Button, ComboBox, FieldError, Form, Input, Label, ListBox, Surface} from "@heroui/react";
+import {
+  Button,
+  ComboBox,
+  FieldError,
+  Form,
+  Input,
+  Label,
+  ListBox,
+  Surface,
+} from "@vx-oss/heroui-v3-react";
 
 export function OnSurface() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

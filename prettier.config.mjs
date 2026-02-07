@@ -1,6 +1,6 @@
 import path from "path";
 
-import preset from "@heroui/standard/prettier/base.mjs";
+import preset from "@vx-oss/heroui-v3-standard/prettier/base.mjs";
 
 /** @type {import("prettier").Config} */
 const config = {

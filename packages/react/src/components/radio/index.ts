@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {radioVariants} from "@heroui/styles";
+export {radioVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {RadioVariants} from "@heroui/styles";
+export type {RadioVariants} from "@vx-oss/heroui-v3-styles";

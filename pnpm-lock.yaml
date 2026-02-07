@@ -39,9 +39,6 @@ importers:
       '@eslint/js':
         specifier: 9.39.2
         version: 9.39.2
-      '@heroui/standard':
-        specifier: workspace:*
-        version: link:packages/standard
       '@next/eslint-plugin-next':
         specifier: 16.1.1
         version: 16.1.1
@@ -66,6 +63,9 @@ importers:
       '@typescript-eslint/parser':
         specifier: 8.50.1
         version: 8.50.1(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
+      '@vx-oss/heroui-v3-standard':
+        specifier: workspace:*
+        version: link:packages/standard
       babel-plugin-react-compiler:
         specifier: 19.1.0-rc.3
         version: 19.1.0-rc.3
@@ -180,9 +180,6 @@ importers:
       '@gravity-ui/icons':
         specifier: 2.16.0
         version: 2.16.0(react@19.2.3)
-      '@heroui/react':
-        specifier: workspace:*
-        version: link:../../packages/react
       '@iconify-json/gravity-ui':
         specifier: 1.2.10
         version: 1.2.10
@@ -207,6 +204,9 @@ importers:
       '@vercel/og':
         specifier: 0.8.6
         version: 0.8.6
+      '@vx-oss/heroui-v3-react':
+        specifier: workspace:*
+        version: link:../../packages/react
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -301,12 +301,6 @@ importers:
         specifier: 4.2.1
         version: 4.2.1
     devDependencies:
-      '@heroui/standard':
-        specifier: workspace:*
-        version: link:../../packages/standard
-      '@heroui/styles':
-        specifier: workspace:*
-        version: link:../../packages/styles
       '@tailwindcss/postcss':
         specifier: 4.1.18
         version: 4.1.18
@@ -325,6 +319,12 @@ importers:
       '@types/react-dom':
         specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.7)
+      '@vx-oss/heroui-v3-standard':
+        specifier: workspace:*
+        version: link:../../packages/standard
+      '@vx-oss/heroui-v3-styles':
+        specifier: workspace:*
+        version: link:../../packages/styles
       babel-plugin-react-compiler:
         specifier: 1.0.0
         version: 1.0.0
@@ -343,9 +343,6 @@ importers:
 
   packages/react:
     dependencies:
-      '@heroui/styles':
-        specifier: workspace:*
-        version: link:../styles
       '@internationalized/date':
         specifier: 3.10.1
         version: 3.10.1
@@ -364,6 +361,9 @@ importers:
       '@react-types/shared':
         specifier: 3.32.1
         version: 3.32.1(react@19.2.3)
+      '@vx-oss/heroui-v3-styles':
+        specifier: workspace:*
+        version: link:../styles
       input-otp:
         specifier: 1.4.2
         version: 1.4.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -377,9 +377,6 @@ importers:
         specifier: 3.2.2
         version: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.18)
     devDependencies:
-      '@heroui/standard':
-        specifier: workspace:*
-        version: link:../standard
       '@iconify/react':
         specifier: 6.0.2
         version: 6.0.2(react@19.2.3)
@@ -398,6 +395,9 @@ importers:
       '@types/react-dom':
         specifier: 19.2.3
         version: 19.2.3(@types/react@19.2.7)
+      '@vx-oss/heroui-v3-standard':
+        specifier: workspace:*
+        version: link:../standard
       fs-extra:
         specifier: 11.3.3
         version: 11.3.3
@@ -418,15 +418,15 @@ importers:
       '@gravity-ui/icons':
         specifier: 2.16.0
         version: 2.16.0(react@19.2.3)
-      '@heroui/react':
-        specifier: workspace:*
-        version: link:../react
-      '@heroui/styles':
-        specifier: workspace:*
-        version: link:../styles
       '@iconify/react':
         specifier: 6.0.2
         version: 6.0.2(react@19.2.3)
+      '@vx-oss/heroui-v3-react':
+        specifier: workspace:*
+        version: link:../react
+      '@vx-oss/heroui-v3-styles':
+        specifier: workspace:*
+        version: link:../styles
       apcach:
         specifier: 0.6.4
         version: 0.6.4
@@ -449,9 +449,6 @@ importers:
         specifier: ^3.2.2
         version: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.18)
     devDependencies:
-      '@heroui/standard':
-        specifier: workspace:*
-        version: link:../standard
       '@storybook/addon-a11y':
         specifier: 10.1.10
         version: 10.1.10(storybook@10.1.10(@testing-library/dom@10.4.1)(prettier@3.7.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))
@@ -482,6 +479,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: 5.1.2
         version: 5.1.2(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.21.0)(yaml@2.8.2))
+      '@vx-oss/heroui-v3-standard':
+        specifier: workspace:*
+        version: link:../standard
       glob:
         specifier: 13.0.0
         version: 13.0.0
@@ -507,15 +507,15 @@ importers:
         specifier: 1.4.0
         version: 1.4.0
     devDependencies:
-      '@heroui/standard':
-        specifier: workspace:*
-        version: link:../standard
       '@tailwindcss/cli':
         specifier: 4.1.18
         version: 4.1.18
       '@types/fs-extra':
         specifier: 11.0.4
         version: 11.0.4
+      '@vx-oss/heroui-v3-standard':
+        specifier: workspace:*
+        version: link:../standard
       clean-package:
         specifier: 2.2.0
         version: 2.2.0
@@ -534,9 +534,6 @@ importers:
 
   packages/vitest:
     devDependencies:
-      '@heroui/standard':
-        specifier: workspace:*
-        version: link:../standard
       '@testing-library/jest-dom':
         specifier: 6.9.1
         version: 6.9.1
@@ -546,6 +543,9 @@ importers:
       '@testing-library/user-event':
         specifier: 14.6.1
         version: 14.6.1(@testing-library/dom@10.4.1)
+      '@vx-oss/heroui-v3-standard':
+        specifier: workspace:*
+        version: link:../standard
       glob:
         specifier: 13.0.0
         version: 13.0.0

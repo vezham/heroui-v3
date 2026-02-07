@@ -1,5 +1,5 @@
 import {Globe, Plus, TrashBin} from "@gravity-ui/icons";
-import {Button, ButtonGroup} from "@heroui/react";
+import {Button, ButtonGroup} from "@vx-oss/heroui-v3-react";
 
 export function WithIcons() {
   return (

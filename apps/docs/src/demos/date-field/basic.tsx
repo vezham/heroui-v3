@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, DateInputGroup, Label} from "@heroui/react";
+import {DateField, DateInputGroup, Label} from "@vx-oss/heroui-v3-react";
 
 export function Basic() {
   return (

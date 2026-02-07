@@ -2,7 +2,7 @@
 
 import type {FC} from "react";
 
-import {cn} from "@heroui/react";
+import {cn} from "@vx-oss/heroui-v3-react";
 import {useTheme} from "next-themes";
 
 import {NativeQRPreviewPopover} from "./native-qr-preview-popover";

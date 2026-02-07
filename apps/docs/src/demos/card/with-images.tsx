@@ -1,5 +1,5 @@
 import {CircleDollar} from "@gravity-ui/icons";
-import {Avatar, Button, Card, CloseButton, Link} from "@heroui/react";
+import {Avatar, Button, Card, CloseButton, Link} from "@vx-oss/heroui-v3-react";
 
 export function WithImages() {
   return (

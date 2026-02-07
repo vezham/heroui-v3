@@ -9,7 +9,7 @@ import {
   ListBox,
   SearchField,
   useFilter,
-} from "@heroui/react";
+} from "@vx-oss/heroui-v3-react";
 
 export function Required() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

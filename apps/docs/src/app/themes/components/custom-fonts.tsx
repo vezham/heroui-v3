@@ -1,7 +1,15 @@
 "use client";
 
 import {ArrowLeft, Globe} from "@gravity-ui/icons";
-import {Button, Description, FieldError, InputGroup, Label, Link, TextField} from "@heroui/react";
+import {
+  Button,
+  Description,
+  FieldError,
+  InputGroup,
+  Label,
+  Link,
+  TextField,
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 import {useCustomFonts, useVariableSetter} from "../hooks";

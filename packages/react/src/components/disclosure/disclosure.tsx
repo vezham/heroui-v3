@@ -1,11 +1,11 @@
 "use client";
 
 import type {Booleanish} from "../../utils/assertion";
-import type {DisclosureVariants} from "@heroui/styles";
+import type {DisclosureVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ButtonProps} from "react-aria-components";
 
-import {disclosureVariants} from "@heroui/styles";
+import {disclosureVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext, useRef} from "react";
 import {
   Button,

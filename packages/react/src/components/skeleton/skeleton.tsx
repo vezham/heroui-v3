@@ -1,9 +1,9 @@
 "use client";
 
-import type {SkeletonVariants} from "@heroui/styles";
+import type {SkeletonVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {skeletonVariants} from "@heroui/styles";
+import {skeletonVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 
 import {useCSSVariable} from "../../hooks/use-css-variable";

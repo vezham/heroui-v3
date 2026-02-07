@@ -1,4 +1,4 @@
-import {ColorField, ColorInputGroup, Description, Label} from "@heroui/react";
+import {ColorField, ColorInputGroup, Description, Label} from "@vx-oss/heroui-v3-react";
 
 export function WithDescription() {
   return (

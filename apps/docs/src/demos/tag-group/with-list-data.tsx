@@ -1,8 +1,16 @@
 "use client";
 
-import type {Key} from "@heroui/react";
+import type {Key} from "@vx-oss/heroui-v3-react";
 
-import {Avatar, Description, EmptyState, Label, Tag, TagGroup, useListData} from "@heroui/react";
+import {
+  Avatar,
+  Description,
+  EmptyState,
+  Label,
+  Tag,
+  TagGroup,
+  useListData,
+} from "@vx-oss/heroui-v3-react";
 
 export function TagGroupWithListData() {
   type User = {

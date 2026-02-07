@@ -1,6 +1,6 @@
 ---
 name: heroui-react
-description: "HeroUI v3 React component library (Tailwind CSS v4 + React Aria). Use when working with HeroUI components, installing HeroUI, customizing HeroUI themes, or accessing HeroUI component documentation. Keywords: HeroUI, Hero UI, heroui, @heroui/react, @heroui/styles."
+description: "HeroUI v3 React component library (Tailwind CSS v4 + React Aria). Use when working with HeroUI components, installing HeroUI, customizing HeroUI themes, or accessing HeroUI component documentation. Keywords: HeroUI, Hero UI, heroui, @vx-oss/heroui-v3-react, @vx-oss/heroui-v3-styles."
 metadata:
   author: heroui
   version: "2.0.0"
@@ -23,14 +23,14 @@ HeroUI v3 is a component library built on **Tailwind CSS v4** and **React Aria C
 | Provider      | `<HeroUIProvider>` required       | **No Provider needed**                      |
 | Animations    | `framer-motion` package           | CSS-based, no extra deps                    |
 | Component API | Flat props: `<Card title="x">`    | Compound: `<Card><Card.Header>`             |
-| Styling       | Tailwind v3 + `@heroui/theme`     | Tailwind v4 + `@heroui/styles@beta`         |
-| Packages      | `@heroui/system`, `@heroui/theme` | `@heroui/react@beta`, `@heroui/styles@beta` |
+| Styling       | Tailwind v3 + `@vx-oss/heroui-v3-theme`     | Tailwind v4 + `@vx-oss/heroui-v3-styles@beta`         |
+| Packages      | `@vx-oss/heroui-v3-system`, `@vx-oss/heroui-v3-theme` | `@vx-oss/heroui-v3-react@beta`, `@vx-oss/heroui-v3-styles@beta` |
 
 ### WRONG (v2 patterns)
 
 ```tsx
 // DO NOT DO THIS - v2 pattern
-import { HeroUIProvider } from "@heroui/react";
+import { HeroUIProvider } from "@vx-oss/heroui-v3-react";
 import { motion } from "framer-motion";
 
 <HeroUIProvider>
@@ -42,7 +42,7 @@ import { motion } from "framer-motion";
 
 ```tsx
 // DO THIS - v3 pattern (no provider, compound components)
-import { Card } from "@heroui/react@beta";
+import { Card } from "@vx-oss/heroui-v3-react@beta";
 
 <Card>
 	<Card.Header>
@@ -115,7 +115,7 @@ Getting started guides: `https://v3.heroui.com/docs/react/getting-started/{topic
 ### Quick Install
 
 ```bash
-npm i @heroui/styles@beta @heroui/react@beta tailwind-variants
+npm i @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta tailwind-variants
 ```
 
 ### Framework Setup (Next.js App Router - Recommended)
@@ -123,7 +123,7 @@ npm i @heroui/styles@beta @heroui/react@beta tailwind-variants
 1. **Install dependencies:**
 
 ```bash
-npm i @heroui/styles@beta @heroui/react@beta tailwind-variants tailwindcss @tailwindcss/postcss postcss
+npm i @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta tailwind-variants tailwindcss @tailwindcss/postcss postcss
 ```
 
 2. **Create/update `app/globals.css`:**
@@ -133,7 +133,7 @@ npm i @heroui/styles@beta @heroui/react@beta tailwind-variants tailwindcss @tail
 @import "tailwindcss";
 
 /* HeroUI v3 styles - Must be after Tailwind */
-@import "@heroui/styles";
+@import "@vx-oss/heroui-v3-styles";
 ```
 
 3. **Import in `app/layout.tsx`:**

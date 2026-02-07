@@ -12,9 +12,9 @@ export const siteConfig = {
   description: "A set of beautiful, customizable components that stay maintained and up to date.",
   figmaCommunityFile: "https://www.figma.com/community/file/1546526812159103429",
   githubRawUrl:
-    "https://raw.githubusercontent.com/heroui-inc/heroui/refs/heads/v3/apps/docs/content/docs",
-  githubRepo: "heroui-inc/heroui",
-  githubUrl: "https://github.com/heroui-inc/heroui",
+    "https://raw.githubusercontent.com/vezham/heroui-v3/refs/heads/v3/apps/docs/content/docs",
+  githubRepo: "vezham/heroui-v3",
+  githubUrl: "https://github.com/vezham/heroui-v3",
   links: {
     discord: "https://discord.gg/9b6yyZKmH4",
     github: "https://github.com/heroui-inc",
@@ -24,7 +24,7 @@ export const siteConfig = {
   ogImage: `/images/twitter-card.jpg`,
   ogImageNative: `/images/twitter-card-native.jpeg`,
   siteUrl: __BASE_URL__,
-  supportEmail: "support@heroui.com",
+  supportEmail: "support@vezham.com",
 };
 
 export type SiteConfig = typeof siteConfig;

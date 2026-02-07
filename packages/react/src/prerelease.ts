@@ -40,7 +40,7 @@ export function handlePrereleaseWarning(): void {
     logger.newline();
     logger.divider("=", 80);
     logger.warn("IMPORTANT!");
-    logger.warn(`You are using a ${prereleaseType} version [@heroui/react@v${version}]`);
+    logger.warn(`You are using a ${prereleaseType} version [@vx-oss/heroui-v3-react@v${version}]`);
     logger.warn("This version may contain bugs and breaking changes.");
     logger.warn("Use in production at your own risk!");
     logger.divider("=", 80);

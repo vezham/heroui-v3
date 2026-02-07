@@ -22,14 +22,14 @@ HeroUI Native is a component library built on **Uniwind (Tailwind CSS for React 
 | ------------ | -------------------- | ----------------------------------- |
 | **Styling**  | Tailwind CSS v4      | Uniwind (Tailwind for React Native) |
 | **Colors**   | oklch format         | HSL format                          |
-| **Package**  | `@heroui/react@beta` | `heroui-native`                     |
+| **Package**  | `@vx-oss/heroui-v3-react@beta` | `heroui-native`                     |
 | **Platform** | Web browsers         | iOS & Android                       |
 
 ### WRONG (React web patterns)
 
 ```tsx
 // DO NOT DO THIS - React web pattern
-import { Button } from "@heroui/react";
+import { Button } from "@vx-oss/heroui-v3-react";
 import "./styles.css"; // CSS files don't work in React Native
 
 <Button className="bg-blue-500">Click me</Button>;

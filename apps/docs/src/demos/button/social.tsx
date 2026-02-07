@@ -1,5 +1,5 @@
-import {Button} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {Button} from "@vx-oss/heroui-v3-react";
 
 export function Social() {
   return (

@@ -3,7 +3,7 @@
 import type {TagVariants} from "../tag";
 import type {ComponentPropsWithRef} from "react";
 
-import {tagGroupVariants} from "@heroui/styles";
+import {tagGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext, useMemo} from "react";
 import {TagGroup as TagGroupPrimitive, TagList as TagListPrimitive} from "react-aria-components";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import {Input} from "@heroui/react";
+import {Input} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Controlled() {

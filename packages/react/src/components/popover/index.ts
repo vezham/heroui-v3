@@ -49,6 +49,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {popoverVariants} from "@heroui/styles";
+export {popoverVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {PopoverVariants} from "@heroui/styles";
+export type {PopoverVariants} from "@vx-oss/heroui-v3-styles";

@@ -2,7 +2,7 @@
 
 import type {ThemeId} from "../constants";
 
-import {ListBox, ScrollShadow} from "@heroui/react";
+import {ListBox, ScrollShadow} from "@vx-oss/heroui-v3-react";
 import Image from "next/image";
 
 import {cn} from "@/utils/cn";

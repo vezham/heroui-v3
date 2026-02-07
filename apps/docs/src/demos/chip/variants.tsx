@@ -1,5 +1,5 @@
 import {CircleDashed} from "@gravity-ui/icons";
-import {Chip, Separator} from "@heroui/react";
+import {Chip, Separator} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function ChipVariants() {

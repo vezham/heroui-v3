@@ -64,9 +64,9 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {toastVariants} from "@heroui/styles";
+export {toastVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ToastVariants} from "@heroui/styles";
+export type {ToastVariants} from "@vx-oss/heroui-v3-styles";
 
 /* -------------------------------------------------------------------------------------------------
  * Utilities

@@ -1,9 +1,9 @@
 "use client";
 
-import type {SeparatorVariants} from "@heroui/styles";
+import type {SeparatorVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {separatorVariants} from "@heroui/styles";
+import {separatorVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 import {Separator as SeparatorPrimitive} from "react-aria-components";
 

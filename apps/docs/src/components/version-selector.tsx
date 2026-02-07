@@ -1,6 +1,6 @@
 "use client";
 
-import {Popover, Separator} from "@heroui/react";
+import {Popover, Separator} from "@vx-oss/heroui-v3-react";
 import Link from "next/link";
 import {useState} from "react";
 

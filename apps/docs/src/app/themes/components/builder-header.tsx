@@ -7,7 +7,7 @@ import {
   Link as LinkIcon,
   NodesRight,
 } from "@gravity-ui/icons";
-import {Button, Chip, Kbd, Separator, Tabs, Tooltip, toast} from "@heroui/react";
+import {Button, Chip, Kbd, Separator, Tabs, Tooltip, toast} from "@vx-oss/heroui-v3-react";
 import Link from "next/link";
 
 import {HeroUILogo} from "@/components/heroui-logo";

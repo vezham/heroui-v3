@@ -15,7 +15,7 @@ HeroUI uses CSS variables and [BEM](https://getbem.com/) classes for theming. Cu
 
 ## How It Works
 
-HeroUI's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme. When you import `@heroui/styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
+HeroUI's theming system is built on top of [Tailwind CSS v4](https://tailwindcss.com/docs/theme)'s theme. When you import `@vx-oss/heroui-v3-styles`, it uses Tailwind's built-in color palettes, maps them to semantic variables, automatically switches between light and dark themes, and uses CSS layers and the `@theme` directive for organization.
 
 **Naming pattern:**
 - Colors without a suffix are backgrounds (e.g., `--accent`)
@@ -47,7 +47,7 @@ HeroUI's theming system is built on top of [Tailwind CSS v4](https://tailwindcss
 ```css
 /* app/globals.css */
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@vx-oss/heroui-v3-styles";
 
 :root {
   /* Override any color variable */
@@ -212,7 +212,7 @@ Use your theme:
 @layer theme, base, components, utilities;
 
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@vx-oss/heroui-v3-styles";
 
 @import "./src/themes/ocean.css" layer(theme); /* [!code highlight]*/
 ```
@@ -261,7 +261,7 @@ Apply your theme:
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@vx-oss/heroui-v3-styles";
 ```
 
 **Selective import:** Import only what you need:
@@ -272,38 +272,38 @@ Apply your theme:
 
 /* Base requirements */
 @import "tailwindcss";
-@import "@heroui/styles/base" layer(base);
+@import "@vx-oss/heroui-v3-styles/base" layer(base);
 /* OR specific base file */
-@import "@heroui/styles/base/base.css" layer(base);
+@import "@vx-oss/heroui-v3-styles/base/base.css" layer(base);
 
 /* Theme variables */
-@import "@heroui/styles/themes/shared/theme.css" layer(theme);
-@import "@heroui/styles/themes/default" layer(theme);
+@import "@vx-oss/heroui-v3-styles/themes/shared/theme.css" layer(theme);
+@import "@vx-oss/heroui-v3-styles/themes/default" layer(theme);
 /* OR specific theme files */
-@import "@heroui/styles/themes/default/index.css" layer(theme);
-@import "@heroui/styles/themes/default/variables.css" layer(theme);
+@import "@vx-oss/heroui-v3-styles/themes/default/index.css" layer(theme);
+@import "@vx-oss/heroui-v3-styles/themes/default/variables.css" layer(theme);
 
 /* Components (all components) */
-@import "@heroui/styles/components" layer(components);
+@import "@vx-oss/heroui-v3-styles/components" layer(components);
 /* OR specific component files */
-@import "@heroui/styles/components/index.css" layer(components);
-@import "@heroui/styles/components/button.css" layer(components);
-@import "@heroui/styles/components/accordion.css" layer(components);
+@import "@vx-oss/heroui-v3-styles/components/index.css" layer(components);
+@import "@vx-oss/heroui-v3-styles/components/button.css" layer(components);
+@import "@vx-oss/heroui-v3-styles/components/accordion.css" layer(components);
 
 /* Utilities (optional) */
-@import "@heroui/styles/utilities" layer(utilities);
+@import "@vx-oss/heroui-v3-styles/utilities" layer(utilities);
 
 /* Variants (optional) */
-@import "@heroui/styles/variants" layer(utilities);
+@import "@vx-oss/heroui-v3-styles/variants" layer(utilities);
 ```
 
-> **Note**: Directory imports (e.g., `@heroui/styles/components`) automatically resolve to their `index.css` file. Use explicit file paths (e.g., `@heroui/styles/components/button.css`) to import individual component styles.
+> **Note**: Directory imports (e.g., `@vx-oss/heroui-v3-styles/components`) automatically resolve to their `index.css` file. Use explicit file paths (e.g., `@vx-oss/heroui-v3-styles/components/button.css`) to import individual component styles.
 
 **Headless mode:** Build your own styles from scratch:
 
 ```css
 @import "tailwindcss";
-@import "@heroui/styles/base/base.css";
+@import "@vx-oss/heroui-v3-styles/base/base.css";
 
 /* Your custom styles */
 .button {
@@ -349,7 +349,7 @@ HeroUI defines three types of variables:
 2. **Theme Variables** — Colors that change between light/dark themes
 3. **Calculated Variables** — Automatically generated hover states and size variants
 
-For a complete reference, see: [Colors Documentation](/docs/handbook/colors), [Default Theme Variables](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/themes/default/variables.css), [Shared Theme Utilities](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/themes/shared/theme.css)
+For a complete reference, see: [Colors Documentation](/docs/handbook/colors), [Default Theme Variables](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/themes/default/variables.css), [Shared Theme Utilities](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/themes/shared/theme.css)
 
 **Calculated variables (Tailwind):**
 

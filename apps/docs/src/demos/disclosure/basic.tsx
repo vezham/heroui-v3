@@ -1,8 +1,8 @@
 "use client";
 
 import {QrCode} from "@gravity-ui/icons";
-import {Button, Disclosure} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {Button, Disclosure} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Basic() {

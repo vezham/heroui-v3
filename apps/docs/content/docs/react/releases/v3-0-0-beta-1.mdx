@@ -18,22 +18,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles@beta @heroui/react@beta
+    npm i @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles@beta @heroui/react@beta
+    pnpm add @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles@beta @heroui/react@beta
+    yarn add @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles@beta @heroui/react@beta
+    bun add @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
 </Tabs>
@@ -171,7 +171,7 @@ HeroUI now supports flexible component syntax. Use compound patterns with or wit
 **Available patterns:**
 
 ```tsx
-import { Avatar } from "@heroui/react"
+import { Avatar } from "@vx-oss/heroui-v3-react"
 
 // 1. Compound pattern (no .Root needed) - recommended
 <Avatar>
@@ -186,7 +186,7 @@ import { Avatar } from "@heroui/react"
 </Avatar.Root>
 
 // 3. Named exports
-import { AvatarRoot, AvatarImage, AvatarFallback } from "@heroui/react"
+import { AvatarRoot, AvatarImage, AvatarFallback } from "@vx-oss/heroui-v3-react"
 
 <AvatarRoot>
   <AvatarImage src="/avatar.jpg" alt="User" />
@@ -197,7 +197,7 @@ import { AvatarRoot, AvatarImage, AvatarFallback } from "@heroui/react"
 **Simple components** like Button work the same way:
 
 ```tsx
-import { Button } from "@heroui/react"
+import { Button } from "@vx-oss/heroui-v3-react"
 
 // No .Root needed
 <Button>Label</Button>
@@ -206,14 +206,14 @@ import { Button } from "@heroui/react"
 <Button.Root>Label</Button.Root>
 
 // Or named export
-import { ButtonRoot } from "@heroui/react"
+import { ButtonRoot } from "@vx-oss/heroui-v3-react"
 <ButtonRoot>Label</ButtonRoot>
 ```
 
 **You can mix compound and named exports** in the same component:
 
 ```tsx
-import { Avatar, AvatarFallback } from "@heroui/react"
+import { Avatar, AvatarFallback } from "@vx-oss/heroui-v3-react"
 
 <Avatar>
   <Avatar.Image src="/avatar.jpg" alt="User" />
@@ -419,14 +419,14 @@ The Chip component's `type` prop has been renamed to `color`, and a new `size` p
 
 **Before:**
 ```tsx
-import { Chip } from "@heroui/react";
+import { Chip } from "@vx-oss/heroui-v3-react";
 
 <Chip type="danger" variant="secondary">Label</Chip>
 ```
 
 **After:**
 ```tsx
-import { Chip } from "@heroui/react";
+import { Chip } from "@vx-oss/heroui-v3-react";
 
 <Chip color="danger" variant="soft" size="md">Label</Chip>
 ```
@@ -442,14 +442,14 @@ The Link component now supports `underline` and `underlineOffset` props, and inc
 
 **Before:**
 ```tsx
-import { Link } from "@heroui/react";
+import { Link } from "@vx-oss/heroui-v3-react";
 
 <Link href="#">Link text</Link>
 ```
 
 **After:**
 ```tsx
-import { Link } from "@heroui/react";
+import { Link } from "@vx-oss/heroui-v3-react";
 
 <Link href="#" underline="hover" underlineOffset={4}>Link text</Link>
 ```
@@ -474,7 +474,7 @@ type AvatarProps = Avatar["RootProps"]
 
 **After (Option 2 - Named type imports, recommended):**
 ```tsx
-import type { AvatarRootProps } from "@heroui/react"
+import type { AvatarRootProps } from "@vx-oss/heroui-v3-react"
 
 type AvatarProps = AvatarRootProps
 ```
@@ -716,7 +716,7 @@ type ButtonProps = Button["RootProps"]
 
 **After (Option 2 - Named imports, recommended):**
 ```tsx
-import type { ButtonRootProps } from "@heroui/react"
+import type { ButtonRootProps } from "@vx-oss/heroui-v3-react"
 
 type ButtonProps = ButtonRootProps
 ```
@@ -727,7 +727,7 @@ Replace `TabListWrapper` with `TabListContainer`:
 
 **Before:**
 ```tsx
-import { Tabs } from "@heroui/react"
+import { Tabs } from "@vx-oss/heroui-v3-react"
 
 <Tabs.Root>
   <Tabs.ListWrapper>
@@ -741,7 +741,7 @@ import { Tabs } from "@heroui/react"
 
 **After:**
 ```tsx
-import { Tabs } from "@heroui/react"
+import { Tabs } from "@vx-oss/heroui-v3-react"
 
 <Tabs>
   <Tabs.ListContainer>
@@ -859,8 +859,8 @@ See what the community is saying: [HeroUI Native Reception](https://x.com/hero_u
 - [Component Documentation](/docs/react/components)
 - [Design System - Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
 - [HeroUI Native](https://link.heroui.com/native)
-- [GitHub Repository](https://github.com/heroui-inc/heroui)
-- [GitHub PR #5872](https://github.com/heroui-inc/heroui/pull/5872)
+- [GitHub Repository](https://github.com/vezham/heroui-v3)
+- [GitHub PR #5872](https://github.com/vezham/heroui-v3/pull/5872)
 
 ## Contributors
 

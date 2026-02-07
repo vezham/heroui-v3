@@ -1,6 +1,6 @@
 "use client";
 
-import {ScrollShadow} from "@heroui/react";
+import {ScrollShadow} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 import {THEME_BUILDER_BOTTOM_SHEET_ID, formRadiusOptions, radiusOptions} from "../constants";

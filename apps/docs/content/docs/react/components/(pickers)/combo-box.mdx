@@ -12,7 +12,7 @@ links:
 ## Import
 
 ```tsx
-import { ComboBox } from '@heroui/react';
+import { ComboBox } from '@vx-oss/heroui-v3-react';
 ```
 
 ### Usage
@@ -26,7 +26,7 @@ import { ComboBox } from '@heroui/react';
 Import the ComboBox component and access all parts using dot notation.
 
 ```tsx
-import { ComboBox, Input, Label, Description, Header, ListBox, Separator } from '@heroui/react';
+import { ComboBox, Input, Label, Description, Header, ListBox, Separator } from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <ComboBox>
@@ -166,7 +166,7 @@ Use the `menuTrigger` prop to control when the popover opens:
 ### Passing Tailwind CSS classes
 
 ```tsx
-import { ComboBox, Input } from '@heroui/react';
+import { ComboBox, Input } from '@vx-oss/heroui-v3-react';
 
 function CustomComboBox() {
   return (
@@ -217,7 +217,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The ComboBox component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/combo-box.css)):
+The ComboBox component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/combo-box.css)):
 
 #### Base Classes
 - `.combo-box` - Base ComboBox container
@@ -316,7 +316,7 @@ When using render functions with ComboBox, these values are provided:
 ### Basic Usage
 
 ```tsx
-import { ComboBox, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 <ComboBox className="w-[256px]">
   <Label>Favorite Animal</Label>
@@ -342,7 +342,7 @@ import { ComboBox, Input, Label, ListBox } from '@heroui/react';
 ### With Sections
 
 ```tsx
-import { ComboBox, Input, Label, ListBox, Header, Separator } from '@heroui/react';
+import { ComboBox, Input, Label, ListBox, Header, Separator } from '@vx-oss/heroui-v3-react';
 
 <ComboBox className="w-[256px]">
   <Label>Country</Label>
@@ -375,9 +375,9 @@ import { ComboBox, Input, Label, ListBox, Header, Separator } from '@heroui/reac
 ### Controlled Selection
 
 ```tsx
-import type { Key } from '@heroui/react';
+import type { Key } from '@vx-oss/heroui-v3-react';
 
-import { ComboBox, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 import { useState } from 'react';
 
 function ControlledComboBox() {
@@ -414,7 +414,7 @@ function ControlledComboBox() {
 ### Controlled Input Value
 
 ```tsx
-import { ComboBox, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 import { useState } from 'react';
 
 function ControlledInputComboBox() {
@@ -451,7 +451,7 @@ function ControlledInputComboBox() {
 ### Asynchronous Loading
 
 ```tsx
-import { Collection, ComboBox, EmptyState, Input, Label, ListBox, ListBoxLoadMoreItem, Spinner } from '@heroui/react';
+import { Collection, ComboBox, EmptyState, Input, Label, ListBox, ListBoxLoadMoreItem, Spinner } from '@vx-oss/heroui-v3-react';
 import { useAsyncList } from '@react-stately/data';
 
 interface Character {
@@ -515,7 +515,7 @@ function AsyncComboBox() {
 ### Custom Filtering
 
 ```tsx
-import { ComboBox, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 <ComboBox
   className="w-[256px]"
@@ -549,7 +549,7 @@ import { ComboBox, Input, Label, ListBox } from '@heroui/react';
 Control when the popover opens using the `menuTrigger` prop:
 
 ```tsx
-import { ComboBox, Description, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, Description, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 // Opens on focus (default)
 <ComboBox className="w-[256px]" menuTrigger="focus">
@@ -611,7 +611,7 @@ import { ComboBox, Description, Input, Label, ListBox } from '@heroui/react';
 Use the `formValue` prop to control whether the selected item's key or text is submitted in forms:
 
 ```tsx
-import { Button, ComboBox, FieldError, Form, Input, Label, ListBox } from '@heroui/react';
+import { Button, ComboBox, FieldError, Form, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 function FormValueExample() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -677,7 +677,7 @@ function FormValueExample() {
 Control how validation is displayed using the `validationBehavior` prop:
 
 ```tsx
-import { Button, ComboBox, FieldError, Form, Input, Label, ListBox } from '@heroui/react';
+import { Button, ComboBox, FieldError, Form, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 function ValidationExample() {
   return (
@@ -733,7 +733,7 @@ function ValidationExample() {
 Use the `validate` prop to add custom validation logic:
 
 ```tsx
-import { ComboBox, FieldError, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, FieldError, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 function CustomValidationExample() {
   return (
@@ -782,7 +782,7 @@ function CustomValidationExample() {
 Use the `isReadOnly` prop to make the comboBox read-only:
 
 ```tsx
-import { ComboBox, Input, Label, ListBox } from '@heroui/react';
+import { ComboBox, Input, Label, ListBox } from '@vx-oss/heroui-v3-react';
 
 <ComboBox className="w-[256px]" isReadOnly defaultSelectedKey="cat">
   <Label>Favorite Animal</Label>

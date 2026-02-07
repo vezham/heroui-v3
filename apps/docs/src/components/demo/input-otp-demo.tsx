@@ -1,6 +1,6 @@
 "use client";
 
-import {InputOTP, Label, Link} from "@heroui/react";
+import {InputOTP, Label, Link} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function InputOTPDemo() {

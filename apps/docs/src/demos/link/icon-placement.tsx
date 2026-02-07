@@ -1,4 +1,4 @@
-import {Link} from "@heroui/react";
+import {Link} from "@vx-oss/heroui-v3-react";
 
 export function LinkIconPlacement() {
   return (

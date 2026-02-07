@@ -1,4 +1,4 @@
-import {Description, Label, Radio, RadioGroup} from "@heroui/react";
+import {Description, Label, Radio, RadioGroup} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

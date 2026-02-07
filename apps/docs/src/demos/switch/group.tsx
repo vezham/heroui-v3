@@ -1,4 +1,4 @@
-import {Label, Switch, SwitchGroup} from "@heroui/react";
+import {Label, Switch, SwitchGroup} from "@vx-oss/heroui-v3-react";
 
 export function Group() {
   return (

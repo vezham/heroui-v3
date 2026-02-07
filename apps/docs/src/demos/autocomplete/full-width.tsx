@@ -1,8 +1,15 @@
 "use client";
 
-import type {Key} from "@heroui/react";
+import type {Key} from "@vx-oss/heroui-v3-react";
 
-import {Autocomplete, Label, ListBox, SearchField, Surface, useFilter} from "@heroui/react";
+import {
+  Autocomplete,
+  Label,
+  ListBox,
+  SearchField,
+  Surface,
+  useFilter,
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function FullWidth() {

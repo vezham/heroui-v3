@@ -1,4 +1,4 @@
-import {Card} from "@heroui/react";
+import {Card} from "@vx-oss/heroui-v3-react";
 
 export function Variants() {
   return (

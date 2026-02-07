@@ -1,4 +1,4 @@
-import {Description, Label, Radio, RadioGroup, Surface} from "@heroui/react";
+import {Description, Label, Radio, RadioGroup, Surface} from "@vx-oss/heroui-v3-react";
 
 export function OnSurface() {
   return (

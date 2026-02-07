@@ -1,4 +1,4 @@
-import {Kbd} from "@heroui/react";
+import {Kbd} from "@vx-oss/heroui-v3-react";
 
 export function InlineUsage() {
   return (

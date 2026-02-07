@@ -1,5 +1,5 @@
 import {ArrowRotateLeft} from "@gravity-ui/icons";
-import {AlertDialog, Button, Kbd, Tooltip, useOverlayState} from "@heroui/react";
+import {AlertDialog, Button, Kbd, Tooltip, useOverlayState} from "@vx-oss/heroui-v3-react";
 import {useMemo} from "react";
 
 import useKeyPress from "@/hooks/use-key-press";

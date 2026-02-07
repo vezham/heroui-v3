@@ -13,7 +13,7 @@ const withMDX = createMDX();
 const config: NextConfig = {
   compress: true,
   experimental: {
-    optimizePackageImports: ["@heroui/react"],
+    optimizePackageImports: ["@vx-oss/heroui-v3-react"],
   },
   async headers() {
     return [
@@ -67,7 +67,7 @@ const config: NextConfig = {
     ];
   },
   trailingSlash: false,
-  transpilePackages: ["@heroui/react", "@heroui/styles"],
+  transpilePackages: ["@vx-oss/heroui-v3-react", "@vx-oss/heroui-v3-styles"],
   typedRoutes: true,
   typescript: {
     ignoreBuildErrors: true,

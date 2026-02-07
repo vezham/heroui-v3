@@ -1,7 +1,15 @@
 "use client";
 
 import {Pencil, SquarePlus, TrashBin} from "@gravity-ui/icons";
-import {Description, Header, Kbd, Label, ListBox, Separator, Surface} from "@heroui/react";
+import {
+  Description,
+  Header,
+  Kbd,
+  Label,
+  ListBox,
+  Separator,
+  Surface,
+} from "@vx-oss/heroui-v3-react";
 
 export function WithDisabledItems() {
   return (

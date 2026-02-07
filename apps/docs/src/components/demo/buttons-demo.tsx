@@ -1,4 +1,4 @@
-import {Button} from "@heroui/react";
+import {Button} from "@vx-oss/heroui-v3-react";
 
 export const ButtonsDemo = () => {
   return (

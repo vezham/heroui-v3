@@ -1,7 +1,7 @@
 "use client";
 
 import {FloppyDisk, FolderOpen, SquarePlus, TrashBin} from "@gravity-ui/icons";
-import {Button, Description, Dropdown, Kbd, Label} from "@heroui/react";
+import {Button, Description, Dropdown, Kbd, Label} from "@vx-oss/heroui-v3-react";
 
 export function WithDescriptions() {
   return (

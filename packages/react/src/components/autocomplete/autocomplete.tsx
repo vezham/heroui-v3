@@ -2,11 +2,11 @@
 
 import type {Booleanish} from "../../utils/assertion";
 import type {SurfaceVariants} from "../surface";
-import type {AutocompleteVariants} from "@heroui/styles";
+import type {AutocompleteVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, RefObject} from "react";
 
-import {autocompleteVariants} from "@heroui/styles";
 import {mergeRefs} from "@react-aria/utils";
+import {autocompleteVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext, useRef} from "react";
 import {
   Autocomplete as AutocompletePrimitive,

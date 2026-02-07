@@ -1,6 +1,6 @@
 "use client";
 
-import {Avatar, Button, Popover} from "@heroui/react";
+import {Avatar, Button, Popover} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function PopoverInteractive() {

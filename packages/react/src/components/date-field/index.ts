@@ -24,6 +24,6 @@ export type {DateFieldRootProps, DateFieldRootProps as DateFieldProps} from "./d
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {dateFieldVariants} from "@heroui/styles";
+export {dateFieldVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {DateFieldVariants} from "@heroui/styles";
+export type {DateFieldVariants} from "@vx-oss/heroui-v3-styles";

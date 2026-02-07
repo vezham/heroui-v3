@@ -1,10 +1,10 @@
 "use client";
 
 import type {LinkProps} from "../link";
-import type {BreadcrumbsVariants} from "@heroui/styles";
+import type {BreadcrumbsVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {breadcrumbsVariants} from "@heroui/styles";
+import {breadcrumbsVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Breadcrumb as BreadcrumbPrimitive,

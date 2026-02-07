@@ -1,4 +1,4 @@
-import {Avatar, Card} from "@heroui/react";
+import {Avatar, Card} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 import {VerifiedBadgeIcon} from "./components/icons";

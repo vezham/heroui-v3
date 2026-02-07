@@ -1,7 +1,7 @@
 "use client";
 
 import {Envelope} from "@gravity-ui/icons";
-import {InputGroup, Label, TextField} from "@heroui/react";
+import {InputGroup, Label, TextField} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

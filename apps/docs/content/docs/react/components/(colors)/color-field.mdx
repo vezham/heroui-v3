@@ -12,7 +12,7 @@ links:
 ## Import
 
 ```tsx
-import { ColorField, parseColor } from '@heroui/react';
+import { ColorField, parseColor } from '@vx-oss/heroui-v3-react';
 ```
 
 ### Usage
@@ -22,7 +22,7 @@ import { ColorField, parseColor } from '@heroui/react';
 ### Anatomy
 
 ```tsx
-import {ColorField, Label, ColorInputGroup, ColorSwatch, Description, FieldError, parseColor} from '@heroui/react';
+import {ColorField, Label, ColorInputGroup, ColorSwatch, Description, FieldError, parseColor} from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <ColorField>
@@ -103,7 +103,7 @@ Complete form example with validation and submission handling.
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {ColorField, Label, ColorInputGroup, ColorSwatch, Description} from '@heroui/react';
+import {ColorField, Label, ColorInputGroup, ColorSwatch, Description} from '@vx-oss/heroui-v3-react';
 
 function CustomColorField() {
   return (
@@ -235,16 +235,16 @@ ColorField inherits all props from React Aria's [ColorField](https://react-aria.
 
 ColorField works with these separate components that should be imported and used directly:
 
-- **Label** - Field label component from `@heroui/react`
-- **ColorInputGroup** - Color input component from `@heroui/react` (documented below)
-- **ColorSwatch** - Color preview component from `@heroui/react`
-- **Description** - Helper text component from `@heroui/react`
-- **FieldError** - Validation error message from `@heroui/react`
+- **Label** - Field label component from `@vx-oss/heroui-v3-react`
+- **ColorInputGroup** - Color input component from `@vx-oss/heroui-v3-react` (documented below)
+- **ColorSwatch** - Color preview component from `@vx-oss/heroui-v3-react`
+- **Description** - Helper text component from `@vx-oss/heroui-v3-react`
+- **FieldError** - Validation error message from `@vx-oss/heroui-v3-react`
 
 Each of these components has its own props API. Use them directly within ColorField for composition:
 
 ```tsx
-import {ColorField, Label, ColorInputGroup, ColorSwatch, Description, FieldError, parseColor} from '@heroui/react';
+import {ColorField, Label, ColorInputGroup, ColorSwatch, Description, FieldError, parseColor} from '@vx-oss/heroui-v3-react';
 
 <ColorField
   isRequired
@@ -269,7 +269,7 @@ import {ColorField, Label, ColorInputGroup, ColorSwatch, Description, FieldError
 ColorField uses `Color` objects from React Aria Components:
 
 ```tsx
-import {parseColor} from '@heroui/react';
+import {parseColor} from '@vx-oss/heroui-v3-react';
 
 // Parse from hex string
 const color = parseColor('#3B82F6');

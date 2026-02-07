@@ -36,9 +36,9 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {inputOTPVariants} from "@heroui/styles";
+export {inputOTPVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {InputOTPVariants} from "@heroui/styles";
+export type {InputOTPVariants} from "@vx-oss/heroui-v3-styles";
 
 //  ===================================
 // Regular Expressions

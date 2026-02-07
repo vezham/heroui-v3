@@ -1,4 +1,4 @@
-import {Button, Card, CloseButton} from "@heroui/react";
+import {Button, Card, CloseButton} from "@vx-oss/heroui-v3-react";
 
 export function Horizontal() {
   return (

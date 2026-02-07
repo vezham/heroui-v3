@@ -1,4 +1,4 @@
-import {ColorSlider} from "@heroui/react";
+import {ColorSlider} from "@vx-oss/heroui-v3-react";
 
 export function Vertical() {
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Form, InputOTP, Label, Link, Spinner} from "@heroui/react";
+import {Button, Description, Form, InputOTP, Label, Link, Spinner} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function FormExample() {

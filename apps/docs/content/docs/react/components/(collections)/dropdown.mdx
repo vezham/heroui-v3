@@ -11,7 +11,7 @@ links:
 ## Import
 
 ```tsx
-import { Dropdown } from '@heroui/react';
+import { Dropdown } from '@vx-oss/heroui-v3-react';
 ```
 
 ### Usage
@@ -25,7 +25,7 @@ import { Dropdown } from '@heroui/react';
 Import the Dropdown component and access all parts using dot notation.
 
 ```tsx
-import { Dropdown, Button, Label, Description, Header, Kbd, Separator } from '@heroui/react';
+import { Dropdown, Button, Label, Description, Header, Kbd, Separator } from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <Dropdown>
@@ -159,7 +159,7 @@ export default () => (
 ### Passing Tailwind CSS classes
 
 ```tsx
-import { Dropdown, Button } from '@heroui/react';
+import { Dropdown, Button } from '@vx-oss/heroui-v3-react';
 
 function CustomDropdown() {
   return (
@@ -208,7 +208,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The Dropdown component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/dropdown.css)):
+The Dropdown component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/dropdown.css)):
 
 #### Base Classes
 - `.dropdown` - Base dropdown container
@@ -230,11 +230,11 @@ The Dropdown component uses these CSS classes ([View source styles](https://gith
 The Dropdown component uses Menu, MenuItem, and MenuSection as base components. These classes are also available for customization:
 
 #### Menu Classes
-- `.menu` - Base menu container ([menu.css](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/menu.css))
+- `.menu` - Base menu container ([menu.css](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/menu.css))
   - `[data-slot="separator"]` - Separator elements within the menu
 
 #### MenuItem Classes
-- `.menu-item` - Base menu item container ([menu-item.css](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/menu-item.css))
+- `.menu-item` - Base menu item container ([menu-item.css](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/menu-item.css))
 - `.menu-item__indicator` - Selection indicator (checkmark or dot)
   - `[data-slot="menu-item-indicator--checkmark"]` - Checkmark indicator SVG
   - `[data-slot="menu-item-indicator--dot"]` - Dot indicator SVG
@@ -256,7 +256,7 @@ The Dropdown component uses Menu, MenuItem, and MenuSection as base components. 
 - `.menu-item[aria-selected="true"]` - Selected item (ARIA)
 
 #### MenuSection Classes
-- `.menu-section` - Base menu section container ([menu-section.css](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/menu-section.css))
+- `.menu-section` - Base menu section container ([menu-section.css](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/menu-section.css))
 
 ### Interactive States
 
@@ -388,7 +388,7 @@ When using render functions with Dropdown.Item, these values are provided:
 ### Basic Usage
 
 ```tsx
-import { Dropdown, Button, Label } from '@heroui/react';
+import { Dropdown, Button, Label } from '@vx-oss/heroui-v3-react';
 
 <Dropdown>
   <Button aria-label="Menu" variant="secondary">
@@ -413,7 +413,7 @@ import { Dropdown, Button, Label } from '@heroui/react';
 ### With Sections
 
 ```tsx
-import { Dropdown, Button, Label, Header, Separator } from '@heroui/react';
+import { Dropdown, Button, Label, Header, Separator } from '@vx-oss/heroui-v3-react';
 
 <Dropdown>
   <Button aria-label="Menu" variant="secondary">
@@ -445,9 +445,9 @@ import { Dropdown, Button, Label, Header, Separator } from '@heroui/react';
 ### Controlled Selection
 
 ```tsx
-import type { Selection } from '@heroui/react';
+import type { Selection } from '@vx-oss/heroui-v3-react';
 
-import { Dropdown, Button, Label } from '@heroui/react';
+import { Dropdown, Button, Label } from '@vx-oss/heroui-v3-react';
 import { useState } from 'react';
 
 function ControlledDropdown() {
@@ -482,7 +482,7 @@ function ControlledDropdown() {
 ### With Submenus
 
 ```tsx
-import { Dropdown, Button, Label } from '@heroui/react';
+import { Dropdown, Button, Label } from '@vx-oss/heroui-v3-react';
 
 <Dropdown>
   <Button aria-label="Menu" variant="secondary">

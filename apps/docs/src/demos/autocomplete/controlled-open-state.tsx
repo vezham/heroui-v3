@@ -1,6 +1,13 @@
 "use client";
 
-import {Autocomplete, Button, Label, ListBox, SearchField, useFilter} from "@heroui/react";
+import {
+  Autocomplete,
+  Button,
+  Label,
+  ListBox,
+  SearchField,
+  useFilter,
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function ControlledOpenState() {

@@ -11,7 +11,7 @@ links:
 ## Import
 
 ```tsx
-import { ListBox } from '@heroui/react';
+import { ListBox } from '@vx-oss/heroui-v3-react';
 ```
 
 ### Usage
@@ -25,7 +25,7 @@ import { ListBox } from '@heroui/react';
 Import the ListBox component and access all parts using dot notation.
 
 ```tsx
-import { ListBox, Label, Description, Header } from '@heroui/react';
+import { ListBox, Label, Description, Header } from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <ListBox>
@@ -81,7 +81,7 @@ export default () => (
 ### Passing Tailwind CSS classes
 
 ```tsx
-import { ListBox } from '@heroui/react';
+import { ListBox } from '@vx-oss/heroui-v3-react';
 
 function CustomListBox() {
   return (
@@ -123,7 +123,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The ListBox component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/list-box.css)):
+The ListBox component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/list-box.css)):
 
 #### Base Classes
 - `.list-box` - Base listbox container
@@ -211,16 +211,16 @@ When using render functions with ListBox.Item or ListBox.ItemIndicator, these va
 ### Basic Usage
 
 ```tsx
-import { ListBox, Label, Description } from '@heroui/react';
+import { ListBox, Label, Description } from '@vx-oss/heroui-v3-react';
 
 <ListBox aria-label="Users" selectionMode="single">
   <ListBox.Item id="1" textValue="Bob">
     <Label>Bob</Label>
-    <Description>bob@heroui.com</Description>
+    <Description>bob@vezham.com</Description>
   </ListBox.Item>
   <ListBox.Item id="2" textValue="Alice">
     <Label>Alice</Label>
-    <Description>alice@heroui.com</Description>
+    <Description>alice@vezham.com</Description>
   </ListBox.Item>
 </ListBox>
 ```
@@ -228,7 +228,7 @@ import { ListBox, Label, Description } from '@heroui/react';
 ### With Sections
 
 ```tsx
-import { ListBox, Header, Separator } from '@heroui/react';
+import { ListBox, Header, Separator } from '@vx-oss/heroui-v3-react';
 
 <ListBox aria-label="Actions" selectionMode="none" onAction={(key) => console.log(key)}>
   <ListBox.Section>
@@ -247,7 +247,7 @@ import { ListBox, Header, Separator } from '@heroui/react';
 ### Controlled Selection
 
 ```tsx
-import { ListBox, Selection } from '@heroui/react';
+import { ListBox, Selection } from '@vx-oss/heroui-v3-react';
 import { useState } from 'react';
 
 function ControlledListBox() {
@@ -271,7 +271,7 @@ function ControlledListBox() {
 ### Custom Indicator
 
 ```tsx
-import { ListBox, ListBoxItemIndicator } from '@heroui/react';
+import { ListBox, ListBoxItemIndicator } from '@vx-oss/heroui-v3-react';
 import { Icon } from '@iconify/react';
 
 <ListBox aria-label="Options" selectionMode="multiple">

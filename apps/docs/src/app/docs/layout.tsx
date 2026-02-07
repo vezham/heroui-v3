@@ -1,6 +1,6 @@
 import type {ReactNode} from "react";
 
-import {Separator} from "@heroui/react";
+import {Separator} from "@vx-oss/heroui-v3-react";
 
 import {baseOptions} from "@/app/layout.config";
 import {FrameworksTabs} from "@/components/frameworks-tabs";

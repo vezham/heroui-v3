@@ -1,6 +1,6 @@
 "use client";
 
-import {ComboBox, Input, Label, ListBox} from "@heroui/react";
+import {ComboBox, Input, Label, ListBox} from "@vx-oss/heroui-v3-react";
 
 export function CustomFiltering() {
   const animals = [

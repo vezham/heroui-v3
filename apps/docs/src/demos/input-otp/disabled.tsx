@@ -1,4 +1,4 @@
-import {Description, InputOTP, Label} from "@heroui/react";
+import {Description, InputOTP, Label} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

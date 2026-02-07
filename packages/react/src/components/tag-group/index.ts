@@ -30,6 +30,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {tagGroupVariants} from "@heroui/styles";
+export {tagGroupVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {TagGroupVariants} from "@heroui/styles";
+export type {TagGroupVariants} from "@vx-oss/heroui-v3-styles";

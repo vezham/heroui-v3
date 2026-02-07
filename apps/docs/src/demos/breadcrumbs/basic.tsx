@@ -1,6 +1,6 @@
 "use client";
 
-import {Breadcrumbs} from "@heroui/react";
+import {Breadcrumbs} from "@vx-oss/heroui-v3-react";
 
 export default function BreadcrumbsBasic() {
   return (

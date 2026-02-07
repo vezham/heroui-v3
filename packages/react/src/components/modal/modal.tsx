@@ -2,15 +2,15 @@
 
 import type {UseOverlayStateProps, UseOverlayStateReturn} from "../../hooks/use-overlay-state";
 import type {SurfaceVariants} from "../surface";
-import type {ModalVariants} from "@heroui/styles";
+import type {ModalVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {
   Button as ButtonPrimitive,
   DialogProps as DialogPrimitiveProps,
 } from "react-aria-components";
 
-import {modalVariants} from "@heroui/styles";
 import {mergeProps} from "@react-aria/utils";
+import {modalVariants} from "@vx-oss/heroui-v3-styles";
 import {createContext, useContext, useMemo} from "react";
 import {
   Dialog as DialogPrimitive,

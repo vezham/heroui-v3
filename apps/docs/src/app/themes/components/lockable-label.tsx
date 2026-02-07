@@ -3,7 +3,7 @@
 import type {ThemeVariables} from "../constants";
 
 import {CircleInfo, Lock, LockOpen} from "@gravity-ui/icons";
-import {Label, Tooltip, cn} from "@heroui/react";
+import {Label, Tooltip, cn} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 import {useToggleLockedVariable} from "../hooks/use-toggle-locked-variable";

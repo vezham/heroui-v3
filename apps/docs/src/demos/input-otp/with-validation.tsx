@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Form, InputOTP, Label} from "@heroui/react";
+import {Button, Description, Form, InputOTP, Label} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function WithValidation() {

@@ -11,7 +11,7 @@ links:
 ## Import
 
 ```tsx
-import { InputOTP } from '@heroui/react';
+import { InputOTP } from '@vx-oss/heroui-v3-react';
 ```
 
 ### Usage
@@ -23,7 +23,7 @@ import { InputOTP } from '@heroui/react';
 Import the InputOTP component and access all parts using dot notation.
 
 ```tsx
-import { InputOTP } from '@heroui/react';
+import { InputOTP } from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <InputOTP maxLength={6}>
@@ -103,7 +103,7 @@ When used inside a [Surface](/docs/components/surface) component, use `variant="
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {InputOTP, Label} from '@heroui/react';
+import {InputOTP, Label} from '@vx-oss/heroui-v3-react';
 
 function CustomInputOTP() {
   return (
@@ -178,7 +178,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The InputOTP component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/input-otp.css)):
+The InputOTP component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/input-otp.css)):
 
 #### Base Classes
 - `.input-otp` - Base container
@@ -276,7 +276,7 @@ InputOTP is built on top of the [input-otp](https://github.com/guilhermerodz/inp
 HeroUI re-exports common regex patterns from input-otp for convenience:
 
 ```tsx
-import { REGEXP_ONLY_DIGITS, REGEXP_ONLY_CHARS, REGEXP_ONLY_DIGITS_AND_CHARS } from '@heroui/react';
+import { REGEXP_ONLY_DIGITS, REGEXP_ONLY_CHARS, REGEXP_ONLY_DIGITS_AND_CHARS } from '@vx-oss/heroui-v3-react';
 
 // Use with pattern prop
 <InputOTP pattern={REGEXP_ONLY_DIGITS} maxLength={6}>

@@ -1,4 +1,4 @@
-import baseReactConfig from "@heroui/standard/eslint/react.mjs";
+import baseReactConfig from "@vx-oss/heroui-v3-standard/eslint/react.mjs";
 import {defineConfig} from "eslint/config";
 
 const config = defineConfig([

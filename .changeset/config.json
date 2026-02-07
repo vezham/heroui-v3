@@ -3,16 +3,16 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "heroui-inc/heroui"
+      "repo": "vezham/heroui-v3"
     }
   ],
   "commit": false,
   "fixed": [],
   "linked": [],
   "access": "public",
-  "baseBranch": "canary",
+  "baseBranch": "timeline",
   "updateInternalDependencies": "patch",
-  "ignore": ["@heroui/docs", "@heroui/storybook", "@heroui/vitest"],
+  "ignore": ["@vx-oss/heroui-v3-docs", "@vx-oss/heroui-v3-storybook", "@vx-oss/heroui-v3-vitest"],
   "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
     "onlyUpdatePeerDependentsWhenOutOfRange": true
   }

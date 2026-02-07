@@ -1,14 +1,14 @@
 "use client";
 
 import {ChevronDown, ChevronUp, QrCode} from "@gravity-ui/icons";
+import {Icon} from "@iconify/react";
 import {
   Button,
   Disclosure,
   DisclosureGroup,
   Separator,
   useDisclosureGroupNavigation,
-} from "@heroui/react";
-import {Icon} from "@iconify/react";
+} from "@vx-oss/heroui-v3-react";
 import React from "react";
 import {cn} from "tailwind-variants";
 

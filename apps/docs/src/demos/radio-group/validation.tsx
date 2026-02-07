@@ -1,6 +1,14 @@
 "use client";
 
-import {Button, Description, FieldError, Form, Label, Radio, RadioGroup} from "@heroui/react";
+import {
+  Button,
+  Description,
+  FieldError,
+  Form,
+  Label,
+  Radio,
+  RadioGroup,
+} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Validation() {

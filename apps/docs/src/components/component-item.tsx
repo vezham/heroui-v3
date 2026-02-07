@@ -4,7 +4,7 @@ import type {ComponentInfo} from "../components-registry";
 import type {StatusChipStatus} from "./status-chip";
 import type {UrlObject} from "url";
 
-import {Link} from "@heroui/react";
+import {Link} from "@vx-oss/heroui-v3-react";
 import Image from "next/image";
 import NextLink from "next/link";
 

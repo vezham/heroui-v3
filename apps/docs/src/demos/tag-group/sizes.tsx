@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, Tag, TagGroup} from "@heroui/react";
+import {Label, Tag, TagGroup} from "@vx-oss/heroui-v3-react";
 
 export function TagGroupSizes() {
   return (

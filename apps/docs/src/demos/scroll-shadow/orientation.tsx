@@ -1,4 +1,4 @@
-import {Card, ScrollShadow} from "@heroui/react";
+import {Card, ScrollShadow} from "@vx-oss/heroui-v3-react";
 
 const images = [
   "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/robot1.jpeg",

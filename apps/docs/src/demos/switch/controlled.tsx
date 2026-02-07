@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, Switch} from "@heroui/react";
+import {Label, Switch} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Controlled() {

@@ -41,6 +41,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {colorInputGroupVariants} from "@heroui/styles";
+export {colorInputGroupVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ColorInputGroupVariants} from "@heroui/styles";
+export type {ColorInputGroupVariants} from "@vx-oss/heroui-v3-styles";

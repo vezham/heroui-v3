@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronsExpandVertical} from "@gravity-ui/icons";
-import {ComboBox, Input, Label, ListBox} from "@heroui/react";
+import {ComboBox, Input, Label, ListBox} from "@vx-oss/heroui-v3-react";
 
 export function CustomIndicator() {
   return (

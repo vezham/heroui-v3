@@ -1,4 +1,4 @@
-import {Label, Slider} from "@heroui/react";
+import {Label, Slider} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

@@ -29,6 +29,6 @@ export {TextFieldContext} from "./text-field";
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {textFieldVariants} from "@heroui/styles";
+export {textFieldVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {TextFieldVariants} from "@heroui/styles";
+export type {TextFieldVariants} from "@vx-oss/heroui-v3-styles";

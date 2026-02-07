@@ -1,10 +1,10 @@
 "use client";
 
-import type {TagVariants} from "@heroui/styles";
+import type {TagVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {Button as ButtonPrimitive} from "react-aria-components";
 
-import {tagVariants} from "@heroui/styles";
+import {tagVariants} from "@vx-oss/heroui-v3-styles";
 import React, {Children, createContext, useContext, useMemo} from "react";
 import {Tag as TagPrimitive} from "react-aria-components";
 

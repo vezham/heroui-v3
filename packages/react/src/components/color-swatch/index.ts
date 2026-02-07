@@ -24,6 +24,6 @@ export type {ColorSwatchRootProps, ColorSwatchRootProps as ColorSwatchProps} fro
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {colorSwatchVariants} from "@heroui/styles";
+export {colorSwatchVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ColorSwatchVariants} from "@heroui/styles";
+export type {ColorSwatchVariants} from "@vx-oss/heroui-v3-styles";

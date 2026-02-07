@@ -1,4 +1,4 @@
-import {Description, Label, Switch} from "@heroui/react";
+import {Description, Label, Switch} from "@vx-oss/heroui-v3-react";
 
 export function WithDescription() {
   return (

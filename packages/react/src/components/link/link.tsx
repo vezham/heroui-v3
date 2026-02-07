@@ -1,9 +1,9 @@
 "use client";
 
-import type {LinkVariants} from "@heroui/styles";
+import type {LinkVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {linkVariants} from "@heroui/styles";
+import {linkVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Link as LinkPrimitive} from "react-aria-components";
 

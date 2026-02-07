@@ -1,9 +1,9 @@
 "use client";
 
-import type {ChipVariants} from "@heroui/styles";
+import type {ChipVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {chipVariants} from "@heroui/styles";
+import {chipVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

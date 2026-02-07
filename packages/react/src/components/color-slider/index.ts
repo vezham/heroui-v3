@@ -48,6 +48,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {colorSliderVariants} from "@heroui/styles";
+export {colorSliderVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ColorSliderVariants} from "@heroui/styles";
+export type {ColorSliderVariants} from "@vx-oss/heroui-v3-styles";

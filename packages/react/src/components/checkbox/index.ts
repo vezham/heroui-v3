@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {checkboxVariants} from "@heroui/styles";
+export {checkboxVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {CheckboxVariants} from "@heroui/styles";
+export type {CheckboxVariants} from "@vx-oss/heroui-v3-styles";

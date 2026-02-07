@@ -2,7 +2,7 @@
 
 import type {Color} from "@/components/color-picker";
 
-import {Button, cn} from "@heroui/react";
+import {Button, cn} from "@vx-oss/heroui-v3-react";
 import {formatHsl} from "culori";
 import {useMemo} from "react";
 

@@ -2,7 +2,7 @@
 
 import type {ShowcaseItem as ShowcaseItemType} from "@/showcases";
 
-import {chipVariants} from "@heroui/react";
+import {chipVariants} from "@vx-oss/heroui-v3-react";
 import LinkRoot from "next/link";
 import {useSearchParams} from "next/navigation";
 import {Suspense} from "react";

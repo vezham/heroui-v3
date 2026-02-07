@@ -1,10 +1,10 @@
 "use client";
 
 import type {SurfaceVariants} from "../surface";
-import type {AlertVariants} from "@heroui/styles";
+import type {AlertVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {alertVariants} from "@heroui/styles";
+import {alertVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

@@ -1,6 +1,6 @@
 "use client";
 
-import {Kbd, Label, Tooltip, cn} from "@heroui/react";
+import {Kbd, Label, Tooltip, cn} from "@vx-oss/heroui-v3-react";
 import {useTheme} from "next-themes";
 
 import {ThemeToggle} from "@/components/fumadocs/ui/theme-toggle";

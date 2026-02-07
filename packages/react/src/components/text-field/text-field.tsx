@@ -1,9 +1,9 @@
 "use client";
 
-import type {TextFieldVariants} from "@heroui/styles";
+import type {TextFieldVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {textFieldVariants} from "@heroui/styles";
+import {textFieldVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext} from "react";
 import {TextField as TextFieldPrimitive} from "react-aria-components";
 

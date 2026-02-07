@@ -1,4 +1,4 @@
-import {Description, Label, ListBox, Select} from "@heroui/react";
+import {Description, Label, ListBox, Select} from "@vx-oss/heroui-v3-react";
 
 export function WithDescription() {
   return (

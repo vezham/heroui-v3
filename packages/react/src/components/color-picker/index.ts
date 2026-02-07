@@ -33,6 +33,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {colorPickerVariants} from "@heroui/styles";
+export {colorPickerVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ColorPickerVariants} from "@heroui/styles";
+export type {ColorPickerVariants} from "@vx-oss/heroui-v3-styles";

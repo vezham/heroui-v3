@@ -51,6 +51,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {dateInputGroupVariants} from "@heroui/styles";
+export {dateInputGroupVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {DateInputGroupVariants} from "@heroui/styles";
+export type {DateInputGroupVariants} from "@vx-oss/heroui-v3-styles";

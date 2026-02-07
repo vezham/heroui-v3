@@ -1,6 +1,6 @@
 import type {DisclosureGroupProps} from "./index";
-import type {ButtonProps} from "@heroui/react";
 import type {Meta} from "@storybook/react";
+import type {ButtonProps} from "@vx-oss/heroui-v3-react";
 import type {SVGProps} from "react";
 
 import {Icon} from "@iconify/react";

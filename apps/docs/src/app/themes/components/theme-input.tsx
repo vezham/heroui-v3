@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronsExpandVertical} from "@gravity-ui/icons";
-import {Avatar, InputGroup} from "@heroui/react";
+import {Avatar, InputGroup} from "@vx-oss/heroui-v3-react";
 
 import {findMatchingTheme, themes} from "../constants";
 import {useVariablesState} from "../hooks/use-variables-state";

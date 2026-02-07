@@ -13,7 +13,7 @@ links:
 ## Import
 
 ```tsx
-import { Toast, toast } from '@heroui/react';
+import { Toast, toast } from '@vx-oss/heroui-v3-react';
 ```
 
 ## Setup
@@ -21,7 +21,7 @@ import { Toast, toast } from '@heroui/react';
 Render the provider in the root of your app.
 
 ```tsx
-import { Toast, Button, toast } from '@heroui/react';
+import { Toast, Button, toast } from '@vx-oss/heroui-v3-react';
 
 function App() {
   return (
@@ -136,7 +136,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The Toast component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/toast.css)):
+The Toast component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/toast.css)):
 
 #### Base Classes
 - `.toast` - Base toast container
@@ -260,7 +260,7 @@ A `ToastQueue` manages the state for a `<Toast.Provider>`. The state is stored o
 The default `toast` function provides convenient methods for showing toasts:
 
 ```tsx
-import { toast } from '@heroui/react';
+import { toast } from '@vx-oss/heroui-v3-react';
 
 // Basic toast (auto-dismisses after 4 seconds by default)
 toast("Event has been created");

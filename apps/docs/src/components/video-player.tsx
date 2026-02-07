@@ -2,7 +2,7 @@
 
 import type {FC} from "react";
 
-import {Button, Spinner, Tooltip, cn} from "@heroui/react";
+import {Button, Spinner, Tooltip, cn} from "@vx-oss/heroui-v3-react";
 import {useCallback, useEffect, useRef, useState} from "react";
 import {useIntersectionObserver} from "usehooks-ts";
 

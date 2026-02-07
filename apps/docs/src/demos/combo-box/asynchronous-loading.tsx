@@ -1,5 +1,6 @@
 "use client";
 
+import {useAsyncList} from "@react-stately/data";
 import {
   Collection,
   ComboBox,
@@ -9,8 +10,7 @@ import {
   ListBox,
   ListBoxLoadMoreItem,
   Spinner,
-} from "@heroui/react";
-import {useAsyncList} from "@react-stately/data";
+} from "@vx-oss/heroui-v3-react";
 
 interface Character {
   name: string;

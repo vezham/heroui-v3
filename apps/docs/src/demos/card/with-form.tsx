@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Card, Form, Input, Label, Link, TextField} from "@heroui/react";
+import {Button, Card, Form, Input, Label, Link, TextField} from "@vx-oss/heroui-v3-react";
 
 export function WithForm() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {

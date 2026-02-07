@@ -1,6 +1,6 @@
 "use client";
 
-import {FieldError, Input, Label, TextField} from "@heroui/react";
+import {FieldError, Input, Label, TextField} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function Basic() {

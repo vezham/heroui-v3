@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronDown, Clock} from "@gravity-ui/icons";
-import {DateInputGroup, Description, Label, TimeField} from "@heroui/react";
+import {DateInputGroup, Description, Label, TimeField} from "@vx-oss/heroui-v3-react";
 
 export function WithPrefixAndSuffix() {
   return (

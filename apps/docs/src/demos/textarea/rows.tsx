@@ -1,4 +1,4 @@
-import {Label, TextArea} from "@heroui/react";
+import {Label, TextArea} from "@vx-oss/heroui-v3-react";
 
 export function Rows() {
   return (

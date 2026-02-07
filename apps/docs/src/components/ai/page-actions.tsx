@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, ButtonGroup, Description, Dropdown, Label} from "@heroui/react";
+import {Button, ButtonGroup, Description, Dropdown, Label} from "@vx-oss/heroui-v3-react";
 import {useCopyButton} from "fumadocs-ui/utils/use-copy-button";
 import {ChevronDown} from "lucide-react";
 import {useMemo, useState} from "react";

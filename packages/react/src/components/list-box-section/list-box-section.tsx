@@ -2,7 +2,7 @@
 
 import type {ComponentPropsWithRef} from "react";
 
-import {listboxSectionVariants} from "@heroui/styles";
+import {listboxSectionVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 import {ListBoxSection as ListBoxSectionPrimitive} from "react-aria-components";
 

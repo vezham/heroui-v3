@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {fieldsetVariants} from "@heroui/styles";
+export {fieldsetVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {FieldsetVariants} from "@heroui/styles";
+export type {FieldsetVariants} from "@vx-oss/heroui-v3-styles";

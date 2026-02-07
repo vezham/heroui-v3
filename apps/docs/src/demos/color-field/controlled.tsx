@@ -1,6 +1,6 @@
 "use client";
 
-import type {Color} from "@heroui/react";
+import type {Color} from "@vx-oss/heroui-v3-react";
 
 import {
   Button,
@@ -10,7 +10,7 @@ import {
   Description,
   Label,
   parseColor,
-} from "@heroui/react";
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function Controlled() {

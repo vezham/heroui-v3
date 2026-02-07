@@ -81,6 +81,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {modalVariants} from "@heroui/styles";
+export {modalVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ModalVariants} from "@heroui/styles";
+export type {ModalVariants} from "@vx-oss/heroui-v3-styles";

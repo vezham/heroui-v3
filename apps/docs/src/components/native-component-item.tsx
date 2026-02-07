@@ -4,7 +4,7 @@ import type {StatusChipStatus} from "./status-chip";
 import type {UrlObject} from "url";
 
 import {Link as LocalLinkIcon} from "@gravity-ui/icons";
-import {Link} from "@heroui/react";
+import {Link} from "@vx-oss/heroui-v3-react";
 import NextLink from "next/link";
 
 import {useIsMobileDevice} from "@/hooks/use-is-mobile-device";

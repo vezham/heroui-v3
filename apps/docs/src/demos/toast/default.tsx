@@ -1,7 +1,7 @@
 "use client";
 
 import {Persons} from "@gravity-ui/icons";
-import {Button, toast} from "@heroui/react";
+import {Button, toast} from "@vx-oss/heroui-v3-react";
 
 export function Default() {
   return (

@@ -26,6 +26,6 @@ export type {LinkRootProps, LinkIconProps, LinkRootProps as LinkProps} from "./l
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {linkVariants} from "@heroui/styles";
+export {linkVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {LinkVariants} from "@heroui/styles";
+export type {LinkVariants} from "@vx-oss/heroui-v3-styles";

@@ -1,9 +1,9 @@
 "use client";
 
-import type {ButtonVariants} from "@heroui/styles";
+import type {ButtonVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {buttonVariants} from "@heroui/styles";
+import {buttonVariants} from "@vx-oss/heroui-v3-styles";
 import {useContext} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components";
 

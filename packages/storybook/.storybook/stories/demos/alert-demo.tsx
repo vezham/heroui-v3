@@ -1,4 +1,4 @@
-import {Alert, Button} from "@heroui/react";
+import {Alert, Button} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function AlertDemo() {

@@ -1,4 +1,4 @@
-import {Avatar, Button, Card, CloseButton} from "@heroui/react";
+import {Avatar, Button, Card, CloseButton} from "@vx-oss/heroui-v3-react";
 
 import {Iconify} from "@/components/iconify";
 

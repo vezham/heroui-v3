@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {switchVariants} from "@heroui/styles";
+export {switchVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {SwitchVariants} from "@heroui/styles";
+export type {SwitchVariants} from "@vx-oss/heroui-v3-styles";

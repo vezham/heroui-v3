@@ -26,6 +26,6 @@ export type {ChipRootProps, ChipRootProps as ChipProps, ChipLabelProps} from "./
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {chipVariants} from "@heroui/styles";
+export {chipVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ChipVariants} from "@heroui/styles";
+export type {ChipVariants} from "@vx-oss/heroui-v3-styles";

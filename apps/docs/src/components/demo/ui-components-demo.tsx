@@ -1,4 +1,4 @@
-import {Checkbox, Radio, RadioGroup, Spinner, Switch} from "@heroui/react";
+import {Checkbox, Radio, RadioGroup, Spinner, Switch} from "@vx-oss/heroui-v3-react";
 
 export function UIComponentsDemo() {
   return (

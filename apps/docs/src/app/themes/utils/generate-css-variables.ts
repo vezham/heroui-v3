@@ -294,7 +294,7 @@ export function generateCssVariables(
 
     return `/*
  * HeroUI Theme Customization
- * Add this to your global.css after importing @heroui/styles
+ * Add this to your global.css after importing @vx-oss/heroui-v3-styles
  * @see https://v3.heroui.com/docs/react/getting-started/theming
  */
 
@@ -323,7 +323,7 @@ ${darkVarsCSS}
 
   return `/*
  * HeroUI Theme Customization
- * Add this to your global.css after importing @heroui/styles
+ * Add this to your global.css after importing @vx-oss/heroui-v3-styles
  * @see https://v3.heroui.com/docs/react/getting-started/theming
  */
 
@@ -421,7 +421,7 @@ export function generateMinimalCssVariables(
 
   return `/*
  * HeroUI Theme Customization
- * Add this to your global.css after importing @heroui/styles
+ * Add this to your global.css after importing @vx-oss/heroui-v3-styles
  * Only includes base variables from variables.css
  * @see https://v3.heroui.com/docs/react/getting-started/theming
  */

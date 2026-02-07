@@ -1,10 +1,10 @@
 "use client";
 
-import type {InputOTPVariants} from "@heroui/styles";
+import type {InputOTPVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ValidationResult} from "react-aria-components";
 
-import {inputOTPVariants} from "@heroui/styles";
+import {inputOTPVariants} from "@vx-oss/heroui-v3-styles";
 import {OTPInput, OTPInputContext} from "input-otp";
 import React, {createContext, useContext} from "react";
 import {FieldErrorContext} from "react-aria-components";

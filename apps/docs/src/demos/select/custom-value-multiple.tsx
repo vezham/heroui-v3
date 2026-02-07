@@ -9,41 +9,41 @@ import {
   Label,
   ListBox,
   Select,
-} from "@heroui/react";
+} from "@vx-oss/heroui-v3-react";
 
 export function CustomValueMultiple() {
   const users = [
     {
       avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/blue.jpg",
-      email: "bob@heroui.com",
+      email: "bob@vezham.com",
       fallback: "B",
       id: "1",
       name: "Bob",
     },
     {
       avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg",
-      email: "fred@heroui.com",
+      email: "fred@vezham.com",
       fallback: "F",
       id: "2",
       name: "Fred",
     },
     {
       avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/purple.jpg",
-      email: "martha@heroui.com",
+      email: "martha@vezham.com",
       fallback: "M",
       id: "3",
       name: "Martha",
     },
     {
       avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg",
-      email: "john@heroui.com",
+      email: "john@vezham.com",
       fallback: "J",
       id: "4",
       name: "John",
     },
     {
       avatarUrl: "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/orange.jpg",
-      email: "jane@heroui.com",
+      email: "jane@vezham.com",
       fallback: "J",
       id: "5",
       name: "Jane",

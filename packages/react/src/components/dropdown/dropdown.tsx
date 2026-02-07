@@ -1,10 +1,10 @@
 "use client";
 
 import type {SurfaceVariants} from "../surface";
-import type {DropdownVariants} from "@heroui/styles";
+import type {DropdownVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {dropdownVariants} from "@heroui/styles";
+import {dropdownVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Button,

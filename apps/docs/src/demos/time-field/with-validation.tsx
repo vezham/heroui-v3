@@ -2,8 +2,8 @@
 
 import type {Time} from "@internationalized/date";
 
-import {DateInputGroup, Description, FieldError, Label, TimeField} from "@heroui/react";
 import {parseTime} from "@internationalized/date";
+import {DateInputGroup, Description, FieldError, Label, TimeField} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function WithValidation() {

@@ -1,4 +1,4 @@
-import {ColorArea, ColorPicker, ColorSlider, ColorSwatch, Label} from "@heroui/react";
+import {ColorArea, ColorPicker, ColorSlider, ColorSwatch, Label} from "@vx-oss/heroui-v3-react";
 
 export function Basic() {
   return (

@@ -2,7 +2,7 @@
 
 import type {Key} from "react-aria-components";
 
-import {Label, ListBox, Select} from "@heroui/react";
+import {Label, ListBox, Select} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function Controlled() {

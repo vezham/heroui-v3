@@ -1,6 +1,6 @@
 "use client";
 
-import {Button} from "@heroui/react";
+import {Button} from "@vx-oss/heroui-v3-react";
 import {Ripple} from "m3-ripple";
 
 import "m3-ripple/ripple.css";

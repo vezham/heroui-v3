@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import {Icon} from "@iconify/react";
 import {
   Alert,
   AlertDialog,
@@ -25,8 +26,7 @@ import {
   Surface,
   Switch,
   Tabs,
-} from "@heroui/react";
-import {Icon} from "@iconify/react";
+} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 import {HeroUILogo} from "../heroui-logo";

@@ -1,7 +1,7 @@
 "use client";
 
 import {Envelope} from "@gravity-ui/icons";
-import {Description, InputGroup, Label, Surface, TextField} from "@heroui/react";
+import {Description, InputGroup, Label, Surface, TextField} from "@vx-oss/heroui-v3-react";
 
 export function OnSurface() {
   return (

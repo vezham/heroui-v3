@@ -1,9 +1,9 @@
 "use client";
 
-import type {TimeValue} from "@heroui/react";
+import type {TimeValue} from "@vx-oss/heroui-v3-react";
 
-import {Button, DateInputGroup, Description, Label, TimeField} from "@heroui/react";
 import {Time, getLocalTimeZone, now} from "@internationalized/date";
+import {Button, DateInputGroup, Description, Label, TimeField} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function Controlled() {

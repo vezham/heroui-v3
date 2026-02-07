@@ -1,4 +1,4 @@
-import {Checkbox, CheckboxGroup, Description, Label, Surface} from "@heroui/react";
+import {Checkbox, CheckboxGroup, Description, Label, Surface} from "@vx-oss/heroui-v3-react";
 
 export function OnSurface() {
   return (

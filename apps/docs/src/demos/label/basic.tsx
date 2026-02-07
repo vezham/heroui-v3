@@ -1,4 +1,4 @@
-import {Input, Label} from "@heroui/react";
+import {Input, Label} from "@vx-oss/heroui-v3-react";
 
 export function Basic() {
   return (

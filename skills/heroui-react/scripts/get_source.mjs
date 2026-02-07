@@ -11,7 +11,7 @@
  */
 
 const API_BASE = process.env.HEROUI_API_BASE || "https://mcp-api.heroui.com";
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/heroui-inc/heroui/refs/heads/v3";
+const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/vezham/heroui-v3/refs/heads/v3";
 const APP_PARAM = "app=react-skills";
 
 /**
@@ -76,7 +76,7 @@ async function fetchGithubFallback(component) {
         return {
           component,
           filePath: path,
-          githubUrl: `https://github.com/heroui-inc/heroui/blob/v3/${path}`,
+          githubUrl: `https://github.com/vezham/heroui-v3/blob/timeline/${path}`,
           source: "fallback",
           sourceCode: content,
         };

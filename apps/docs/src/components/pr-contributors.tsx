@@ -1,4 +1,4 @@
-import {Avatar, Link} from "@heroui/react";
+import {Avatar, Link} from "@vx-oss/heroui-v3-react";
 import * as React from "react";
 
 import {siteConfig} from "@/config/site";

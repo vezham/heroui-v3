@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, DateInputGroup, FieldError, Label} from "@heroui/react";
+import {DateField, DateInputGroup, FieldError, Label} from "@vx-oss/heroui-v3-react";
 
 export function Invalid() {
   return (

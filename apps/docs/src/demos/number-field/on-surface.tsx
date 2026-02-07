@@ -1,4 +1,4 @@
-import {Description, Label, NumberField, Surface} from "@heroui/react";
+import {Description, Label, NumberField, Surface} from "@vx-oss/heroui-v3-react";
 
 export function OnSurface() {
   return (

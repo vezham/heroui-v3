@@ -1,5 +1,5 @@
 import {Ellipsis, Gear, TrashBin} from "@gravity-ui/icons";
-import {Button} from "@heroui/react";
+import {Button} from "@vx-oss/heroui-v3-react";
 
 export function IconOnly() {
   return (

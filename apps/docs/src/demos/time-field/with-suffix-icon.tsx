@@ -1,7 +1,7 @@
 "use client";
 
 import {Clock} from "@gravity-ui/icons";
-import {DateInputGroup, Label, TimeField} from "@heroui/react";
+import {DateInputGroup, Label, TimeField} from "@vx-oss/heroui-v3-react";
 
 export function WithSuffixIcon() {
   return (

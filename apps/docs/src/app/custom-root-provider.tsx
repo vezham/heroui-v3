@@ -2,7 +2,7 @@
 
 import type {ReactNode} from "react";
 
-import {Toast} from "@heroui/react";
+import {Toast} from "@vx-oss/heroui-v3-react";
 import {RootProvider} from "fumadocs-ui/provider/next";
 import dynamic from "next/dynamic";
 

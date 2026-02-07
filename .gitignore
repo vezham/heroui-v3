@@ -1,3 +1,11 @@
+# @vx/INFO: Add files here to ignore them from @vx/ws handling
+
+.vezham
+vx/bin
+
+#  --- END of @vx/fe-kit-config ---
+# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
 # cache
 .turbo
 .cache
@@ -47,6 +55,7 @@ next-env.d.ts
 .env*.staging
 .env*.production
 !.env.example
+!apps/docs/.env
 
 # idea
 .idea

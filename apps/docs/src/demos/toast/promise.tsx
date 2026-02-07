@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, toast} from "@heroui/react";
+import {Button, toast} from "@vx-oss/heroui-v3-react";
 
 const uploadFile = (): Promise<{filename: string; size: number}> => {
   return new Promise<{filename: string; size: number}>((resolve) => {

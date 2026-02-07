@@ -1,11 +1,11 @@
 "use client";
 
 import type {SurfaceVariants} from "../surface";
-import type {ComboBoxVariants} from "@heroui/styles";
+import type {ComboBoxVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {ButtonProps} from "react-aria-components";
 
-import {comboBoxVariants} from "@heroui/styles";
+import {comboBoxVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Button,

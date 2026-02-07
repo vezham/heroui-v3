@@ -1,9 +1,9 @@
 "use client";
 
-import type {TabsVariants} from "@heroui/styles";
+import type {TabsVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {tabsVariants} from "@heroui/styles";
+import {tabsVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   SelectionIndicator as SelectionIndicatorPrimitive,

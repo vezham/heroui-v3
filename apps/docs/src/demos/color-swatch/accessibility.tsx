@@ -1,4 +1,4 @@
-import {ColorSwatch} from "@heroui/react";
+import {ColorSwatch} from "@vx-oss/heroui-v3-react";
 
 export function ColorSwatchAccessibility() {
   return (

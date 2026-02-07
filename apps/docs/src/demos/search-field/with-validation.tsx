@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, FieldError, Label, SearchField} from "@heroui/react";
+import {Description, FieldError, Label, SearchField} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function WithValidation() {

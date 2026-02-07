@@ -1,2 +1,2 @@
-// Re-export cn from @heroui/react for convenience
-export {cn} from "@heroui/react";
+// Re-export cn from @vx-oss/heroui-v3-react for convenience
+export {cn} from "@vx-oss/heroui-v3-react";

@@ -1,4 +1,4 @@
-import {Label, ListBox, Select} from "@heroui/react";
+import {Label, ListBox, Select} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

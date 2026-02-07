@@ -1,9 +1,9 @@
 "use client";
 
-import type {TextVariants} from "@heroui/styles";
+import type {TextVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {textVariants} from "@heroui/styles";
+import {textVariants} from "@vx-oss/heroui-v3-styles";
 import {Text as TextPrimitive} from "react-aria-components";
 
 /* -------------------------------------------------------------------------------------------------

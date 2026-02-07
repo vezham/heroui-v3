@@ -1,4 +1,4 @@
-import {Switch} from "@heroui/react";
+import {Switch} from "@vx-oss/heroui-v3-react";
 
 export function WithoutLabel() {
   return (

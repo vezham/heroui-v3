@@ -1,4 +1,4 @@
-import {CloseButton} from "@heroui/react";
+import {CloseButton} from "@vx-oss/heroui-v3-react";
 
 export function Variants() {
   return (

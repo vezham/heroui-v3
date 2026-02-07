@@ -1,4 +1,4 @@
-import {buttonVariants} from "@heroui/react";
+import {buttonVariants} from "@vx-oss/heroui-v3-react";
 import LinkRoot from "fumadocs-core/link";
 import Image from "next/image";
 

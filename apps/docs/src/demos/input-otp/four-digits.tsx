@@ -1,4 +1,4 @@
-import {InputOTP, Label} from "@heroui/react";
+import {InputOTP, Label} from "@vx-oss/heroui-v3-react";
 
 export function FourDigits() {
   return (

@@ -1,7 +1,14 @@
 "use client";
 
-import {Autocomplete, EmptyState, Label, ListBox, SearchField, Spinner} from "@heroui/react";
 import {useAsyncList} from "@react-stately/data";
+import {
+  Autocomplete,
+  EmptyState,
+  Label,
+  ListBox,
+  SearchField,
+  Spinner,
+} from "@vx-oss/heroui-v3-react";
 import {cn} from "tailwind-variants";
 
 interface Character {

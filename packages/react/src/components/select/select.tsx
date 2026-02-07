@@ -2,10 +2,10 @@
 
 import type {Booleanish} from "../../utils/assertion";
 import type {SurfaceVariants} from "../surface";
-import type {SelectVariants} from "@heroui/styles";
+import type {SelectVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {selectVariants} from "@heroui/styles";
+import {selectVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Button as ButtonPrimitive,

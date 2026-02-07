@@ -1,6 +1,6 @@
 "use client";
 
-import {Autocomplete, Label, ListBox, SearchField, useFilter} from "@heroui/react";
+import {Autocomplete, Label, ListBox, SearchField, useFilter} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   const {contains} = useFilter({sensitivity: "base"});

@@ -1,5 +1,5 @@
 import {ArrowRightFromSquare, Gear, Persons} from "@gravity-ui/icons";
-import {Avatar, Dropdown, Label} from "@heroui/react";
+import {Avatar, Dropdown, Label} from "@vx-oss/heroui-v3-react";
 
 export function CustomTrigger() {
   return (

@@ -1,7 +1,7 @@
-import type {ButtonProps} from "@heroui/react";
+import type {ButtonProps} from "@vx-oss/heroui-v3-react";
 import type {VariantProps} from "tailwind-variants";
 
-import {Button, buttonVariants} from "@heroui/react";
+import {Button, buttonVariants} from "@vx-oss/heroui-v3-react";
 import {tv} from "tailwind-variants";
 
 const myButtonVariants = tv({

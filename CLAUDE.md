@@ -35,7 +35,7 @@ pnpm dev:docs
 pnpm build
 
 # Build specific package
-pnpm build --filter=@heroui/react
+pnpm build --filter=@vx-oss/heroui-v3-react
 
 # Run linting
 pnpm lint
@@ -55,8 +55,8 @@ pnpm typecheck
 
 ### Package-Specific Commands
 
-- Use `--filter` flag with package name: `pnpm build --filter=@heroui/react`
-- Main packages: `@heroui/react`, `@heroui/docs`, `@heroui/storybook`
+- Use `--filter` flag with package name: `pnpm build --filter=@vx-oss/heroui-v3-react`
+- Main packages: `@vx-oss/heroui-v3-react`, `@vx-oss/heroui-v3-docs`, `@vx-oss/heroui-v3-storybook`
 
 ## Git Commit Convention
 
@@ -129,7 +129,7 @@ component-name/
 
 **Migration to CSS-based Styling**:
 
-- The `button` component has been migrated to use CSS styles from `@heroui/styles/src/components/button.css`
+- The `button` component has been migrated to use CSS styles from `@vx-oss/heroui-v3-styles/src/components/button.css`
 - This approach allows for better customization through CSS utilities and `@utility` directives
 - Other components will gradually be migrated to follow this CSS-based pattern
 - Components use `tv()` from `tailwind-variants` to map variant props to BEM class names
@@ -243,7 +243,7 @@ export {ComponentRoot as Root, ComponentItem as Item, ...};
 
 1. **Styling with Tailwind Variants**:
    - Styles defined in `.styles.ts` files using `tv()` function from `tailwind-variants`
-   - **IMPORTANT**: Always import from `tailwind-variants`, never from `@heroui/standard` (which doesn't exist)
+   - **IMPORTANT**: Always import from `tailwind-variants`, never from `@vx-oss/heroui-v3-standard` (which doesn't exist)
    - **CRITICAL**: tailwind-variants already includes `twMerge` functionality, so NEVER manually use `twMerge`
    - **RULE**: All component styles MUST be defined in separate `.styles.ts` files, NOT in the component implementation files
    - Component implementation files (`.tsx`) should only contain logic and React Aria primitives

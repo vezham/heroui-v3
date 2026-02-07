@@ -61,6 +61,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {autocompleteVariants} from "@heroui/styles";
+export {autocompleteVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {AutocompleteVariants} from "@heroui/styles";
+export type {AutocompleteVariants} from "@vx-oss/heroui-v3-styles";

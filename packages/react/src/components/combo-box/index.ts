@@ -36,6 +36,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {comboBoxVariants} from "@heroui/styles";
+export {comboBoxVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ComboBoxVariants} from "@heroui/styles";
+export type {ComboBoxVariants} from "@vx-oss/heroui-v3-styles";

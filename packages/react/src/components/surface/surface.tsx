@@ -1,9 +1,9 @@
 "use client";
 
-import type {SurfaceVariants} from "@heroui/styles";
+import type {SurfaceVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {surfaceVariants} from "@heroui/styles";
+import {surfaceVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext} from "react";
 
 /* ------------------------------------------------------------------------------------------------

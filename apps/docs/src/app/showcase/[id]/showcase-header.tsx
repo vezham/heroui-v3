@@ -8,7 +8,7 @@ import {
   TooltipContent,
   TooltipRoot,
   TooltipTrigger,
-} from "@heroui/react";
+} from "@vx-oss/heroui-v3-react";
 import {useRouter, useSearchParams} from "next/navigation";
 import {useEffect} from "react";
 

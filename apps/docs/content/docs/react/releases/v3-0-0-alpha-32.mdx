@@ -16,22 +16,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles@alpha @heroui/react@alpha
+    npm i @vx-oss/heroui-v3-styles@alpha @vx-oss/heroui-v3-react@alpha
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles@alpha @heroui/react@alpha
+    pnpm add @vx-oss/heroui-v3-styles@alpha @vx-oss/heroui-v3-react@alpha
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles@alpha @heroui/react@alpha
+    yarn add @vx-oss/heroui-v3-styles@alpha @vx-oss/heroui-v3-react@alpha
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles@alpha @heroui/react@alpha
+    bun add @vx-oss/heroui-v3-styles@alpha @vx-oss/heroui-v3-react@alpha
     ```
   </Tab>
 </Tabs>
@@ -65,7 +65,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
   "mcpServers": {
     "heroui-react": {
       "command": "npx",
-      "args": ["-y", "@heroui/react-mcp@latest"]
+      "args": ["-y", "@vx-oss/heroui-v3-react-mcp@latest"]
     }
   }
 }
@@ -76,7 +76,7 @@ Or manually add to **Cursor Settings** → **Tools** → **MCP Servers**:
 Run this command in your terminal:
 
 ```bash
-claude mcp add heroui-react -- npx -y @heroui/react-mcp@latest
+claude mcp add heroui-react -- npx -y @vx-oss/heroui-v3-react-mcp@latest
 ```
 
 [Learn more](/docs/ui-for-agents/mcp-server)
@@ -125,7 +125,7 @@ The [Card component](/docs/components/card) has been updated with a new variant 
 Added a [CloseButton component](/docs/components/close-button) for closing dialogs, modals, and other dismissible elements.
 
 ```tsx
-import {CloseButton} from "@heroui/react";
+import {CloseButton} from "@vx-oss/heroui-v3-react";
 
 // Basic usage
 <CloseButton onPress={() => console.log("Closed")} />
@@ -168,12 +168,12 @@ import {CloseButton} from "@heroui/react";
 3. **Update imports:**
    ```tsx
    // Add CloseButton if needed
-   import {Card, CloseButton} from "@heroui/react";
+   import {Card, CloseButton} from "@vx-oss/heroui-v3-react";
    ```
 
 ## Links
 
-- [GitHub PR #5747](https://github.com/heroui-inc/heroui/pull/5747)
+- [GitHub PR #5747](https://github.com/vezham/heroui-v3/pull/5747)
 - [MCP Server Documentation](/docs/ui-for-agents/mcp-server)
 - [Card Component Guide](/docs/components/card)
 - [CloseButton Component](/docs/components/close-button)

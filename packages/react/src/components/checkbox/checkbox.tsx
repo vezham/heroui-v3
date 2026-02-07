@@ -1,10 +1,10 @@
 "use client";
 
-import type {CheckboxVariants} from "@heroui/styles";
+import type {CheckboxVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {CheckboxRenderProps} from "react-aria-components";
 
-import {checkboxVariants} from "@heroui/styles";
+import {checkboxVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Checkbox as CheckboxPrimitive} from "react-aria-components";
 

@@ -1,9 +1,9 @@
 "use client";
 
-import type {FieldsetVariants} from "@heroui/styles";
+import type {FieldsetVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {fieldsetVariants} from "@heroui/styles";
+import {fieldsetVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

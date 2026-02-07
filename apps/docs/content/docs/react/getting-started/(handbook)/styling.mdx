@@ -126,8 +126,8 @@ HeroUI uses [BEM methodology](https://getbem.com/) for consistent class naming:
 Create reusable custom components using [tailwind-variants](https://tailwind-variants.org/)—a Tailwind CSS first-class variant API:
 
 ```tsx
-import { Button as HeroButton, type ButtonProps } from '@heroui/react';
-import { buttonVariants, tv, type VariantProps } from '@heroui/styles';
+import { Button as HeroButton, type ButtonProps } from '@vx-oss/heroui-v3-react';
+import { buttonVariants, tv, type VariantProps } from '@vx-oss/heroui-v3-styles';
 
 const customButtonVariants = tv({
   extend: buttonVariants,
@@ -173,7 +173,7 @@ export function CustomButton({ intent, size, className, ...props }: CustomButton
 
 ```tsx
 import styled from 'styled-components';
-import { Button } from '@heroui/react';
+import { Button } from '@vx-oss/heroui-v3-react';
 
 const StyledButton = styled(Button)`
   background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
@@ -191,7 +191,7 @@ const StyledButton = styled(Button)`
 
 ```tsx
 import { css } from '@emotion/css';
-import { Button } from '@heroui/react';
+import { Button } from '@vx-oss/heroui-v3-react';
 
 const buttonStyles = css`
   background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
@@ -262,7 +262,7 @@ For scoped styles, use CSS Modules:
 
 ```tsx
 import styles from './Button.module.css';
-import { Button } from '@heroui/react';
+import { Button } from '@vx-oss/heroui-v3-react';
 
 <Button className={styles.button}>
   Scoped Button
@@ -276,7 +276,7 @@ import { Button } from '@heroui/react';
 
 > **Note:** See component docs for complete class references: [Button](/docs/components/button#css-classes), [Accordion](/docs/components/accordion#css-classes)
 
-View all component classes in [@heroui/styles/components](https://github.com/heroui-inc/heroui/tree/main/packages/styles/components).
+View all component classes in [@vx-oss/heroui-v3-styles/components](https://github.com/vezham/heroui-v3/tree/main/packages/styles/components).
 
 ## Next Steps
 

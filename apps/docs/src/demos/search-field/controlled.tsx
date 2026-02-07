@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Description, Label, SearchField} from "@heroui/react";
+import {Button, Description, Label, SearchField} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Controlled() {

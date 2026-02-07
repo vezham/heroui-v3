@@ -3,6 +3,7 @@
 import type {Time} from "@internationalized/date";
 
 import {Clock} from "@gravity-ui/icons";
+import {parseTime} from "@internationalized/date";
 import {
   Button,
   DateInputGroup,
@@ -11,8 +12,7 @@ import {
   Form,
   Label,
   TimeField,
-} from "@heroui/react";
-import {parseTime} from "@internationalized/date";
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function FormExample() {

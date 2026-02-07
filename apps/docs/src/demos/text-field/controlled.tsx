@@ -1,6 +1,6 @@
 "use client";
 
-import {Description, Input, Label, TextArea, TextField} from "@heroui/react";
+import {Description, Input, Label, TextArea, TextField} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Controlled() {

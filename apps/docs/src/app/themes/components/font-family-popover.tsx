@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronsExpandVertical, FontCase} from "@gravity-ui/icons";
-import {InputGroup, Popover} from "@heroui/react";
+import {InputGroup, Popover} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 import {fonts} from "../constants";

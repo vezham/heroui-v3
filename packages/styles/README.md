@@ -1,15 +1,15 @@
-# @heroui/styles
+# @vx-oss/heroui-v3-styles
 
 The core HeroUI styles package containing CSS files for components, themes, and utilities. This package provides the foundation for HeroUI's design system using Tailwind CSS v4 and is framework-agnostic.
 
 ## Installation
 
 ```bash
-npm install @heroui/styles
+npm install @vx-oss/heroui-v3-styles
 # or
-pnpm add @heroui/styles
+pnpm add @vx-oss/heroui-v3-styles
 # or
-yarn add @heroui/styles
+yarn add @vx-oss/heroui-v3-styles
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add @heroui/styles
 Import the HeroUI styles in your main CSS file:
 
 ```css
-@import "@heroui/styles";
+@import "@vx-oss/heroui-v3-styles";
 ```
 
 This will import:
@@ -35,7 +35,7 @@ This will import:
 The package exports CSS files organized into:
 
 ```
-@heroui/styles/
+@vx-oss/heroui-v3-styles/
 ├── index.css          # Main entry point
 ├── base/              # Base styles and CSS variables
 │   └── base.css       # Layout tokens, typography, scrollbar
@@ -67,11 +67,11 @@ Instead of importing everything, you can import only what you need:
 @import "tailwindcss";
 
 /* Import only specific components */
-@import "@heroui/styles/components/button.css" layer(components);
-@import "@heroui/styles/components/chip.css" layer(components);
+@import "@vx-oss/heroui-v3-styles/components/button.css" layer(components);
+@import "@vx-oss/heroui-v3-styles/components/chip.css" layer(components);
 
 /* Import theme */
-@import "@heroui/styles/themes/default" layer(base);
+@import "@vx-oss/heroui-v3-styles/themes/default" layer(base);
 ```
 
 ### Component Classes
@@ -251,7 +251,7 @@ The package provides:
 
 ## Framework Integration
 
-This package is designed to work with any framework. For React-specific components, use `@heroui/react` which builds on top of these core styles.
+This package is designed to work with any framework. For React-specific components, use `@vx-oss/heroui-v3-react` which builds on top of these core styles.
 
 ## License
 

@@ -28,6 +28,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {colorFieldVariants} from "@heroui/styles";
+export {colorFieldVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ColorFieldVariants} from "@heroui/styles";
+export type {ColorFieldVariants} from "@vx-oss/heroui-v3-styles";

@@ -1,6 +1,6 @@
 "use client";
 
-import {ColorSlider, ColorSwatch, Label} from "@heroui/react";
+import {ColorSlider, ColorSwatch, Label} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 import {parseColor} from "react-aria-components";
 

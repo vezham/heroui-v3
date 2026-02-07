@@ -27,9 +27,9 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {disclosureGroupVariants} from "@heroui/styles";
+export {disclosureGroupVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {DisclosureGroupVariants} from "@heroui/styles";
+export type {DisclosureGroupVariants} from "@vx-oss/heroui-v3-styles";
 
 /* -------------------------------------------------------------------------------------------------
  * Hooks

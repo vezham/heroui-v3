@@ -1,4 +1,4 @@
-import {Button, Tooltip} from "@heroui/react";
+import {Button, Tooltip} from "@vx-oss/heroui-v3-react";
 
 export function TooltipWithArrow() {
   return (

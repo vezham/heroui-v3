@@ -1,5 +1,5 @@
 import {FloppyDisk} from "@gravity-ui/icons";
-import {Avatar, Button, Card, CloseButton} from "@heroui/react";
+import {Avatar, Button, Card, CloseButton} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function AlertDialogDemo() {

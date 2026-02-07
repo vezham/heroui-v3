@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Label, Switch, SwitchGroup} from "@heroui/react";
+import {Button, Label, Switch, SwitchGroup} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Form() {

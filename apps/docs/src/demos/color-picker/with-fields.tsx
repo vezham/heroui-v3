@@ -1,6 +1,6 @@
 "use client";
 
-import type {ColorChannel, ColorSpace} from "@heroui/react";
+import type {ColorChannel, ColorSpace} from "@vx-oss/heroui-v3-react";
 
 import {
   ColorArea,
@@ -12,7 +12,7 @@ import {
   Label,
   ListBox,
   Select,
-} from "@heroui/react";
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function WithFields() {

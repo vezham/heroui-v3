@@ -1,9 +1,9 @@
 "use client";
 
-import type {DisclosureGroupVariants} from "@heroui/styles";
+import type {DisclosureGroupVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {disclosureGroupVariants} from "@heroui/styles";
+import {disclosureGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext} from "react";
 import {DisclosureGroup as DisclosureGroupPrimitive} from "react-aria-components";
 

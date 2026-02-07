@@ -1,4 +1,4 @@
-import {Surface} from "@heroui/react";
+import {Surface} from "@vx-oss/heroui-v3-react";
 
 export function Variants() {
   return (

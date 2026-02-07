@@ -1,4 +1,4 @@
-import {FieldError, Label, SearchField} from "@heroui/react";
+import {FieldError, Label, SearchField} from "@vx-oss/heroui-v3-react";
 
 export function Validation() {
   return (

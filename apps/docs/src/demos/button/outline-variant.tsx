@@ -1,4 +1,4 @@
-import {Button, ButtonGroup} from "@heroui/react";
+import {Button, ButtonGroup} from "@vx-oss/heroui-v3-react";
 
 export function OutlineVariant() {
   return (

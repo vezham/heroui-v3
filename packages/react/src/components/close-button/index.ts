@@ -24,6 +24,6 @@ export type {CloseButtonRootProps, CloseButtonRootProps as CloseButtonProps} fro
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {closeButtonVariants} from "@heroui/styles";
+export {closeButtonVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {CloseButtonVariants} from "@heroui/styles";
+export type {CloseButtonVariants} from "@vx-oss/heroui-v3-styles";

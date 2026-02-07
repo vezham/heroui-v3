@@ -1,10 +1,10 @@
 "use client";
 
 import type {SurfaceVariants} from "../surface";
-import type {PopoverVariants} from "@heroui/styles";
+import type {PopoverVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {popoverVariants} from "@heroui/styles";
+import {popoverVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Dialog as DialogPrimitive,

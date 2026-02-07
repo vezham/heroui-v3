@@ -1,8 +1,8 @@
 "use client";
 
-import type {ColorSpace, Key} from "@heroui/react";
+import type {ColorSpace, Key} from "@vx-oss/heroui-v3-react";
 
-import {ColorArea, Label, ListBox, Select, parseColor} from "@heroui/react";
+import {ColorArea, Label, ListBox, Select, parseColor} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 type ColorChannel = "hue" | "saturation" | "brightness" | "lightness" | "red" | "green" | "blue";

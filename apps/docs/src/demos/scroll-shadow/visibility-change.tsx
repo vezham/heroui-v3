@@ -1,8 +1,8 @@
 "use client";
 
-import type {ScrollShadowVisibility} from "@heroui/react";
+import type {ScrollShadowVisibility} from "@vx-oss/heroui-v3-react";
 
-import {Card, ScrollShadow} from "@heroui/react";
+import {Card, ScrollShadow} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 const images = [

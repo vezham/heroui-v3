@@ -24,6 +24,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {listboxSectionVariants} from "@heroui/styles";
+export {listboxSectionVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ListBoxSectionVariants} from "@heroui/styles";
+export type {ListBoxSectionVariants} from "@vx-oss/heroui-v3-styles";

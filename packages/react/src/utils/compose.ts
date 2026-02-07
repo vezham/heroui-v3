@@ -3,8 +3,8 @@
 import {composeRenderProps} from "react-aria-components";
 import {cx} from "tailwind-variants";
 
-// Re-export utility classes from @heroui/styles for backward compatibility
-export {disabledClasses, focusRingClasses, ariaDisabledClasses} from "@heroui/styles";
+// Re-export utility classes from @vx-oss/heroui-v3-styles for backward compatibility
+export {disabledClasses, focusRingClasses, ariaDisabledClasses} from "@vx-oss/heroui-v3-styles";
 
 function composeTwRenderProps<T>(
   className: string | ((v: T) => string) | undefined,

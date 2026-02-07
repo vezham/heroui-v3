@@ -1,10 +1,10 @@
 "use client";
 
-import type {DateFieldVariants} from "@heroui/styles";
+import type {DateFieldVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {DateValue} from "react-aria-components";
 
-import {dateFieldVariants} from "@heroui/styles";
+import {dateFieldVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 import {DateField as DateFieldPrimitive} from "react-aria-components";
 

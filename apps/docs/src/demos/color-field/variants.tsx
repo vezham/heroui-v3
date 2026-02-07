@@ -1,4 +1,4 @@
-import {ColorField, ColorInputGroup, Label} from "@heroui/react";
+import {ColorField, ColorInputGroup, Label} from "@vx-oss/heroui-v3-react";
 
 export function Variants() {
   return (

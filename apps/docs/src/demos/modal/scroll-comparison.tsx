@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Label, Modal, Radio, RadioGroup} from "@heroui/react";
+import {Button, Label, Modal, Radio, RadioGroup} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function ScrollComparison() {

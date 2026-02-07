@@ -1,7 +1,7 @@
-import type {EmptyStateVariants} from "@heroui/styles";
+import type {EmptyStateVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {emptyStateVariants} from "@heroui/styles";
+import {emptyStateVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 
 /* -------------------------------------------------------------------------------------------------

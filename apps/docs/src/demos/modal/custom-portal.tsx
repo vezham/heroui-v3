@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Modal} from "@heroui/react";
+import {Button, Modal} from "@vx-oss/heroui-v3-react";
 import {useCallback, useRef, useState} from "react";
 
 export function CustomPortal() {

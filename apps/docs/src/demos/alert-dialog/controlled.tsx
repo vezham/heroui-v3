@@ -1,6 +1,6 @@
 "use client";
 
-import {AlertDialog, Button, useOverlayState} from "@heroui/react";
+import {AlertDialog, Button, useOverlayState} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Controlled() {

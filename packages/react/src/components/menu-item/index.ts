@@ -33,5 +33,5 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {menuItemVariants} from "@heroui/styles";
-export type {MenuItemVariants} from "@heroui/styles";
+export {menuItemVariants} from "@vx-oss/heroui-v3-styles";
+export type {MenuItemVariants} from "@vx-oss/heroui-v3-styles";

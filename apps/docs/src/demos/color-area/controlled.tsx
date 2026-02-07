@@ -1,8 +1,8 @@
 "use client";
 
-import type {Color} from "@heroui/react";
+import type {Color} from "@vx-oss/heroui-v3-react";
 
-import {ColorArea, ColorSwatch, parseColor} from "@heroui/react";
+import {ColorArea, ColorSwatch, parseColor} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function ColorAreaControlled() {

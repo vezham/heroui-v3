@@ -1,10 +1,10 @@
 "use client";
 
-import type {MenuItemVariants} from "@heroui/styles";
+import type {MenuItemVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {MenuItemRenderProps} from "react-aria-components";
 
-import {menuItemVariants} from "@heroui/styles";
+import {menuItemVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {MenuItem as MenuItemPrimitive} from "react-aria-components";
 

@@ -12,7 +12,7 @@ import {
   Surface,
   TextArea,
   TextField,
-} from "@heroui/react";
+} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function OnSurface() {

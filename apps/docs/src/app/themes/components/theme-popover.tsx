@@ -3,7 +3,7 @@
 import type {ThemeId} from "../constants";
 
 import {BucketPaint, ChevronsExpandVertical} from "@gravity-ui/icons";
-import {InputGroup, Kbd, Label, ListBox, Popover} from "@heroui/react";
+import {InputGroup, Kbd, Label, ListBox, Popover} from "@vx-oss/heroui-v3-react";
 import Image from "next/image";
 
 import useKeyPress from "@/hooks/use-key-press";

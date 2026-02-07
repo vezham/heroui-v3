@@ -1,9 +1,9 @@
 "use client";
 
-import type {NumberFieldVariants} from "@heroui/styles";
+import type {NumberFieldVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {numberFieldVariants} from "@heroui/styles";
+import {numberFieldVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Button as ButtonPrimitive,

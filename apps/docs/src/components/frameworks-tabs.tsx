@@ -1,10 +1,10 @@
 "use client";
 
 import type {Framework} from "@/hooks/use-current-framework";
-import type {Key} from "@heroui/react";
+import type {Key} from "@vx-oss/heroui-v3-react";
 
 import {Globe, Smartphone} from "@gravity-ui/icons";
-import {Tabs} from "@heroui/react";
+import {Tabs} from "@vx-oss/heroui-v3-react";
 import {usePathname, useRouter} from "next/navigation";
 import {useCallback, useEffect, useRef, useState} from "react";
 

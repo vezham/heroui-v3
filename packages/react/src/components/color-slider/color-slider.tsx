@@ -1,10 +1,10 @@
 "use client";
 
-import type {ColorSliderVariants} from "@heroui/styles";
+import type {ColorSliderVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ColorSliderRenderProps, ColorSpace} from "react-aria-components";
 
-import {colorSliderVariants} from "@heroui/styles";
+import {colorSliderVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   ColorSlider as ColorSliderPrimitive,

@@ -42,6 +42,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {cardVariants} from "@heroui/styles";
+export {cardVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {CardVariants} from "@heroui/styles";
+export type {CardVariants} from "@vx-oss/heroui-v3-styles";

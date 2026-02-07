@@ -1,4 +1,4 @@
-import {ScrollShadow} from "@heroui/react";
+import {ScrollShadow} from "@vx-oss/heroui-v3-react";
 import {Suspense} from "react";
 
 import {CodePanelProvider} from "@/hooks/use-code-panel";

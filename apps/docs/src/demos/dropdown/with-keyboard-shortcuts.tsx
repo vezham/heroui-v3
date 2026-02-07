@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Dropdown, Kbd, Label} from "@heroui/react";
+import {Button, Dropdown, Kbd, Label} from "@vx-oss/heroui-v3-react";
 
 export function WithKeyboardShortcuts() {
   return (

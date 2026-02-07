@@ -24,6 +24,6 @@ export type {RadioGroupRootProps, RadioGroupRootProps as RadioGroupProps} from "
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {radioGroupVariants} from "@heroui/styles";
+export {radioGroupVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {RadioGroupVariants} from "@heroui/styles";
+export type {RadioGroupVariants} from "@vx-oss/heroui-v3-styles";
