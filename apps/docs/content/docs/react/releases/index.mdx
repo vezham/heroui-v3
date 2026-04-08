@@ -9,6 +9,98 @@ description: All updates and changes to HeroUI v3, including new features, fixes
 
 ## Latest Release
 
+### v3.0.2
+
+**April 3, 2026**
+
+Bug fixes, smoother Drawer transitions, new `--backdrop` theme variable, and style refinements for triggers, arrows, and tags. Autocomplete popover width tracking fixed, overlay triggers now `inline-block`, and Tag gets improved spacing + accessibility.
+
+[Read full release notes →](/docs/releases/v3-0-2)
+
+---
+
+### v3.0.0
+
+**March 2026**
+
+<VideoPlayer
+  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/videos/heroui-v3-release.mp4"
+  height={430}
+  muted
+/>
+
+A ground-up rewrite for React and React Native. 75+ web components, 37 native components, Tailwind CSS v4, React Aria, compound component architecture, CSS-first theming with OKLCH tokens, `data-reduce-motion` animation control, and built for AI-assisted development with MCP servers, agent skills, and LLMs.txt.
+
+[Read the full announcement →](/docs/releases/v3-0-0)
+
+---
+
+### HeroUI Pro
+
+<DocsImage
+  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro@2x.jpg"
+  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/heroui-pro-dark@2x.jpg"
+  alt="HeroUI Pro"
+  href="https://heroui.pro"
+/>
+
+Premium components, templates, and AI tooling for React and React Native. Pre-sale pricing is live.
+
+[See plans and pricing at heroui.pro →](https://heroui.pro)
+
+---
+
+### v3.0.0-rc.1
+
+**March 14, 2026**
+
+<DocsImage
+  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/rc-1-light@2x.jpg"
+  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/rc-1-dark@2x.jpg"
+  alt="HeroUI v3 RC 1"
+  href="/docs/releases/v3-0-0-rc-1"
+/>
+
+Seven new components ([Drawer](/docs/components/drawer), [ToggleButton](/docs/components/toggle-button), [ToggleButtonGroup](/docs/components/toggle-button-group), [Meter](/docs/components/meter), [ProgressBar](/docs/components/progress-bar), [ProgressCircle](/docs/components/progress-circle), [Toolbar](/docs/components/toolbar)), **virtualization** for [Table](/docs/components/table) and [ListBox](/docs/components/list-box), `ButtonGroup.Separator` + vertical orientation for [ButtonGroup](/docs/components/button-group), and React Aria Components bumped to v1.16.0.
+
+[Read full release notes →](/docs/releases/v3-0-0-rc-1)
+
+---
+
+### v3.0.0-beta.8
+
+**March 2, 2026**
+
+<DocsImage
+  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/beta-8-light@2x.jpg"
+  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/beta-8-dark@2x.jpg"
+  alt="HeroUI v3 Beta 8"
+  href="/docs/releases/v3-0-0-beta-8"
+/>
+
+This release adds three new components ([Badge](/docs/components/badge), [Pagination](/docs/components/pagination), [Table](/docs/components/table)) and new `InputContainer` composition APIs for [DateField](/docs/components/date-field) + [TimeField](/docs/components/time-field). ⚠️ **Breaking changes**: TextField CSS classes were renamed from `.text-field` to `.textfield`.
+
+[Read full release notes →](/docs/releases/v3-0-0-beta-8)
+
+---
+
+### v3.0.0-beta.7
+
+**February 18, 2026**
+
+<DocsImage
+  src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/beta-7-light@2x.jpg"
+  darkSrc="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/versions/beta-7-dark@2x.jpg"
+  alt="HeroUI v3 Beta 7"
+  href="/docs/releases/v3-0-0-beta-7"
+/>
+
+This release introduces a comprehensive **Date & Time** system with four new components ([Calendar](/docs/components/calendar), [RangeCalendar](/docs/components/range-calendar), [DatePicker](/docs/components/date-picker), [DateRangePicker](/docs/components/date-range-picker)), new [Switch.Content](/docs/components/switch) sub-component, explicit [Tabs.Separator](/docs/components/tabs) for opt-in separator lines, and ⚠️ **breaking changes** removing `hideSeparator` from Tabs and consolidating `DateInputGroup`/`ColorInputGroup` under their respective field components.
+
+[Read full release notes →](/docs/releases/v3-0-0-beta-7)
+
+---
+
 ### v3.0.0-beta.6
 
 **February 6, 2026**
@@ -94,6 +186,7 @@ This release introduces six essential new components ([AlertDialog](/docs/compon
   src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/videos/v3-beta-1.mp4"
   poster="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/videos/v3-beta-1-poster.png"
   height={430}
+  muted
 />
 
 This release introduces a comprehensive redesign of HeroUI v3, merging v2's beauty and animations with v3's simplicity. All components have been redesigned, 8 new components added ([Alert](/docs/compoenents/alert), [Checkbox](/docs/components/checkbox), [InputOTP](/docs/components/input-otp), [ListBox](/docs/components/listbox), [Select](/docs/components/select), [Slider](/docs/components/slider), [Surface](/docs/components/surface)), and the design system has been completely overhauled with better color tokens, shadows, and architecture. Includes breaking changes to design system variables, component APIs, and flexible component patterns.
@@ -180,11 +273,11 @@ Card component redesigned with [new variants](/docs/components/card), added [Clo
 
 ## Release Schedule
 
-HeroUI v3 follows a regular release cycle:
+HeroUI v3 is now stable. Future releases follow a regular cycle:
 
-- **Alpha releases**: Weekly to bi-weekly during active development
-- **Beta releases**: Monthly stabilization releases - In progress
-- **Stable releases**: Quarterly major versions (Q4 2025 target)
+- **Patch releases**: Bug fixes and minor improvements as needed
+- **Minor releases**: New components and features, typically monthly
+- **Major releases**: Architectural changes with migration guides
 
 ## Contributing
 

@@ -10,7 +10,15 @@ import {NativeComponentItem} from "./native-component-item";
 const COMPONENT_GROUPS = [
   {
     category: "Buttons",
-    components: ["(buttons)/button", "(buttons)/close-button"],
+    components: ["(buttons)/button", "(buttons)/close-button", "(buttons)/link-button"],
+  },
+  {
+    category: "Collections",
+    components: ["(collections)/menu", "(collections)/tag-group"],
+  },
+  {
+    category: "Controls",
+    components: ["(controls)/slider", "(controls)/switch"],
   },
   {
     category: "Forms",
@@ -20,18 +28,19 @@ const COMPONENT_GROUPS = [
       "(forms)/description",
       "(forms)/field-error",
       "(forms)/input",
+      "(forms)/input-group",
       "(forms)/input-otp",
       "(forms)/label",
       "(forms)/radio-group",
+      "(forms)/search-field",
       "(forms)/select",
-      "(forms)/switch",
       "(forms)/text-area",
       "(forms)/text-field",
     ],
   },
   {
     category: "Navigation",
-    components: ["(navigation)/accordion", "(navigation)/tabs"],
+    components: ["(navigation)/accordion", "(navigation)/list-group", "(navigation)/tabs"],
   },
   {
     category: "Overlays",
@@ -44,7 +53,12 @@ const COMPONENT_GROUPS = [
   },
   {
     category: "Feedback",
-    components: ["(feedback)/skeleton", "(feedback)/skeleton-group", "(feedback)/spinner"],
+    components: [
+      "(feedback)/alert",
+      "(feedback)/skeleton",
+      "(feedback)/skeleton-group",
+      "(feedback)/spinner",
+    ],
   },
   {
     category: "Layout",

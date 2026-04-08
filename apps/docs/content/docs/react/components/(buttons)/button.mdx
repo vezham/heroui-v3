@@ -1,7 +1,6 @@
 ---
 title: Button
 description: A clickable button component with multiple variants and states
-icon: updated
 links:
   rac: Button
   source: button/button.tsx
@@ -78,6 +77,12 @@ import { Button } from '@vx-oss/heroui-v3-react';
   name="button-social"
 />
 
+### Custom Render Function
+
+<ComponentPreview
+  name="button-custom-render-function"
+/>
+
 <RelatedComponents component="button" />
 
 <RelatedShowcases component="Button" />
@@ -127,7 +132,7 @@ You can extend HeroUI components by wrapping them and adding your own custom var
 
 ### Adding Ripple Effect
 
-The Button component supports ripple effects through composition, allowing you to nest ripple components as children. This example uses [m3-ripple](https://github.com/saltyaom/m3-ripple). 
+The Button component supports ripple effects through composition, allowing you to nest ripple components as children. This example uses [m3-ripple](https://github.com/saltyaom/m3-ripple).
 
 <ComponentPreview
   name="button-ripple-effect"
@@ -180,6 +185,7 @@ The button supports both CSS pseudo-classes and data attributes for flexibility:
 | `isIconOnly` | `boolean` | `false` | Whether the button contains only an icon |
 | `onPress` | `(e: PressEvent) => void` | - | Handler called when the button is pressed |
 | `children` | `React.ReactNode \| (values: ButtonRenderProps) => React.ReactNode` | - | Button content or render prop |
+| `render` | `DOMRenderFunction<keyof React.JSX.IntrinsicElements, ButtonRenderProps>` | - | Overrides the default DOM element with a custom render function.|
 
 ### ButtonRenderProps
 

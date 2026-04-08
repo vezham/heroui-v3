@@ -1,6 +1,7 @@
 ---
 title: Autocomplete
 description: An autocomplete combines a select with filtering, allowing users to search and select from a list of options
+icon: updated
 links:
   rac: Select
   source: autocomplete/autocomplete.tsx
@@ -11,7 +12,7 @@ links:
 ## Import
 
 ```tsx
-import {Autocomplete, useFilter} from "@vx-oss/heroui-v3-react";
+import { Autocomplete, useFilter } from "@heroui/react";
 ```
 
 ### Usage
@@ -23,7 +24,7 @@ import {Autocomplete, useFilter} from "@vx-oss/heroui-v3-react";
 Import the Autocomplete component and access all parts using dot notation.
 
 ```tsx
-import {Autocomplete, Label, Description, SearchField, ListBox} from "@vx-oss/heroui-v3-react";
+import {Autocomplete, Label, Description, SearchField, ListBox} from "@heroui/react";
 
 export default () => (
   <Autocomplete>
@@ -69,6 +70,12 @@ export default () => (
 ### With Disabled Options
 
 <ComponentPreview name="autocomplete-with-disabled-options" />
+
+### Allows Empty Collection
+
+The `allowsEmptyCollection` prop enables the autocomplete to function even when there are no items in the collection. This is useful for scenarios where the list might be empty initially or when all items are filtered out.
+
+<ComponentPreview name="autocomplete-allows-empty-collection" />
 
 ### Custom Indicator
 
@@ -152,7 +159,7 @@ You can customize the displayed value using render props:
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {Autocomplete, SearchField, ListBox} from "@vx-oss/heroui-v3-react";
+import {Autocomplete, SearchField, ListBox} from "@heroui/react";
 
 function CustomAutocomplete() {
   return (
@@ -222,7 +229,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The Autocomplete component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/autocomplete.css)):
+The Autocomplete component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/autocomplete.css)):
 
 #### Base Classes
 
@@ -265,6 +272,7 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 | --------------- | --------------------------------------- | ------------------ | -------------------------------------------------------- |
 | `placeholder`   | `string`                                | `'Select an item'` | Temporary text that occupies the autocomplete when it is empty |
 | `selectionMode` | `"single" \| "multiple"`                | `"single"`         | Whether single or multiple selection is enabled          |
+| `allowsEmptyCollection` | `boolean`                        | `false`            | Whether the autocomplete allows an empty collection. When true, the autocomplete can function even with no items. |
 | `isOpen`        | `boolean`                               | -                  | Sets the open state of the popover (controlled)             |
 | `defaultOpen`   | `boolean`                               | -                  | Sets the default open state of the popover (uncontrolled)   |
 | `onOpenChange`  | `(isOpen: boolean) => void`             | -                  | Handler called when the open state changes               |
@@ -332,7 +340,7 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 The `useFilter` hook from React Aria provides filtering functions for autocomplete functionality.
 
 ```tsx
-import {useFilter} from "@vx-oss/heroui-v3-react";
+import {useFilter} from "@heroui/react";
 
 const {contains} = useFilter({sensitivity: "base"});
 

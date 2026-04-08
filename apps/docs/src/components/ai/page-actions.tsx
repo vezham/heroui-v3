@@ -143,7 +143,8 @@ export function ViewOptions({markdownUrl}: {markdownUrl: string}) {
         )}
       </Button>
       <Dropdown isOpen={isOpen} onOpenChange={setOpen}>
-        <Button isIconOnly size="md" variant="tertiary">
+        <Button isIconOnly aria-label="More options" size="md" variant="tertiary">
+          <ButtonGroup.Separator />
           <ChevronDown
             className={cn(
               "text-fd-muted-foreground size-3.5 transition-transform",

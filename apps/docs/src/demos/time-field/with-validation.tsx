@@ -2,8 +2,9 @@
 
 import type {Time} from "@internationalized/date";
 
+import {Description, FieldError, Label, TimeField} from "@heroui/react";
 import {parseTime} from "@internationalized/date";
-import {DateInputGroup, Description, FieldError, Label, TimeField} from "@vx-oss/heroui-v3-react";
+import {Description, FieldError, Label, TimeField} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function WithValidation() {
@@ -25,11 +26,9 @@ export function WithValidation() {
         onChange={setValue}
       >
         <Label>Time</Label>
-        <DateInputGroup>
-          <DateInputGroup.Input>
-            {(segment) => <DateInputGroup.Segment segment={segment} />}
-          </DateInputGroup.Input>
-        </DateInputGroup>
+        <TimeField.Group>
+          <TimeField.Input>{(segment) => <TimeField.Segment segment={segment} />}</TimeField.Input>
+        </TimeField.Group>
         {isInvalid ? (
           <FieldError>Time must be between 9:00 AM and 5:00 PM</FieldError>
         ) : (

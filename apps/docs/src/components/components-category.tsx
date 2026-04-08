@@ -11,14 +11,13 @@ import {ComponentItem} from "./component-item";
 const COMPONENT_GROUPS = [
   {
     category: "Buttons",
-    components: ["button", "button-group", "close-button"],
+    components: ["button", "button-group", "close-button", "toggle-button", "toggle-button-group"],
   },
   {
     category: "Forms",
     components: [
       "checkbox",
       "checkbox-group",
-      "date-field",
       "description",
       "error-message",
       "field-error",
@@ -31,18 +30,36 @@ const COMPONENT_GROUPS = [
       "number-field",
       "radio-group",
       "search-field",
-      "text-field",
+      "textfield",
       "textarea",
+    ],
+  },
+  {
+    category: "Date and Time",
+    components: [
+      "calendar",
+      "date-field",
+      "date-picker",
+      "date-range-picker",
+      "range-calendar",
       "time-field",
     ],
   },
   {
     category: "Navigation",
-    components: ["accordion", "breadcrumbs", "disclosure", "disclosure-group", "link", "tabs"],
+    components: [
+      "accordion",
+      "breadcrumbs",
+      "disclosure",
+      "disclosure-group",
+      "link",
+      "pagination",
+      "tabs",
+    ],
   },
   {
     category: "Overlays",
-    components: ["alert-dialog", "modal", "popover", "toast", "tooltip"],
+    components: ["alert-dialog", "drawer", "modal", "popover", "toast", "tooltip"],
   },
   {
     category: "Collections",
@@ -54,11 +71,11 @@ const COMPONENT_GROUPS = [
   },
   {
     category: "Feedback",
-    components: ["alert", "skeleton", "spinner"],
+    components: ["alert", "meter", "progressbar", "progresscircle", "skeleton", "spinner"],
   },
   {
     category: "Layout",
-    components: ["card", "separator", "surface"],
+    components: ["card", "separator", "surface", "toolbar"],
   },
   {
     category: "Media",
@@ -74,7 +91,7 @@ const COMPONENT_GROUPS = [
   },
   {
     category: "Data Display",
-    components: ["chip"],
+    components: ["badge", "chip", "table"],
   },
   {
     category: "Colors",

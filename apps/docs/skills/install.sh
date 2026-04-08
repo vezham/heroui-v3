@@ -1,9 +1,9 @@
 #!/bin/bash
 # HeroUI Skill Installer
-# Usage: curl -sSL https://v3.heroui.com/install | bash -s [skill-name]
+# Usage: curl -sSL https://heroui.com/install | bash -s [skill-name]
 # Default: heroui-react
-# Available skills: heroui-react, heroui-native
-# https://v3.heroui.com
+# Available skills: heroui-react, heroui-native, heroui-migration
+# https://heroui.com
 
 set -e
 

@@ -4,6 +4,7 @@ import type {Key} from "@vx-oss/heroui-v3-react";
 
 import {
   Autocomplete,
+  EmptyState,
   Label,
   ListBox,
   SearchField,
@@ -50,7 +51,7 @@ export function FullWidth() {
                 <SearchField.ClearButton />
               </SearchField.Group>
             </SearchField>
-            <ListBox>
+            <ListBox renderEmptyState={() => <EmptyState>No results found</EmptyState>}>
               {items.map((item) => (
                 <ListBox.Item key={item.id} id={item.id} textValue={item.name}>
                   {item.name}

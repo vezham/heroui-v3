@@ -9,6 +9,66 @@ description: All updates and changes to HeroUI Native, including new features, f
 
 ## Latest Release
 
+### v1.0.1
+
+**April 2026**
+
+This patch release fixes a race condition in the Toast provider where the `total` SharedValue drifted from the actual toast count, corrects disabled-state styling across seven components to use the native `disabled:` modifier, and introduces the `--backdrop` theme variable for overlay components.
+
+[Read full release notes →](/docs/native/releases/v1-0-1)
+
+---
+
+### v1.0.0
+
+**March 2026**
+
+🎉 HeroUI Native reaches its first stable release, graduating from beta and release candidate stages. This milestone includes the new LinkButton component, sub-menu conflict resolution, an optional `@gorhom/bottom-sheet` peer dependency, and improved type safety for `useThemeColor`.
+
+[Read full release notes →](/docs/native/releases/v1-0-0)
+
+---
+
+### RC 4
+
+**March 2026**
+
+This release introduces the SubMenu compound component for nested expandable menus with animated expand/collapse, refactors Slider Output composition with slot-based styling and `textProps` forwarding, and fixes PressableFeedback ripple animation blink on rapid presses.
+
+[Read full release notes →](/docs/native/releases/rc-4)
+
+---
+
+### RC 3
+
+**February 2026**
+
+This release introduces three new components—TagGroup, Menu, and InputGroup—adds Android hardware back button support for all bottom-sheet-based overlays, and achieves Expo 55 compatibility with a critical `combineStyles` fix that preserves Reanimated animated style bindings.
+
+[Read full release notes →](/docs/native/releases/rc-3)
+
+---
+
+### RC 2
+
+**February 2026**
+
+This release introduces three new components—SearchField, ListGroup, and Slider—adds multi-selection mode to Select with type-safe generics, and refactors the Button feedback API into a unified `feedbackVariant` + `animation` prop pattern. Peer dependency constraints are relaxed for broader Expo SDK 55 compatibility, and several Select and Avatar bugs are fixed.
+
+[Read full release notes →](/docs/native/releases/rc-2)
+
+---
+
+### RC 1
+
+**February 2026**
+
+This release introduces the Alert compound component with five status variants and accessibility primitives, extracts Radio into a standalone component with dual-mode operation, and adds the animated Select.TriggerIndicator subcomponent. It also delivers HeroUINativeProviderRaw for bundle optimization, a `disableFullWindowOverlay` prop for iOS debugging, unified `styles` prop support across six components, and theme surface variable refactoring with explicit per-theme definitions.
+
+[Read full release notes →](/docs/native/releases/rc-1)
+
+---
+
 ### Beta 13
 
 **February 2026**
@@ -53,8 +113,8 @@ This release introduces the new [Bottom Sheet](/docs/native/components/bottom-sh
 
 HeroUI Native follows a regular release cycle:
 
-- **Beta releases**: Monthly stabilization releases - In progress
-- **Stable releases**: Quarterly major versions (Q1 2026 target)
+- **Stable releases**: v1.0.0 shipped Q1 2026
+- **Patch releases**: Bug fixes and minor improvements as needed
 
 ## Contributing
 

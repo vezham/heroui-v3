@@ -6,9 +6,11 @@ import * as AlertDemos from "./alert";
 import * as AlertDialogDemos from "./alert-dialog";
 import * as AutocompleteDemos from "./autocomplete";
 import * as AvatarDemos from "./avatar";
+import * as BadgeDemos from "./badge";
 import * as BreadcrumbsDemos from "./breadcrumbs";
 import * as ButtonDemos from "./button";
 import * as ButtonGroupDemos from "./button-group";
+import * as CalendarDemos from "./calendar";
 import * as CardDemos from "./card";
 import * as CheckboxDemos from "./checkbox";
 import * as CheckboxGroupDemos from "./checkbox-group";
@@ -22,9 +24,12 @@ import * as ColorSwatchDemos from "./color-swatch";
 import * as ColorSwatchPickerDemos from "./color-swatch-picker";
 import * as ComboBoxDemos from "./combo-box";
 import * as DateFieldDemos from "./date-field";
+import * as DatePickerDemos from "./date-picker";
+import * as DateRangePickerDemos from "./date-range-picker";
 import * as DescriptionDemos from "./description";
 import * as DisclosureDemos from "./disclosure";
 import * as DisclosureGroupDemos from "./disclosure-group";
+import * as DrawerDemos from "./drawer";
 import * as DropdownDemos from "./dropdown";
 import * as ErrorMessageDemos from "./error-message";
 import * as FieldErrorDemos from "./field-error";
@@ -37,10 +42,15 @@ import * as KbdDemos from "./kbd";
 import * as LabelDemos from "./label";
 import * as LinkDemos from "./link";
 import * as ListBoxDemos from "./list-box";
+import * as MeterDemos from "./meter";
 import * as ModalDemos from "./modal";
 import * as NumberFieldDemos from "./number-field";
+import * as PaginationDemos from "./pagination";
 import * as PopoverDemos from "./popover";
+import * as ProgressBarDemos from "./progress-bar";
+import * as ProgressCircleDemos from "./progress-circle";
 import * as RadioGroupDemos from "./radio-group";
+import * as RangeCalendarDemos from "./range-calendar";
 import * as ScrollShadowDemos from "./scroll-shadow";
 import * as SearchFieldDemos from "./search-field";
 import * as SelectDemos from "./select";
@@ -50,12 +60,16 @@ import * as SliderDemos from "./slider";
 import * as SpinnerDemos from "./spinner";
 import * as SurfaceDemos from "./surface";
 import * as SwitchDemos from "./switch";
+import * as TableDemos from "./table";
 import * as TabsDemos from "./tabs";
 import * as TagGroupDemos from "./tag-group";
-import * as TextFieldDemos from "./text-field";
 import * as TextAreaDemos from "./textarea";
+import * as TextFieldDemos from "./textfield";
 import * as TimeFieldDemos from "./time-field";
 import * as ToastDemos from "./toast";
+import * as ToggleButtonDemos from "./toggle-button";
+import * as ToggleButtonGroupDemos from "./toggle-button-group";
+import * as ToolbarDemos from "./toolbar";
 import * as TooltipDemos from "./tooltip";
 
 export interface DemoItem {
@@ -97,6 +111,14 @@ export const demos: Record<string, DemoItem> = {
   "accordion-without-separator": {
     component: AccordionDemos.WithoutSeparator,
     file: "accordion/without-separator.tsx",
+  },
+  "accordion-custom-render-function": {
+    component: AccordionDemos.CustomRenderFunction,
+    file: "accordion/custom-render-function.tsx",
+  },
+  "accordion-controlled": {
+    component: AccordionDemos.Controlled,
+    file: "accordion/controlled.tsx",
   },
   // Alert demos
   "alert-basic": {
@@ -189,6 +211,35 @@ export const demos: Record<string, DemoItem> = {
     component: AvatarDemos.CustomStyles,
     file: "avatar/custom-styles.tsx",
   },
+  // Badge demos
+  "badge-basic": {
+    component: BadgeDemos.Basic,
+    file: "badge/basic.tsx",
+  },
+  "badge-colors": {
+    component: BadgeDemos.Colors,
+    file: "badge/colors.tsx",
+  },
+  "badge-sizes": {
+    component: BadgeDemos.Sizes,
+    file: "badge/sizes.tsx",
+  },
+  "badge-variants": {
+    component: BadgeDemos.Variants,
+    file: "badge/variants.tsx",
+  },
+  "badge-placements": {
+    component: BadgeDemos.Placements,
+    file: "badge/placements.tsx",
+  },
+  "badge-with-content": {
+    component: BadgeDemos.WithContent,
+    file: "badge/with-content.tsx",
+  },
+  "badge-dot": {
+    component: BadgeDemos.Dot,
+    file: "badge/dot.tsx",
+  },
   // Breadcrumbs demos
   "breadcrumbs-basic": {
     component: BreadcrumbsDemos.BreadcrumbsBasic,
@@ -209,6 +260,10 @@ export const demos: Record<string, DemoItem> = {
   "breadcrumbs-disabled": {
     component: BreadcrumbsDemos.BreadcrumbsDisabled,
     file: "breadcrumbs/disabled.tsx",
+  },
+  "breadcrumbs-custom-render-function": {
+    component: BreadcrumbsDemos.CustomRenderFunction,
+    file: "breadcrumbs/custom-render-function.tsx",
   },
   // Button demos
   "button-basic": {
@@ -263,6 +318,10 @@ export const demos: Record<string, DemoItem> = {
     component: ButtonDemos.WithIcons,
     file: "button/with-icons.tsx",
   },
+  "button-custom-render-function": {
+    component: ButtonDemos.CustomRenderFunction,
+    file: "button/custom-render-function.tsx",
+  },
   // ButtonGroup demos
   "button-group-basic": {
     component: ButtonGroupDemos.Basic,
@@ -287,6 +346,10 @@ export const demos: Record<string, DemoItem> = {
   "button-group-with-icons": {
     component: ButtonGroupDemos.WithIcons,
     file: "button-group/with-icons.tsx",
+  },
+  "button-group-orientation": {
+    component: ButtonGroupDemos.Orientation,
+    file: "button-group/orientation.tsx",
   },
   "button-group-without-separator": {
     component: ButtonGroupDemos.WithoutSeparator,
@@ -316,6 +379,132 @@ export const demos: Record<string, DemoItem> = {
   "card-with-images": {
     component: CardDemos.WithImages,
     file: "card/with-images.tsx",
+  },
+  // Calendar demos
+  "calendar-basic": {
+    component: CalendarDemos.Basic,
+    file: "calendar/basic.tsx",
+  },
+  "calendar-custom-styles": {
+    component: CalendarDemos.CustomStyles,
+    file: "calendar/custom-styles.tsx",
+  },
+  "calendar-default-value": {
+    component: CalendarDemos.DefaultValue,
+    file: "calendar/default-value.tsx",
+  },
+  "calendar-controlled": {
+    component: CalendarDemos.Controlled,
+    file: "calendar/controlled.tsx",
+  },
+  "calendar-min-max-dates": {
+    component: CalendarDemos.MinMaxDates,
+    file: "calendar/min-max-dates.tsx",
+  },
+  "calendar-unavailable-dates": {
+    component: CalendarDemos.UnavailableDates,
+    file: "calendar/unavailable-dates.tsx",
+  },
+  "calendar-disabled": {
+    component: CalendarDemos.Disabled,
+    file: "calendar/disabled.tsx",
+  },
+  "calendar-read-only": {
+    component: CalendarDemos.ReadOnly,
+    file: "calendar/read-only.tsx",
+  },
+  "calendar-focused-value": {
+    component: CalendarDemos.FocusedValue,
+    file: "calendar/focused-value.tsx",
+  },
+  "calendar-with-indicators": {
+    component: CalendarDemos.WithIndicators,
+    file: "calendar/with-indicators.tsx",
+  },
+  "calendar-multiple-months": {
+    component: CalendarDemos.MultipleMonths,
+    file: "calendar/multiple-months.tsx",
+  },
+  "calendar-year-picker": {
+    component: CalendarDemos.YearPicker,
+    file: "calendar/year-picker.tsx",
+  },
+  "calendar-international-calendar": {
+    component: CalendarDemos.InternationalCalendar,
+    file: "calendar/international-calendar.tsx",
+  },
+  "calendar-booking-calendar": {
+    component: CalendarDemos.BookingCalendar,
+    file: "calendar/booking-calendar.tsx",
+  },
+  "calendar-custom-icons": {
+    component: CalendarDemos.CustomIcons,
+    file: "calendar/custom-icons.tsx",
+  },
+  // RangeCalendar demos
+  "range-calendar-basic": {
+    component: RangeCalendarDemos.Basic,
+    file: "range-calendar/basic.tsx",
+  },
+  "range-calendar-year-picker": {
+    component: RangeCalendarDemos.YearPicker,
+    file: "range-calendar/year-picker.tsx",
+  },
+  "range-calendar-default-value": {
+    component: RangeCalendarDemos.DefaultValue,
+    file: "range-calendar/default-value.tsx",
+  },
+  "range-calendar-controlled": {
+    component: RangeCalendarDemos.Controlled,
+    file: "range-calendar/controlled.tsx",
+  },
+  "range-calendar-min-max-dates": {
+    component: RangeCalendarDemos.MinMaxDates,
+    file: "range-calendar/min-max-dates.tsx",
+  },
+  "range-calendar-unavailable-dates": {
+    component: RangeCalendarDemos.UnavailableDates,
+    file: "range-calendar/unavailable-dates.tsx",
+  },
+  "range-calendar-allows-non-contiguous-ranges": {
+    component: RangeCalendarDemos.AllowsNonContiguousRanges,
+    file: "range-calendar/allows-non-contiguous-ranges.tsx",
+  },
+  "range-calendar-disabled": {
+    component: RangeCalendarDemos.Disabled,
+    file: "range-calendar/disabled.tsx",
+  },
+  "range-calendar-read-only": {
+    component: RangeCalendarDemos.ReadOnly,
+    file: "range-calendar/read-only.tsx",
+  },
+  "range-calendar-invalid": {
+    component: RangeCalendarDemos.Invalid,
+    file: "range-calendar/invalid.tsx",
+  },
+  "range-calendar-focused-value": {
+    component: RangeCalendarDemos.FocusedValue,
+    file: "range-calendar/focused-value.tsx",
+  },
+  "range-calendar-with-indicators": {
+    component: RangeCalendarDemos.WithIndicators,
+    file: "range-calendar/with-indicators.tsx",
+  },
+  "range-calendar-multiple-months": {
+    component: RangeCalendarDemos.MultipleMonths,
+    file: "range-calendar/multiple-months.tsx",
+  },
+  "range-calendar-three-months": {
+    component: RangeCalendarDemos.ThreeMonths,
+    file: "range-calendar/three-months.tsx",
+  },
+  "range-calendar-international-calendar": {
+    component: RangeCalendarDemos.InternationalCalendar,
+    file: "range-calendar/international-calendar.tsx",
+  },
+  "range-calendar-booking-calendar": {
+    component: RangeCalendarDemos.BookingCalendar,
+    file: "range-calendar/booking-calendar.tsx",
   },
   // Checkbox demos
   "checkbox-basic": {
@@ -374,6 +563,10 @@ export const demos: Record<string, DemoItem> = {
     component: CheckboxDemos.Variants,
     file: "checkbox/variants.tsx",
   },
+  "checkbox-custom-render-function": {
+    component: CheckboxDemos.CustomRenderFunction,
+    file: "checkbox/custom-render-function.tsx",
+  },
   // CheckboxGroup demos
   "checkbox-group-basic": {
     component: CheckboxGroupDemos.Basic,
@@ -406,6 +599,10 @@ export const demos: Record<string, DemoItem> = {
   "checkbox-group-features-and-addons": {
     component: CheckboxGroupDemos.FeaturesAndAddOns,
     file: "checkbox-group/features-and-addons.tsx",
+  },
+  "checkbox-group-custom-render-function": {
+    component: CheckboxGroupDemos.CustomRenderFunction,
+    file: "checkbox-group/custom-render-function.tsx",
   },
   // Chip demos
   "chip-basic": {
@@ -469,6 +666,10 @@ export const demos: Record<string, DemoItem> = {
     component: ColorFieldDemos.WithDescription,
     file: "color-field/with-description.tsx",
   },
+  "color-field-custom-render-function": {
+    component: ColorFieldDemos.CustomRenderFunction,
+    file: "color-field/custom-render-function.tsx",
+  },
   // ColorPicker demos
   "color-picker-basic": {
     component: ColorPickerDemos.Basic,
@@ -511,6 +712,10 @@ export const demos: Record<string, DemoItem> = {
     component: ColorAreaDemos.Disabled,
     file: "color-area/disabled.tsx",
   },
+  "color-area-custom-render-function": {
+    component: ColorAreaDemos.CustomRenderFunction,
+    file: "color-area/custom-render-function.tsx",
+  },
   // ColorSwatch demos
   "color-swatch-basic": {
     component: ColorSwatchDemos.Basic,
@@ -535,6 +740,10 @@ export const demos: Record<string, DemoItem> = {
   "color-swatch-accessibility": {
     component: ColorSwatchDemos.Accessibility,
     file: "color-swatch/accessibility.tsx",
+  },
+  "color-swatch-custom-render-function": {
+    component: ColorSwatchDemos.CustomRenderFunction,
+    file: "color-swatch/custom-render-function.tsx",
   },
   // ColorSlider demos
   "color-slider-basic": {
@@ -564,6 +773,10 @@ export const demos: Record<string, DemoItem> = {
   "color-slider-controlled": {
     component: ColorSliderDemos.Controlled,
     file: "color-slider/controlled.tsx",
+  },
+  "color-slider-custom-render-function": {
+    component: ColorSliderDemos.CustomRenderFunction,
+    file: "color-slider/custom-render-function.tsx",
   },
   // CloseButton demos
   "close-button-default": {
@@ -611,6 +824,10 @@ export const demos: Record<string, DemoItem> = {
     component: ColorSwatchPickerDemos.CustomIndicator,
     file: "color-swatch-picker/custom-indicator.tsx",
   },
+  "color-swatch-picker-custom-render-function": {
+    component: ColorSwatchPickerDemos.CustomRenderFunction,
+    file: "color-swatch-picker/custom-render-function.tsx",
+  },
   // Autocomplete demos
   "autocomplete-default": {
     component: AutocompleteDemos.Default,
@@ -643,6 +860,10 @@ export const demos: Record<string, DemoItem> = {
   "autocomplete-with-disabled-options": {
     component: AutocompleteDemos.WithDisabledOptions,
     file: "autocomplete/with-disabled-options.tsx",
+  },
+  "autocomplete-allows-empty-collection": {
+    component: AutocompleteDemos.AllowsEmptyCollection,
+    file: "autocomplete/allows-empty-collection.tsx",
   },
   "autocomplete-custom-indicator": {
     component: AutocompleteDemos.CustomIndicator,
@@ -757,10 +978,51 @@ export const demos: Record<string, DemoItem> = {
     component: ComboBoxDemos.MenuTrigger,
     file: "combo-box/menu-trigger.tsx",
   },
+  "combo-box-custom-render-function": {
+    component: ComboBoxDemos.CustomRenderFunction,
+    file: "combo-box/custom-render-function.tsx",
+  },
+  // Drawer demos
+  "drawer-basic": {
+    component: DrawerDemos.Basic,
+    file: "drawer/basic.tsx",
+  },
+  "drawer-placements": {
+    component: DrawerDemos.Placements,
+    file: "drawer/placements.tsx",
+  },
+  "drawer-backdrop-variants": {
+    component: DrawerDemos.BackdropVariants,
+    file: "drawer/backdrop-variants.tsx",
+  },
+  "drawer-with-form": {
+    component: DrawerDemos.WithForm,
+    file: "drawer/with-form.tsx",
+  },
+  "drawer-scrollable-content": {
+    component: DrawerDemos.ScrollableContent,
+    file: "drawer/scrollable-content.tsx",
+  },
+  "drawer-navigation": {
+    component: DrawerDemos.Navigation,
+    file: "drawer/navigation.tsx",
+  },
+  "drawer-non-dismissable": {
+    component: DrawerDemos.NonDismissable,
+    file: "drawer/non-dismissable.tsx",
+  },
+  "drawer-controlled": {
+    component: DrawerDemos.Controlled,
+    file: "drawer/controlled.tsx",
+  },
   // Disclosure demos
   "disclosure-basic": {
     component: DisclosureDemos.Basic,
     file: "disclosure/basic.tsx",
+  },
+  "disclosure-custom-render-function": {
+    component: DisclosureDemos.CustomRenderFunction,
+    file: "disclosure/custom-render-function.tsx",
   },
   // DisclosureGroup demos
   "disclosure-group-basic": {
@@ -849,6 +1111,10 @@ export const demos: Record<string, DemoItem> = {
   "form-basic": {
     component: FormDemos.Basic,
     file: "form/basic.tsx",
+  },
+  "form-custom-render-function": {
+    component: FormDemos.CustomRenderFunction,
+    file: "form/custom-render-function.tsx",
   },
   // Fieldset demos
   "fieldset-basic": {
@@ -944,6 +1210,88 @@ export const demos: Record<string, DemoItem> = {
   "date-field-variants": {
     component: DateFieldDemos.Variants,
     file: "date-field/variants.tsx",
+  },
+  "date-field-custom-render-function": {
+    component: DateFieldDemos.CustomRenderFunction,
+    file: "date-field/custom-render-function.tsx",
+  },
+  // DatePicker demos
+  "date-picker-basic": {
+    component: DatePickerDemos.Basic,
+    file: "date-picker/basic.tsx",
+  },
+  "date-picker-controlled": {
+    component: DatePickerDemos.Controlled,
+    file: "date-picker/controlled.tsx",
+  },
+  "date-picker-disabled": {
+    component: DatePickerDemos.Disabled,
+    file: "date-picker/disabled.tsx",
+  },
+  "date-picker-format-options": {
+    component: DatePickerDemos.FormatOptions,
+    file: "date-picker/format-options.tsx",
+  },
+  "date-picker-form-example": {
+    component: DatePickerDemos.FormExample,
+    file: "date-picker/form-example.tsx",
+  },
+  "date-picker-with-custom-indicator": {
+    component: DatePickerDemos.WithCustomIndicator,
+    file: "date-picker/with-custom-indicator.tsx",
+  },
+  "date-picker-with-validation": {
+    component: DatePickerDemos.WithValidation,
+    file: "date-picker/with-validation.tsx",
+  },
+  "date-picker-international-calendar": {
+    component: DatePickerDemos.InternationalCalendar,
+    file: "date-picker/international-calendar.tsx",
+  },
+  "date-picker-custom-render-function": {
+    component: DatePickerDemos.CustomRenderFunction,
+    file: "date-picker/custom-render-function.tsx",
+  },
+  // DateRangePicker demos
+  "date-range-picker-basic": {
+    component: DateRangePickerDemos.Basic,
+    file: "date-range-picker/basic.tsx",
+  },
+  "date-range-picker-controlled": {
+    component: DateRangePickerDemos.Controlled,
+    file: "date-range-picker/controlled.tsx",
+  },
+  "date-range-picker-disabled": {
+    component: DateRangePickerDemos.Disabled,
+    file: "date-range-picker/disabled.tsx",
+  },
+  "date-range-picker-format-options": {
+    component: DateRangePickerDemos.FormatOptions,
+    file: "date-range-picker/format-options.tsx",
+  },
+  "date-range-picker-form-example": {
+    component: DateRangePickerDemos.FormExample,
+    file: "date-range-picker/form-example.tsx",
+  },
+  "date-range-picker-with-custom-indicator": {
+    component: DateRangePickerDemos.WithCustomIndicator,
+    file: "date-range-picker/with-custom-indicator.tsx",
+  },
+  "date-range-picker-with-validation": {
+    component: DateRangePickerDemos.WithValidation,
+    file: "date-range-picker/with-validation.tsx",
+  },
+  "date-range-picker-international-calendar": {
+    component: DateRangePickerDemos.InternationalCalendar,
+    file: "date-range-picker/international-calendar.tsx",
+  },
+  "date-range-picker-custom-render-function": {
+    component: DateRangePickerDemos.CustomRenderFunction,
+    file: "date-range-picker/custom-render-function.tsx",
+  },
+  "date-range-picker-input-container": {
+    component: DateRangePickerDemos.InputContainer,
+    file: "date-range-picker/input-container.tsx",
   },
   // InputOTP demos
   "input-otp-basic": {
@@ -1109,6 +1457,10 @@ export const demos: Record<string, DemoItem> = {
     component: LinkDemos.UnderlineAndOffset,
     file: "link/underline-and-offset.tsx",
   },
+  "link-custom-render-function": {
+    component: LinkDemos.CustomRenderFunction,
+    file: "link/custom-render-function.tsx",
+  },
   // RadioGroup demos
   "radio-group-basic": {
     component: RadioGroupDemos.Basic,
@@ -1149,6 +1501,10 @@ export const demos: Record<string, DemoItem> = {
   "radio-group-variants": {
     component: RadioGroupDemos.Variants,
     file: "radio-group/variants.tsx",
+  },
+  "radio-group-custom-render-function": {
+    component: RadioGroupDemos.CustomRenderFunction,
+    file: "radio-group/custom-render-function.tsx",
   },
   // Skeleton demos
   "skeleton-basic": {
@@ -1203,6 +1559,10 @@ export const demos: Record<string, DemoItem> = {
   "separator-manual-variant-override": {
     component: SeparatorDemos.ManualVariantOverride,
     file: "separator/manual-variant-override.tsx",
+  },
+  "separator-custom-render-function": {
+    component: SeparatorDemos.CustomRenderFunction,
+    file: "separator/custom-render-function.tsx",
   },
   // Spinner demos
   "spinner-basic": {
@@ -1279,6 +1639,10 @@ export const demos: Record<string, DemoItem> = {
     component: SwitchDemos.CustomStyles,
     file: "switch/custom-styles.tsx",
   },
+  "switch-custom-render-function": {
+    component: SwitchDemos.CustomRenderFunction,
+    file: "switch/custom-render-function.tsx",
+  },
   // Tabs demos
   "tabs-basic": {
     component: TabsDemos.Basic,
@@ -1296,9 +1660,9 @@ export const demos: Record<string, DemoItem> = {
     component: TabsDemos.CustomStyles,
     file: "tabs/custom-styles.tsx",
   },
-  "tabs-without-separator": {
-    component: TabsDemos.WithoutSeparator,
-    file: "tabs/without-separator.tsx",
+  "tabs-with-separator": {
+    component: TabsDemos.WithSeparator,
+    file: "tabs/with-separator.tsx",
   },
   "tabs-secondary": {
     component: TabsDemos.Secondary,
@@ -1307,6 +1671,10 @@ export const demos: Record<string, DemoItem> = {
   "tabs-secondary-vertical": {
     component: TabsDemos.SecondaryVertical,
     file: "tabs/secondary-vertical.tsx",
+  },
+  "tabs-custom-render-function": {
+    component: TabsDemos.CustomRenderFunction,
+    file: "tabs/custom-render-function.tsx",
   },
   // TagGroup demos
   "tag-group-basic": {
@@ -1349,6 +1717,55 @@ export const demos: Record<string, DemoItem> = {
     component: TagGroupDemos.WithListData,
     file: "tag-group/with-list-data.tsx",
   },
+  "tag-group-custom-render-function": {
+    component: TagGroupDemos.CustomRenderFunction,
+    file: "tag-group/custom-render-function.tsx",
+  },
+  // Table demos
+  "table-basic": {
+    component: TableDemos.Basic,
+    file: "table/basic.tsx",
+  },
+  "table-secondary-variant": {
+    component: TableDemos.SecondaryVariant,
+    file: "table/secondary-variant.tsx",
+  },
+  "table-sorting": {
+    component: TableDemos.Sorting,
+    file: "table/sorting.tsx",
+  },
+  "table-selection": {
+    component: TableDemos.SelectionDemo,
+    file: "table/selection.tsx",
+  },
+  "table-custom-cells": {
+    component: TableDemos.CustomCells,
+    file: "table/custom-cells.tsx",
+  },
+  "table-pagination": {
+    component: TableDemos.PaginationDemo,
+    file: "table/pagination.tsx",
+  },
+  "table-column-resizing": {
+    component: TableDemos.ColumnResizing,
+    file: "table/column-resizing.tsx",
+  },
+  "table-empty-state": {
+    component: TableDemos.EmptyStateDemo,
+    file: "table/empty-state.tsx",
+  },
+  "table-async-loading": {
+    component: TableDemos.AsyncLoading,
+    file: "table/async-loading.tsx",
+  },
+  "table-virtualization": {
+    component: TableDemos.Virtualization,
+    file: "table/virtualization.tsx",
+  },
+  "table-tanstack-table": {
+    component: TableDemos.TanstackTable,
+    file: "table/tanstack-table.tsx",
+  },
   // TextArea demos
   "textarea-basic": {
     component: TextAreaDemos.Basic,
@@ -1375,49 +1792,53 @@ export const demos: Record<string, DemoItem> = {
     file: "textarea/variants.tsx",
   },
   // TextField demos
-  "text-field-basic": {
+  "textfield-basic": {
     component: TextFieldDemos.Basic,
-    file: "text-field/basic.tsx",
+    file: "textfield/basic.tsx",
   },
-  "text-field-with-description": {
+  "textfield-with-description": {
     component: TextFieldDemos.WithDescription,
-    file: "text-field/with-description.tsx",
+    file: "textfield/with-description.tsx",
   },
-  "text-field-required": {
+  "textfield-required": {
     component: TextFieldDemos.Required,
-    file: "text-field/required.tsx",
+    file: "textfield/required.tsx",
   },
-  "text-field-with-error": {
+  "textfield-with-error": {
     component: TextFieldDemos.WithError,
-    file: "text-field/with-error.tsx",
+    file: "textfield/with-error.tsx",
   },
-  "text-field-disabled": {
+  "textfield-disabled": {
     component: TextFieldDemos.Disabled,
-    file: "text-field/disabled.tsx",
+    file: "textfield/disabled.tsx",
   },
-  "text-field-textarea": {
+  "textfield-textarea": {
     component: TextFieldDemos.TextArea,
-    file: "text-field/textarea.tsx",
+    file: "textfield/textarea.tsx",
   },
-  "text-field-input-types": {
+  "textfield-input-types": {
     component: TextFieldDemos.InputTypes,
-    file: "text-field/input-types.tsx",
+    file: "textfield/input-types.tsx",
   },
-  "text-field-full-width": {
+  "textfield-full-width": {
     component: TextFieldDemos.FullWidth,
-    file: "text-field/full-width.tsx",
+    file: "textfield/full-width.tsx",
   },
-  "text-field-controlled": {
+  "textfield-controlled": {
     component: TextFieldDemos.Controlled,
-    file: "text-field/controlled.tsx",
+    file: "textfield/controlled.tsx",
   },
-  "text-field-validation": {
+  "textfield-validation": {
     component: TextFieldDemos.Validation,
-    file: "text-field/validation.tsx",
+    file: "textfield/validation.tsx",
   },
-  "text-field-on-surface": {
+  "textfield-on-surface": {
     component: TextFieldDemos.OnSurface,
-    file: "text-field/on-surface.tsx",
+    file: "textfield/on-surface.tsx",
+  },
+  "textfield-custom-render-function": {
+    component: TextFieldDemos.CustomRenderFunction,
+    file: "textfield/custom-render-function.tsx",
   },
   // TimeField demos
   "time-field-basic": {
@@ -1472,6 +1893,10 @@ export const demos: Record<string, DemoItem> = {
     component: TimeFieldDemos.WithValidation,
     file: "time-field/with-validation.tsx",
   },
+  "time-field-custom-render-function": {
+    component: TimeFieldDemos.CustomRenderFunction,
+    file: "time-field/custom-render-function.tsx",
+  },
   // Toast demos
   "toast-default": {
     component: ToastDemos.Default,
@@ -1509,6 +1934,85 @@ export const demos: Record<string, DemoItem> = {
     component: ToastDemos.CustomQueue,
     file: "toast/custom-queue.tsx",
   },
+  // ToggleButton demos
+  "toggle-button-basic": {
+    component: ToggleButtonDemos.Basic,
+    file: "toggle-button/basic.tsx",
+  },
+  "toggle-button-variants": {
+    component: ToggleButtonDemos.Variants,
+    file: "toggle-button/variants.tsx",
+  },
+  "toggle-button-sizes": {
+    component: ToggleButtonDemos.Sizes,
+    file: "toggle-button/sizes.tsx",
+  },
+  "toggle-button-icon-only": {
+    component: ToggleButtonDemos.IconOnly,
+    file: "toggle-button/icon-only.tsx",
+  },
+  "toggle-button-controlled": {
+    component: ToggleButtonDemos.Controlled,
+    file: "toggle-button/controlled.tsx",
+  },
+  "toggle-button-disabled": {
+    component: ToggleButtonDemos.Disabled,
+    file: "toggle-button/disabled.tsx",
+  },
+  // ToggleButtonGroup demos
+  "toggle-button-group-basic": {
+    component: ToggleButtonGroupDemos.Basic,
+    file: "toggle-button-group/basic.tsx",
+  },
+  "toggle-button-group-sizes": {
+    component: ToggleButtonGroupDemos.Sizes,
+    file: "toggle-button-group/sizes.tsx",
+  },
+  "toggle-button-group-orientation": {
+    component: ToggleButtonGroupDemos.Orientation,
+    file: "toggle-button-group/orientation.tsx",
+  },
+  "toggle-button-group-attached": {
+    component: ToggleButtonGroupDemos.Attached,
+    file: "toggle-button-group/attached.tsx",
+  },
+  "toggle-button-group-full-width": {
+    component: ToggleButtonGroupDemos.FullWidth,
+    file: "toggle-button-group/full-width.tsx",
+  },
+  "toggle-button-group-selection-mode": {
+    component: ToggleButtonGroupDemos.SelectionMode,
+    file: "toggle-button-group/selection-mode.tsx",
+  },
+  "toggle-button-group-controlled": {
+    component: ToggleButtonGroupDemos.Controlled,
+    file: "toggle-button-group/controlled.tsx",
+  },
+  "toggle-button-group-disabled": {
+    component: ToggleButtonGroupDemos.Disabled,
+    file: "toggle-button-group/disabled.tsx",
+  },
+  "toggle-button-group-without-separator": {
+    component: ToggleButtonGroupDemos.WithoutSeparator,
+    file: "toggle-button-group/without-separator.tsx",
+  },
+  // Toolbar demos
+  "toolbar-basic": {
+    component: ToolbarDemos.Basic,
+    file: "toolbar/basic.tsx",
+  },
+  "toolbar-vertical": {
+    component: ToolbarDemos.Vertical,
+    file: "toolbar/vertical.tsx",
+  },
+  "toolbar-with-button-group": {
+    component: ToolbarDemos.WithButtonGroup,
+    file: "toolbar/with-button-group.tsx",
+  },
+  "toolbar-attached": {
+    component: ToolbarDemos.Attached,
+    file: "toolbar/custom-styles.tsx",
+  },
   // Tooltip demos
   "tooltip-basic": {
     component: TooltipDemos.Basic,
@@ -1526,6 +2030,10 @@ export const demos: Record<string, DemoItem> = {
     component: TooltipDemos.CustomTrigger,
     file: "tooltip/custom-trigger.tsx",
   },
+  "tooltip-custom-render-function": {
+    component: TooltipDemos.CustomRenderFunction,
+    file: "tooltip/custom-render-function.tsx",
+  },
   // Popover demos
   "popover-basic": {
     component: PopoverDemos.Basic,
@@ -1542,6 +2050,10 @@ export const demos: Record<string, DemoItem> = {
   "popover-interactive": {
     component: PopoverDemos.Interactive,
     file: "popover/interactive.tsx",
+  },
+  "popover-custom-render-function": {
+    component: PopoverDemos.CustomRenderFunction,
+    file: "popover/custom-render-function.tsx",
   },
   // Label demos
   "label-basic": {
@@ -1572,6 +2084,85 @@ export const demos: Record<string, DemoItem> = {
   "list-box-with-sections": {
     component: ListBoxDemos.WithSections,
     file: "list-box/with-sections.tsx",
+  },
+  "list-box-custom-render-function": {
+    component: ListBoxDemos.CustomRenderFunction,
+    file: "list-box/custom-render-function.tsx",
+  },
+  "list-box-virtualization": {
+    component: ListBoxDemos.Virtualization,
+    file: "list-box/virtualization.tsx",
+  },
+  // Meter demos
+  "meter-basic": {
+    component: MeterDemos.Basic,
+    file: "meter/basic.tsx",
+  },
+  "meter-sizes": {
+    component: MeterDemos.Sizes,
+    file: "meter/sizes.tsx",
+  },
+  "meter-colors": {
+    component: MeterDemos.Colors,
+    file: "meter/colors.tsx",
+  },
+  "meter-custom-value": {
+    component: MeterDemos.CustomValue,
+    file: "meter/custom-value.tsx",
+  },
+  "meter-without-label": {
+    component: MeterDemos.WithoutLabel,
+    file: "meter/without-label.tsx",
+  },
+  // ProgressBar demos
+  "progress-bar-basic": {
+    component: ProgressBarDemos.Basic,
+    file: "progress-bar/basic.tsx",
+  },
+  "progress-bar-sizes": {
+    component: ProgressBarDemos.Sizes,
+    file: "progress-bar/sizes.tsx",
+  },
+  "progress-bar-colors": {
+    component: ProgressBarDemos.Colors,
+    file: "progress-bar/colors.tsx",
+  },
+  "progress-bar-indeterminate": {
+    component: ProgressBarDemos.Indeterminate,
+    file: "progress-bar/indeterminate.tsx",
+  },
+  "progress-bar-custom-value": {
+    component: ProgressBarDemos.CustomValue,
+    file: "progress-bar/custom-value.tsx",
+  },
+  "progress-bar-without-label": {
+    component: ProgressBarDemos.WithoutLabel,
+    file: "progress-bar/without-label.tsx",
+  },
+  // ProgressCircle demos
+  "progress-circle-basic": {
+    component: ProgressCircleDemos.Basic,
+    file: "progress-circle/basic.tsx",
+  },
+  "progress-circle-sizes": {
+    component: ProgressCircleDemos.Sizes,
+    file: "progress-circle/sizes.tsx",
+  },
+  "progress-circle-colors": {
+    component: ProgressCircleDemos.Colors,
+    file: "progress-circle/colors.tsx",
+  },
+  "progress-circle-indeterminate": {
+    component: ProgressCircleDemos.Indeterminate,
+    file: "progress-circle/indeterminate.tsx",
+  },
+  "progress-circle-with-label": {
+    component: ProgressCircleDemos.WithLabel,
+    file: "progress-circle/with-label.tsx",
+  },
+  "progress-circle-custom-svg": {
+    component: ProgressCircleDemos.CustomSvg,
+    file: "progress-circle/custom-svg.tsx",
   },
   // Modal demos
   "modal-default": {
@@ -1687,6 +2278,43 @@ export const demos: Record<string, DemoItem> = {
     component: NumberFieldDemos.Variants,
     file: "number-field/variants.tsx",
   },
+  "number-field-custom-render-function": {
+    component: NumberFieldDemos.CustomRenderFunction,
+    file: "number-field/custom-render-function.tsx",
+  },
+  // Pagination demos
+  "pagination-basic": {
+    component: PaginationDemos.Basic,
+    file: "pagination/basic.tsx",
+  },
+  "pagination-sizes": {
+    component: PaginationDemos.Sizes,
+    file: "pagination/sizes.tsx",
+  },
+  "pagination-with-ellipsis": {
+    component: PaginationDemos.WithEllipsis,
+    file: "pagination/with-ellipsis.tsx",
+  },
+  "pagination-simple-prev-next": {
+    component: PaginationDemos.SimplePrevNext,
+    file: "pagination/simple-prev-next.tsx",
+  },
+  "pagination-with-summary": {
+    component: PaginationDemos.WithSummary,
+    file: "pagination/with-summary.tsx",
+  },
+  "pagination-custom-icons": {
+    component: PaginationDemos.CustomIcons,
+    file: "pagination/custom-icons.tsx",
+  },
+  "pagination-controlled": {
+    component: PaginationDemos.Controlled,
+    file: "pagination/controlled.tsx",
+  },
+  "pagination-disabled": {
+    component: PaginationDemos.Disabled,
+    file: "pagination/disabled.tsx",
+  },
   // Select demos
   "select-default": {
     component: SelectDemos.Default,
@@ -1756,6 +2384,10 @@ export const demos: Record<string, DemoItem> = {
     component: SelectDemos.Variants,
     file: "select/variants.tsx",
   },
+  "select-custom-render-function": {
+    component: SelectDemos.CustomRenderFunction,
+    file: "select/custom-render-function.tsx",
+  },
   // SearchField demos
   "search-field-basic": {
     component: SearchFieldDemos.Basic,
@@ -1809,6 +2441,10 @@ export const demos: Record<string, DemoItem> = {
     component: SearchFieldDemos.Variants,
     file: "search-field/variants.tsx",
   },
+  "search-field-custom-render-function": {
+    component: SearchFieldDemos.CustomRenderFunction,
+    file: "search-field/custom-render-function.tsx",
+  },
   // ScrollShadow demos
   "scroll-shadow-default": {
     component: ScrollShadowDemos.Default,
@@ -1850,6 +2486,10 @@ export const demos: Record<string, DemoItem> = {
   "slider-disabled": {
     component: SliderDemos.Disabled,
     file: "slider/disabled.tsx",
+  },
+  "slider-custom-render-function": {
+    component: SliderDemos.CustomRenderFunction,
+    file: "slider/custom-render-function.tsx",
   },
   // Description demos
   "description-basic": {

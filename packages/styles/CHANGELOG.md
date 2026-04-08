@@ -5,3 +5,16 @@
 ### Patch Changes
 
 - [`bf3ba4a`](https://github.com/vezham/heroui-v3/commit/bf3ba4af764fec69fc65490ff4f29c5b90eef67a) Thanks [@vx-vigneshwaran](https://github.com/vx-vigneshwaran)! - init beta ver sync
+# @heroui/styles
+
+## 3.0.1
+
+### Patch Changes
+
+- README updated
+
+## 3.0.0
+
+### Patch Changes
+
+- v3.0.0

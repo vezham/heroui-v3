@@ -2,6 +2,7 @@
 
 import type {Key} from "@vx-oss/heroui-v3-react";
 
+import {Autocomplete, EmptyState, Label, ListBox, SearchField, useFilter} from "@heroui/react";
 import {Icon} from "@iconify/react";
 import {Autocomplete, Label, ListBox, SearchField, useFilter} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
@@ -44,7 +45,7 @@ export function CustomIndicator() {
               <SearchField.ClearButton />
             </SearchField.Group>
           </SearchField>
-          <ListBox>
+          <ListBox renderEmptyState={() => <EmptyState>No results found</EmptyState>}>
             {items.map((item) => (
               <ListBox.Item key={item.id} id={item.id} textValue={item.name}>
                 {item.name}

@@ -1,5 +1,7 @@
 export {Basic} from "./basic";
+export {Controlled} from "./controlled";
 export {CustomIndicator} from "./custom-indicator";
+export {CustomRenderFunction} from "./custom-render-function";
 export {Disabled} from "./disabled";
 export {FAQ} from "./faq";
 export {Multiple} from "./multiple";

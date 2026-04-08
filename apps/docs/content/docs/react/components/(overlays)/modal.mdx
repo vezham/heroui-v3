@@ -11,7 +11,7 @@ links:
 ## Import
 
 ```tsx
-import {Modal} from "@vx-oss/heroui-v3-react";
+import { Modal } from "@heroui/react";
 ```
 
 ### Usage
@@ -23,7 +23,7 @@ import {Modal} from "@vx-oss/heroui-v3-react";
 Import the Modal component and access all parts using dot notation.
 
 ```tsx
-import {Modal, Button} from "@vx-oss/heroui-v3-react";
+import {Modal, Button} from "@heroui/react";
 
 export default () => (
   <Modal>
@@ -98,7 +98,7 @@ export default () => (
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {Modal, Button} from "@vx-oss/heroui-v3-react";
+import {Modal, Button} from "@heroui/react";
 
 function CustomModal() {
   return (
@@ -156,7 +156,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The Modal component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/modal.css)):
+The Modal component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/modal.css)):
 
 #### Base Classes
 
@@ -271,7 +271,7 @@ The component supports these interactive states:
 ### useOverlayState Hook
 
 ```tsx
-import {useOverlayState} from "@vx-oss/heroui-v3-react";
+import {useOverlayState} from "@heroui/react";
 
 const state = useOverlayState({
   defaultOpen: false,

@@ -136,7 +136,7 @@ function buildColorVarsCSS(
  * Generates CSS variables that users can copy-paste into their global.css.
  * Generates comprehensive theme colors based on hue, chroma, and lightness.
  *
- * @see https://v3.heroui.com/docs/react/getting-started/theming
+ * @see https://heroui.com/docs/react/getting-started/theming
  * @param customFont - Optional custom font info when using a CDN font
  */
 export function generateCssVariables(
@@ -294,8 +294,8 @@ export function generateCssVariables(
 
     return `/*
  * HeroUI Theme Customization
- * Add this to your global.css after importing @vx-oss/heroui-v3-styles
- * @see https://v3.heroui.com/docs/react/getting-started/theming
+ * Add this to your global.css after importing @heroui/styles
+ * @see https://heroui.com/docs/react/getting-started/theming
  */
 
 :root,
@@ -323,8 +323,8 @@ ${darkVarsCSS}
 
   return `/*
  * HeroUI Theme Customization
- * Add this to your global.css after importing @vx-oss/heroui-v3-styles
- * @see https://v3.heroui.com/docs/react/getting-started/theming
+ * Add this to your global.css after importing @heroui/styles
+ * @see https://heroui.com/docs/react/getting-started/theming
  */
 
 :root,
@@ -423,7 +423,7 @@ export function generateMinimalCssVariables(
  * HeroUI Theme Customization
  * Add this to your global.css after importing @vx-oss/heroui-v3-styles
  * Only includes base variables from variables.css
- * @see https://v3.heroui.com/docs/react/getting-started/theming
+ * @see https://heroui.com/docs/react/getting-started/theming
  */
 
 :root,

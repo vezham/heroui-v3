@@ -110,9 +110,20 @@ export default function CustomSearchDialog(props: SharedProps) {
   const searchMap = useMemo(() => {
     const map = new Map<string, Item>();
     const tagPrefix = selectedTag === "web" ? "/docs/react/" : "/docs/native/";
+    const releasePrefix =
+      selectedTag === "web" ? "/docs/react/releases/" : "/docs/native/releases/";
+    const migrationPrefix = "/docs/react/migration";
 
     for (const page of allPages) {
-      if (page.url?.startsWith(tagPrefix) && typeof page.name === "string") {
+      const isMigrationSubPage =
+        page.url?.startsWith(migrationPrefix) && page.url !== migrationPrefix;
+
+      if (
+        page.url?.startsWith(tagPrefix) &&
+        !page.url.startsWith(releasePrefix) &&
+        !isMigrationSubPage &&
+        typeof page.name === "string"
+      ) {
         map.set(page.name.toLowerCase(), page);
       }
     }
@@ -173,6 +184,25 @@ export default function CustomSearchDialog(props: SharedProps) {
     }
   }
 
+  const releasesPath = useMemo(() => {
+    return `/docs/${selectedTag === "web" ? "react" : "native"}/releases`;
+  }, [selectedTag]);
+
+  const migrationPath = "/docs/react/migration";
+
+  const queryData = useMemo(() => {
+    if (!query.data || query.data === "empty") return null;
+
+    return query.data.filter((item) => {
+      if (item.url.startsWith(releasesPath)) return false;
+      if (item.url.startsWith(migrationPath) && item.url !== migrationPath) {
+        return false;
+      }
+
+      return true;
+    });
+  }, [query.data, releasesPath, migrationPath]);
+
   return (
     <SearchDialog
       isLoading={query.isLoading}
@@ -182,7 +212,7 @@ export default function CustomSearchDialog(props: SharedProps) {
       {...restProps}
     >
       <SearchDialogOverlay />
-      <SearchDialogContent className="border-none">
+      <SearchDialogContent className="border-none bg-surface">
         <div className="border-none px-2 pt-2">
           <TagGroup
             disallowEmptySelection
@@ -207,15 +237,16 @@ export default function CustomSearchDialog(props: SharedProps) {
           <SearchDialogClose />
         </SearchDialogHeader>
         <SearchDialogList
+          className="**:aria-selected:bg-default **:aria-selected:text-foreground"
           items={
             search.length === 0
               ? defaultSuggestions.length > 0
                 ? defaultSuggestions
                 : null
-              : query.data !== "empty" || pageTreeAction
+              : queryData || pageTreeAction
                 ? [
                     ...(pageTreeAction ? [pageTreeAction] : []),
-                    ...(Array.isArray(query.data) ? query.data : []),
+                    ...(Array.isArray(queryData) ? queryData : []),
                   ]
                 : null
           }

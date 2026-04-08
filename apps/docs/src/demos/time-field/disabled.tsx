@@ -1,7 +1,8 @@
 "use client";
 
+import {Description, Label, TimeField} from "@heroui/react";
 import {Time, getLocalTimeZone, now} from "@internationalized/date";
-import {DateInputGroup, Description, Label, TimeField} from "@vx-oss/heroui-v3-react";
+import {Description, Label, TimeField} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   const currentTime = now(getLocalTimeZone());
@@ -11,20 +12,16 @@ export function Disabled() {
     <div className="flex flex-col gap-4">
       <TimeField isDisabled className="w-[256px]" name="time" value={timeValue}>
         <Label>Time</Label>
-        <DateInputGroup>
-          <DateInputGroup.Input>
-            {(segment) => <DateInputGroup.Segment segment={segment} />}
-          </DateInputGroup.Input>
-        </DateInputGroup>
+        <TimeField.Group>
+          <TimeField.Input>{(segment) => <TimeField.Segment segment={segment} />}</TimeField.Input>
+        </TimeField.Group>
         <Description>This time field is disabled</Description>
       </TimeField>
       <TimeField isDisabled className="w-[256px]" name="time-empty">
         <Label>Time</Label>
-        <DateInputGroup>
-          <DateInputGroup.Input>
-            {(segment) => <DateInputGroup.Segment segment={segment} />}
-          </DateInputGroup.Input>
-        </DateInputGroup>
+        <TimeField.Group>
+          <TimeField.Input>{(segment) => <TimeField.Segment segment={segment} />}</TimeField.Input>
+        </TimeField.Group>
         <Description>This time field is disabled</Description>
       </TimeField>
     </div>

@@ -60,6 +60,13 @@ export default () => (
    minHeight="524px"
 />
 
+### Controlled
+
+<ComponentPreview
+  name="accordion-controlled"
+  minHeight="400px"
+/>
+
 ### Custom Indicator
 
 <ComponentPreview
@@ -92,6 +99,13 @@ export default () => (
 
 <ComponentPreview
   name="accordion-without-separator"
+  minHeight="400px"
+/>
+
+### Custom Render Function
+
+<ComponentPreview
+  name="accordion-custom-render-function"
   minHeight="400px"
 />
 
@@ -237,6 +251,8 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 | `hideSeparator` | `boolean` | `false` | Hide separator lines between accordion items |
 | `className` | `string` | - | Additional CSS classes |
 | `children` | `ReactNode` | - | The accordion items |
+| `render` | `DOMRenderFunction<keyof React.JSX.IntrinsicElements, AccordionRenderProps>` | - | Overrides the default DOM element with a custom render function.|
+
 
 ### Accordion.Item Props
 
@@ -249,6 +265,7 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 | `onExpandedChange` | `(isExpanded: boolean) => void` | - | Handler for expanded state changes |
 | `className` | `string` | - | Additional CSS classes |
 | `children` | `ReactNode` | - | The item content |
+| `render` | `DOMRenderFunction<keyof React.JSX.IntrinsicElements, AccordionItemRenderProps>` | - | Overrides the default DOM element with a custom render function.|
 
 ### Accordion.Trigger Props
 
@@ -258,6 +275,7 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 | `children` | `ReactNode \| RenderFunction` | - | Trigger content or render function |
 | `onPress` | `() => void` | - | Additional press handler |
 | `isDisabled` | `boolean` | - | Whether trigger is disabled |
+| `render` | `DOMRenderFunction<keyof React.JSX.IntrinsicElements, TriggerRenderProps>` | - | Overrides the default DOM element with a custom render function.|
 
 ### Accordion.Panel Props
 
@@ -265,6 +283,7 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 |------|------|---------|-------------|
 | `className` | `string` | - | Additional CSS classes |
 | `children` | `ReactNode` | - | Panel content |
+| `render` | `DOMRenderFunction<keyof React.JSX.IntrinsicElements, AccordionPanelRenderProps>` | - | Overrides the default DOM element with a custom render function.|
 
 ### Accordion.Indicator Props
 
