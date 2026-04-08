@@ -1,7 +1,7 @@
 "use client";
 
-import {Spinner} from "@heroui/react";
 import {UNSAFE_PortalProvider} from "@react-aria/overlays";
+import {Spinner} from "@vx-oss/heroui-v3-react";
 import {useTheme} from "next-themes";
 import {useCallback, useEffect, useMemo, useRef, useState} from "react";
 

@@ -46,6 +46,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {progressCircleVariants} from "@heroui/styles";
+export {progressCircleVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ProgressCircleVariants} from "@heroui/styles";
+export type {ProgressCircleVariants} from "@vx-oss/heroui-v3-styles";

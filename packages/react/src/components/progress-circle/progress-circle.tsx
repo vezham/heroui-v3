@@ -1,10 +1,10 @@
 "use client";
 
-import type {ProgressCircleVariants} from "@heroui/styles";
+import type {ProgressCircleVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {ProgressBarRenderProps} from "react-aria-components";
 
-import {progressCircleVariants} from "@heroui/styles";
+import {progressCircleVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {ProgressBar as ProgressBarPrimitive} from "react-aria-components";
 

@@ -41,6 +41,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {progressBarVariants} from "@heroui/styles";
+export {progressBarVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ProgressBarVariants} from "@heroui/styles";
+export type {ProgressBarVariants} from "@vx-oss/heroui-v3-styles";

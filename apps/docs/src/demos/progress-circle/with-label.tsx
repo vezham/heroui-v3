@@ -1,4 +1,4 @@
-import {Label, ProgressCircle} from "@heroui/react";
+import {Label, ProgressCircle} from "@vx-oss/heroui-v3-react";
 
 export function WithLabel() {
   return (

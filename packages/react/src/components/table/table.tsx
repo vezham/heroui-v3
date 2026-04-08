@@ -1,9 +1,9 @@
 "use client";
 
-import type {TableVariants} from "@heroui/styles";
+import type {TableVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {tableVariants} from "@heroui/styles";
+import {tableVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   Cell as CellPrimitive,

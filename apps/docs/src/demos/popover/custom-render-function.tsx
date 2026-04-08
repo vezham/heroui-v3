@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Popover} from "@heroui/react";
+import {Button, Popover} from "@vx-oss/heroui-v3-react";
 
 export function CustomRenderFunction() {
   return (

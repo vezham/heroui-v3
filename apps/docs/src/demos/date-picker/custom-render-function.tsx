@@ -1,6 +1,6 @@
 "use client";
 
-import {Calendar, DateField, DatePicker, Label} from "@heroui/react";
+import {Calendar, DateField, DatePicker, Label} from "@vx-oss/heroui-v3-react";
 
 export function CustomRenderFunction() {
   return (

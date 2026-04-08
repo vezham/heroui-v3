@@ -1,10 +1,10 @@
 "use client";
 
-import type {CalendarYearPickerVariants} from "@heroui/styles";
+import type {CalendarYearPickerVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {calendarYearPickerVariants} from "@heroui/styles";
 import {useDateFormatter} from "@react-aria/i18n";
+import {calendarYearPickerVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 import {Button as ButtonPrimitive} from "react-aria-components";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, SearchField} from "@heroui/react";
+import {Label, SearchField} from "@vx-oss/heroui-v3-react";
 
 export function CustomRenderFunction() {
   return (

@@ -1,9 +1,9 @@
 "use client";
 
-import type {TimeValue} from "@heroui/react";
+import type {TimeValue} from "@vx-oss/heroui-v3-react";
 
-import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@heroui/react";
 import {getLocalTimeZone, parseZonedDateTime} from "@internationalized/date";
+import {DateField, DateRangePicker, Label, RangeCalendar, TimeField} from "@vx-oss/heroui-v3-react";
 
 export function InputContainer() {
   const localTimeZone = getLocalTimeZone();

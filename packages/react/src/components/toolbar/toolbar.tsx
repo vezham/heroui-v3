@@ -1,9 +1,9 @@
 "use client";
 
-import type {ToolbarVariants} from "@heroui/styles";
+import type {ToolbarVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {toolbarVariants} from "@heroui/styles";
+import {toolbarVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 import {
   SeparatorContext,

@@ -5,8 +5,8 @@ import type {SurfaceVariants} from "../surface";
 import type {AutocompleteVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, RefObject} from "react";
 
-import {autocompleteVariants} from "@heroui/styles";
 import {mergeRefs, useResizeObserver} from "@react-aria/utils";
+import {autocompleteVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useCallback, useContext, useRef, useState} from "react";
 import {
   Autocomplete as AutocompletePrimitive,

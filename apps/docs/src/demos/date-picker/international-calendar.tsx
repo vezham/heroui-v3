@@ -1,7 +1,7 @@
 "use client";
 
-import {Calendar, DateField, DatePicker, Label} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {Calendar, DateField, DatePicker, Label} from "@vx-oss/heroui-v3-react";
 import {I18nProvider} from "react-aria-components";
 
 export function InternationalCalendar() {

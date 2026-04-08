@@ -12,7 +12,7 @@ links:
 ## Import
 
 ```tsx
-import { Autocomplete, useFilter } from "@heroui/react";
+import { Autocomplete, useFilter } from "@vx-oss/heroui-v3-react";
 ```
 
 ### Usage
@@ -24,7 +24,7 @@ import { Autocomplete, useFilter } from "@heroui/react";
 Import the Autocomplete component and access all parts using dot notation.
 
 ```tsx
-import {Autocomplete, Label, Description, SearchField, ListBox} from "@heroui/react";
+import {Autocomplete, Label, Description, SearchField, ListBox} from "@vx-oss/heroui-v3-react";
 
 export default () => (
   <Autocomplete>
@@ -159,7 +159,7 @@ You can customize the displayed value using render props:
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {Autocomplete, SearchField, ListBox} from "@heroui/react";
+import {Autocomplete, SearchField, ListBox} from "@vx-oss/heroui-v3-react";
 
 function CustomAutocomplete() {
   return (
@@ -229,7 +229,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The Autocomplete component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/autocomplete.css)):
+The Autocomplete component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/autocomplete.css)):
 
 #### Base Classes
 
@@ -340,7 +340,7 @@ The component supports both CSS pseudo-classes and data attributes for flexibili
 The `useFilter` hook from React Aria provides filtering functions for autocomplete functionality.
 
 ```tsx
-import {useFilter} from "@heroui/react";
+import {useFilter} from "@vx-oss/heroui-v3-react";
 
 const {contains} = useFilter({sensitivity: "base"});
 

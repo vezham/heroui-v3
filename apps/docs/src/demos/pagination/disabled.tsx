@@ -1,6 +1,6 @@
 "use client";
 
-import {Pagination} from "@heroui/react";
+import {Pagination} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function PaginationDisabled() {

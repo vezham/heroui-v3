@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, CloseButton, buttonVariants} from "@heroui/react";
+import {Button, CloseButton, buttonVariants} from "@vx-oss/heroui-v3-react";
 import {Calligraph} from "calligraph";
 import {AnimatePresence, motion} from "motion/react";
 import {useEffect, useState, useSyncExternalStore} from "react";

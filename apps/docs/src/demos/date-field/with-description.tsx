@@ -1,6 +1,6 @@
 "use client";
 
-import {DateField, Description, Label} from "@heroui/react";
+import {DateField, Description, Label} from "@vx-oss/heroui-v3-react";
 
 export function WithDescription() {
   return (

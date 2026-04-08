@@ -50,7 +50,7 @@
     "version:bump": "bumpp package.json packages/react/package.json packages/styles/package.json",
     "release:canary": "changeset publish --snapshot --no-git-tag --tag canary",
     "clean": "pnpm clean:cache && pnpm i",
-    "clean:cache": "find . \\( -name '.turbo' -o -name '.next' -o -name 'dist' -o -name 'node_modules' -o -name '.source' -o -name '.contentlayer' -o -name 'pnpm-lock.yaml' \\) -prune -exec rm -rf '{}' +",
+    "clean:cache": "find . \\( -name '.turbo' -o -name '.next' -o -name 'dist' -o -name 'node_modules' -o -name '.source' -o -name '.contentlayer' -o -name '.rollup.cache' -o -name 'pnpm-lock.yaml' \\) -prune -exec rm -rf '{}' +",
     "upli": "pnpm up --filter \"./**\"  -L -i",
     "prepare": "husky",
     "postinstall": "pnpm --filter @vx-oss/heroui-v3-styles build && pnpm typegen:docs"

@@ -2,8 +2,8 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Description, RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {Description, RangeCalendar} from "@vx-oss/heroui-v3-react";
 
 export function UnavailableDates() {
   const now = today(getLocalTimeZone());

@@ -2,7 +2,7 @@
 
 import type {Color} from "@vx-oss/heroui-v3-react";
 
-import {Button, ColorField, ColorSwatch, Description, Form, Label} from "@heroui/react";
+import {Button, ColorField, ColorSwatch, Description, Form, Label} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function FormExample() {

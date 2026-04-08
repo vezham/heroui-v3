@@ -1,6 +1,6 @@
 "use client";
 
-import {Pagination, Table} from "@heroui/react";
+import {Pagination, Table} from "@vx-oss/heroui-v3-react";
 import {useMemo, useState} from "react";
 
 const columns = [

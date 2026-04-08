@@ -1,6 +1,6 @@
 {
   "name": "@vx-oss/heroui-v3-styles",
-  "version": "3.0.0-beta.7",
+  "version": "3.0.2",
   "description": "HeroUI core styles and Tailwind plugin",
   "author": "Vx OSS Devs <oss-developers@vezham.com>",
   "homepage": "https://vezham.com",

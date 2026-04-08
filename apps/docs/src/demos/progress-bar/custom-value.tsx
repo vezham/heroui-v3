@@ -1,6 +1,6 @@
 "use client";
 
-import {Label, ListBox, NumberField, ProgressBar, Select, Separator} from "@heroui/react";
+import {Label, ListBox, NumberField, ProgressBar, Select, Separator} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 const formatStyleOptions: {label: string; value: string}[] = [

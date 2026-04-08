@@ -34,7 +34,7 @@ curl -fsSL https://heroui.com/install | bash -s heroui-migration
 | Event handlers | `onClick`                 | `onPress`                              |
 | Styling       | `classNames` prop         | `className` prop                       |
 | Hooks         | `useSwitch`, `useDisclosure`, etc. | Compound components, `useOverlayState` |
-| Packages      | `@heroui/system`, `@heroui/theme` | `@heroui/react`, `@heroui/styles` |
+| Packages      | `@vx-oss/heroui-v3-system`, `@vx-oss/heroui-v3-theme` | `@vx-oss/heroui-v3-react`, `@vx-oss/heroui-v3-styles` |
 
 ---
 

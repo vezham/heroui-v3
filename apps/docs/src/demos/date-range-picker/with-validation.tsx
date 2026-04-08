@@ -2,8 +2,14 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {DateField, DateRangePicker, FieldError, Label, RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {
+  DateField,
+  DateRangePicker,
+  FieldError,
+  Label,
+  RangeCalendar,
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 type DateRange = {

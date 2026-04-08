@@ -140,7 +140,7 @@ Add the HeroUI server to your `~/.codex/config.toml` (or a project-scoped `.code
 ```toml title="config.toml"
 [mcp_servers.heroui-react]
 command = "npx"
-args = ["-y", "@heroui/react-mcp@latest"]
+args = ["-y", "@vx-oss/heroui-v3-react-mcp@latest"]
 ```
 
 After adding the configuration, restart Codex and run `/mcp` in the TUI to verify the server is active.
@@ -157,7 +157,7 @@ Add the HeroUI server to your project's `opencode.json` configuration file:
   "mcp": {
     "heroui-react": {
       "type": "local",
-      "command": ["npx", "-y", "@heroui/react-mcp@latest"]
+      "command": ["npx", "-y", "@vx-oss/heroui-v3-react-mcp@latest"]
     }
   }
 }

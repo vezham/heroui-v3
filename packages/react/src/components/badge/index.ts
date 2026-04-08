@@ -33,6 +33,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {badgeVariants} from "@heroui/styles";
+export {badgeVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {BadgeVariants} from "@heroui/styles";
+export type {BadgeVariants} from "@vx-oss/heroui-v3-styles";

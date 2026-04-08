@@ -1,8 +1,8 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@vx-oss/heroui-v3-react";
 
-import {Checkbox, Table} from "@heroui/react";
+import {Checkbox, Table} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 const users = [

@@ -21,7 +21,7 @@ import { ColorField, parseColor } from '@vx-oss/heroui-v3-react';
 ### Anatomy
 
 ```tsx
-import {ColorField, Label, ColorSwatch, Description, FieldError, parseColor} from '@heroui/react';
+import {ColorField, Label, ColorSwatch, Description, FieldError, parseColor} from '@vx-oss/heroui-v3-react';
 
 export default () => (
   <ColorField>
@@ -108,7 +108,7 @@ Complete form example with validation and submission handling.
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {ColorField, Label, ColorSwatch, Description} from '@heroui/react';
+import {ColorField, Label, ColorSwatch, Description} from '@vx-oss/heroui-v3-react';
 
 function CustomColorField() {
   return (
@@ -241,18 +241,18 @@ ColorField inherits all props from React Aria's [ColorField](https://react-aria.
 
 ColorField works with these separate components that should be imported and used directly:
 
-- **Label** - Field label component from `@heroui/react`
+- **Label** - Field label component from `@vx-oss/heroui-v3-react`
 - **ColorField.Group** - Color input group component (documented below)
 - **ColorField.Input** - Input element within ColorField.Group
 - **ColorField.Prefix** / **ColorField.Suffix** - Prefix and suffix slots for the input group
-- **ColorSwatch** - Color preview component from `@heroui/react`
-- **Description** - Helper text component from `@heroui/react`
-- **FieldError** - Validation error message from `@heroui/react`
+- **ColorSwatch** - Color preview component from `@vx-oss/heroui-v3-react`
+- **Description** - Helper text component from `@vx-oss/heroui-v3-react`
+- **FieldError** - Validation error message from `@vx-oss/heroui-v3-react`
 
 Each of these components has its own props API. Use them directly within ColorField for composition:
 
 ```tsx
-import {ColorField, Label, ColorSwatch, Description, FieldError, parseColor} from '@heroui/react';
+import {ColorField, Label, ColorSwatch, Description, FieldError, parseColor} from '@vx-oss/heroui-v3-react';
 
 <ColorField
   isRequired

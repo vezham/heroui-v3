@@ -1,4 +1,4 @@
-import {ProgressBar} from "@heroui/react";
+import {ProgressBar} from "@vx-oss/heroui-v3-react";
 
 export function WithoutLabel() {
   return (

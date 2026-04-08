@@ -1,9 +1,9 @@
 "use client";
 
-import type {SortDescriptor} from "@heroui/react";
+import type {SortDescriptor} from "@vx-oss/heroui-v3-react";
 
-import {Table, cn} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {Table, cn} from "@vx-oss/heroui-v3-react";
 import {useMemo, useState} from "react";
 
 interface User {

@@ -27,22 +27,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles@beta @heroui/react@beta
+    npm i @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles@beta @heroui/react@beta
+    pnpm add @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles@beta @heroui/react@beta
+    yarn add @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles@beta @heroui/react@beta
+    bun add @vx-oss/heroui-v3-styles@beta @vx-oss/heroui-v3-react@beta
     ```
   </Tab>
 </Tabs>
@@ -134,11 +134,11 @@ Two date fields + popover range calendar.
 
 ### Switch.Content
 
-`Switch.Content` groups label and description next to the switch control ([#6240](https://github.com/heroui-inc/heroui/pull/6240)).
+`Switch.Content` groups label and description next to the switch control ([#6240](https://github.com/vezham/heroui-v3/pull/6240)).
 
 **Before:**
 ```tsx
-import { Switch, Label, Description } from '@heroui/react';
+import { Switch, Label, Description } from '@vx-oss/heroui-v3-react';
 
 <Switch>
   <Switch.Control>
@@ -153,7 +153,7 @@ import { Switch, Label, Description } from '@heroui/react';
 
 ### Tabs.Separator
 
-The [Tabs](/docs/components/tabs) component now includes an explicit `Tabs.Separator` sub-component for adding visual separator lines between tabs. This replaces the previous automatic CSS pseudo-element separator and the `hideSeparator` prop ([#6243](https://github.com/heroui-inc/heroui/pull/6243)).
+The [Tabs](/docs/components/tabs) component now includes an explicit `Tabs.Separator` sub-component for adding visual separator lines between tabs. This replaces the previous automatic CSS pseudo-element separator and the `hideSeparator` prop ([#6243](https://github.com/vezham/heroui-v3/pull/6243)).
 
 Separators are now **opt-in** — add `<Tabs.Separator />` inside each `<Tabs.Tab>` where you want a separator line.
 
@@ -168,7 +168,7 @@ Separators are now **opt-in** — add `<Tabs.Separator />` inside each `<Tabs.Ta
 
 ### Breadcrumbs Fix
 
-Props passed to `Breadcrumbs.Item` are now forwarded to the underlying `Link` ([#6233](https://github.com/heroui-inc/heroui/pull/6233)).
+Props passed to `Breadcrumbs.Item` are now forwarded to the underlying `Link` ([#6233](https://github.com/vezham/heroui-v3/pull/6233)).
 
 ## Style Fixes
 
@@ -188,7 +188,7 @@ Props passed to `Breadcrumbs.Item` are now forwarded to the underlying `Link` ([
 
 ### Tabs — `hideSeparator` Prop Removed
 
-The `hideSeparator` prop has been removed from the Tabs component. Separators are now **opt-in** using the new `<Tabs.Separator />` sub-component instead of being automatically generated via CSS pseudo-elements ([#6243](https://github.com/heroui-inc/heroui/pull/6243)).
+The `hideSeparator` prop has been removed from the Tabs component. Separators are now **opt-in** using the new `<Tabs.Separator />` sub-component instead of being automatically generated via CSS pseudo-elements ([#6243](https://github.com/vezham/heroui-v3/pull/6243)).
 
 **Before:**
 ```tsx
@@ -218,13 +218,13 @@ The `hideSeparator` prop has been removed from the Tabs component. Separators ar
 
 ### Field Sub-Component API Changes
 
-`DateInputGroup` and `ColorInputGroup` are no longer exported directly from `@heroui/react`. Their sub-components have been consolidated under their respective field components (`DateField`, `TimeField`, `ColorField`).
+`DateInputGroup` and `ColorInputGroup` are no longer exported directly from `@vx-oss/heroui-v3-react`. Their sub-components have been consolidated under their respective field components (`DateField`, `TimeField`, `ColorField`).
 
 #### DateField Changes
 
 **Before:**
 ```tsx
-import {DateField, Label, DateInputGroup, Description} from '@heroui/react';
+import {DateField, Label, DateInputGroup, Description} from '@vx-oss/heroui-v3-react';
 
 <DateField>
   <Label>Date</Label>
@@ -241,7 +241,7 @@ import {DateField, Label, DateInputGroup, Description} from '@heroui/react';
 
 **After:**
 ```tsx
-import {DateField, Label, Description} from '@heroui/react';
+import {DateField, Label, Description} from '@vx-oss/heroui-v3-react';
 
 <DateField>
   <Label>Date</Label>
@@ -280,7 +280,7 @@ Same pattern as DateField:
 **Usage:**
 
 ```tsx
-import {ColorField, Label, ColorInputGroup, ColorSwatch} from '@heroui/react';
+import {ColorField, Label, ColorInputGroup, ColorSwatch} from '@vx-oss/heroui-v3-react';
 
 <ColorField>
   <Label>Color</Label>
@@ -295,7 +295,7 @@ import {ColorField, Label, ColorInputGroup, ColorSwatch} from '@heroui/react';
 
 **After:**
 ```tsx
-import {ColorField, Label, ColorSwatch} from '@heroui/react';
+import {ColorField, Label, ColorSwatch} from '@vx-oss/heroui-v3-react';
 
 <ColorField>
   <Label>Color</Label>
@@ -314,8 +314,8 @@ import {ColorField, Label, ColorSwatch} from '@heroui/react';
 
 - [Component Documentation](/docs/react/components)
 - [Design System - Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
-- [GitHub Repository](https://github.com/heroui-inc/heroui)
-- [GitHub PR #6237](https://github.com/heroui-inc/heroui/pull/6237)
+- [GitHub Repository](https://github.com/vezham/heroui-v3)
+- [GitHub PR #6237](https://github.com/vezham/heroui-v3/pull/6237)
 
 ## Contributors
 

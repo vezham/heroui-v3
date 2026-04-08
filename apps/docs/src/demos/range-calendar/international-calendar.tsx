@@ -1,6 +1,6 @@
 "use client";
 
-import {RangeCalendar} from "@heroui/react";
+import {RangeCalendar} from "@vx-oss/heroui-v3-react";
 import {I18nProvider} from "react-aria-components";
 
 export function InternationalCalendar() {

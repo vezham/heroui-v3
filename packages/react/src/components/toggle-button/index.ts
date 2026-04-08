@@ -27,6 +27,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {toggleButtonVariants} from "@heroui/styles";
+export {toggleButtonVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ToggleButtonVariants} from "@heroui/styles";
+export type {ToggleButtonVariants} from "@vx-oss/heroui-v3-styles";

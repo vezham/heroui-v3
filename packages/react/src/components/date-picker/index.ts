@@ -41,6 +41,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {datePickerVariants} from "@heroui/styles";
+export {datePickerVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {DatePickerVariants} from "@heroui/styles";
+export type {DatePickerVariants} from "@vx-oss/heroui-v3-styles";

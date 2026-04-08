@@ -1,10 +1,10 @@
 "use client";
 
-import type {MeterVariants} from "@heroui/styles";
+import type {MeterVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {MeterRenderProps} from "react-aria-components";
 
-import {meterVariants} from "@heroui/styles";
+import {meterVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Meter as MeterPrimitive} from "react-aria-components";
 

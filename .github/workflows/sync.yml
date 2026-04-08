@@ -3,12 +3,12 @@ name: sync with upstream
 
 on:
   schedule:
-    - cron: '0 23 * * 2,5' # every Wed, Sat at 04:30 AM IST
+    - cron: "0 23 * * 2,5" # every Wed, Sat at 04:30 AM IST
   workflow_dispatch:
   push:
     branches: [timeline]
     paths:
-      - '.github/workflows/sync.yml'
+      - ".github/workflows/sync.yml"
     #   - ".changeset/**"
     #   - "packages/**"
 
@@ -91,14 +91,14 @@ jobs:
           else
             echo "⚠️ upstream/${{ env.UPSTREAM_BRANCH }} not found. Skipping merge."
           fi
-      
+
       - name: 🔵 · 🔁 Retry Merge on Conflict
         run: |
           if ! git diff --quiet --merge-base upstream/${{ env.UPSTREAM_BRANCH }} origin/${{ env.BRANCH }}; then
             echo "⚠️ Merge conflict detected. Retrying with rebase..."
             git rebase upstream/${{ env.UPSTREAM_BRANCH }} || git rebase --abort
           fi
-      
+
       - name: 🔵 · 🧹 Skip PR if No Changes
         run: |
           if git diff --quiet; then
@@ -107,20 +107,20 @@ jobs:
           else
             echo "🟢 Changes detected — continuing."
           fi
-      
+
       - name: 🔵 · 📤 Push Sync Branch
         if: env.SKIP_PR != 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           SYNC_BRANCH="sync/${{ env.BRANCH }}"
-          
+
           echo "🪄 Ensuring remote branch '${SYNC_BRANCH}' exists..."
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ env.REPO }}.git"
-          
+
           echo "🪄 Pushing '${SYNC_BRANCH}' to origin..."
           git push origin "${SYNC_BRANCH}:${SYNC_BRANCH}" || git push -u origin "${SYNC_BRANCH}"
-      
+
       - name: 🟠 · 🚀 Create / Update Pull Request
         if: env.SKIP_PR != 'true'
         id: cpr

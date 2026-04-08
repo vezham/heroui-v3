@@ -24,6 +24,6 @@ export type {ToolbarRootProps, ToolbarRootProps as ToolbarProps} from "./toolbar
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {toolbarVariants} from "@heroui/styles";
+export {toolbarVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {ToolbarVariants} from "@heroui/styles";
+export type {ToolbarVariants} from "@vx-oss/heroui-v3-styles";

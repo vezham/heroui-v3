@@ -81,6 +81,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {drawerVariants} from "@heroui/styles";
+export {drawerVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {DrawerVariants} from "@heroui/styles";
+export type {DrawerVariants} from "@vx-oss/heroui-v3-styles";

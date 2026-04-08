@@ -1,4 +1,4 @@
-import {Label, ProgressBar} from "@heroui/react";
+import {Label, ProgressBar} from "@vx-oss/heroui-v3-react";
 
 export function Sizes() {
   return (

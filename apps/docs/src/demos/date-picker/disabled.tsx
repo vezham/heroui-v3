@@ -1,7 +1,7 @@
 "use client";
 
-import {Calendar, DateField, DatePicker, Description, Label} from "@heroui/react";
 import {getLocalTimeZone, today} from "@internationalized/date";
+import {Calendar, DateField, DatePicker, Description, Label} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

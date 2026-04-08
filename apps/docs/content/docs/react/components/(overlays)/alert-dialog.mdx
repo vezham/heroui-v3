@@ -11,7 +11,7 @@ links:
 ## Import
 
 ```tsx
-import { AlertDialog } from "@heroui/react";
+import { AlertDialog } from "@vx-oss/heroui-v3-react";
 ```
 
 ### Usage
@@ -23,7 +23,7 @@ import { AlertDialog } from "@heroui/react";
 Import the AlertDialog component and access all parts using dot notation.
 
 ```tsx
-import {AlertDialog, Button} from "@heroui/react";
+import {AlertDialog, Button} from "@vx-oss/heroui-v3-react";
 
 export default () => (
   <AlertDialog>
@@ -100,7 +100,7 @@ export default () => (
 ### Passing Tailwind CSS classes
 
 ```tsx
-import {AlertDialog, Button} from "@heroui/react";
+import {AlertDialog, Button} from "@vx-oss/heroui-v3-react";
 
 function CustomAlertDialog() {
   return (
@@ -168,7 +168,7 @@ HeroUI follows the [BEM](https://getbem.com/) methodology to ensure component va
 
 ### CSS Classes
 
-The AlertDialog component uses these CSS classes ([View source styles](https://github.com/heroui-inc/heroui/blob/v3/packages/styles/components/alert-dialog.css)):
+The AlertDialog component uses these CSS classes ([View source styles](https://github.com/vezham/heroui-v3/blob/timeline/packages/styles/components/alert-dialog.css)):
 
 #### Base Classes
 
@@ -300,7 +300,7 @@ The component supports these interactive states:
 ### useOverlayState Hook
 
 ```tsx
-import {useOverlayState} from "@heroui/react";
+import {useOverlayState} from "@vx-oss/heroui-v3-react";
 
 const state = useOverlayState({
   defaultOpen: false,

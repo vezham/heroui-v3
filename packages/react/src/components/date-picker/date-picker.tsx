@@ -1,12 +1,12 @@
 "use client";
 
 import type {SurfaceVariants} from "../surface";
-import type {DatePickerVariants} from "@heroui/styles";
+import type {DatePickerVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {DateValue} from "react-aria-components";
 
-import {datePickerVariants} from "@heroui/styles";
 import {mergeRefs} from "@react-aria/utils";
+import {datePickerVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext, useEffect, useRef} from "react";
 import {
   Button as ButtonPrimitive,

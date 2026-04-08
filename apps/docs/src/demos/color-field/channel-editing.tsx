@@ -2,7 +2,7 @@
 
 import type {Color} from "@vx-oss/heroui-v3-react";
 
-import {ColorField, ColorSwatch, Label, parseColor} from "@heroui/react";
+import {ColorField, ColorSwatch, Label, parseColor} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function ChannelEditing() {

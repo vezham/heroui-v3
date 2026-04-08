@@ -1,9 +1,8 @@
 "use client";
 
-import type {SortDescriptor} from "@heroui/react";
 import type {SortingState} from "@tanstack/react-table";
+import type {SortDescriptor} from "@vx-oss/heroui-v3-react";
 
-import {Chip, Pagination, Table, cn} from "@heroui/react";
 import {Icon} from "@iconify/react";
 import {
   createColumnHelper,
@@ -13,6 +12,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import {Chip, Pagination, Table, cn} from "@vx-oss/heroui-v3-react";
 import {useMemo, useState} from "react";
 
 // --- Data -----------------------------------------------------------------

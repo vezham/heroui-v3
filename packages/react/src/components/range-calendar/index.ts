@@ -108,6 +108,6 @@ export type {YearPickerContextValue, YearPickerStateContextValue} from "../calen
 /* -------------------------------------------------------------------------------------------------
 | * Variants
 | * -----------------------------------------------------------------------------------------------*/
-export {rangeCalendarVariants} from "@heroui/styles";
+export {rangeCalendarVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {RangeCalendarVariants} from "@heroui/styles";
+export type {RangeCalendarVariants} from "@vx-oss/heroui-v3-styles";

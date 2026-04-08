@@ -50,10 +50,10 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Publish @heroui/styles
+      - name: Publish @vx-oss/heroui-v3-styles
         id: publish-styles
-        run: pnpm --filter @heroui/styles publish --no-git-checks --access public ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: pnpm --filter @vx-oss/heroui-v3-styles publish --no-git-checks --access public ${{ inputs.dry_run && '--dry-run' || '' }}
 
-      - name: Publish @heroui/react
+      - name: Publish @vx-oss/heroui-v3-react
         if: steps.publish-styles.outcome == 'success'
-        run: pnpm --filter @heroui/react publish --no-git-checks --access public ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: pnpm --filter @vx-oss/heroui-v3-react publish --no-git-checks --access public ${{ inputs.dry_run && '--dry-run' || '' }}

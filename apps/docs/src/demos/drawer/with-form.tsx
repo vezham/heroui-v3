@@ -1,4 +1,4 @@
-import {Button, Drawer, Input, Label, TextField} from "@heroui/react";
+import {Button, Drawer, Input, Label, TextField} from "@vx-oss/heroui-v3-react";
 
 export function WithForm() {
   return (

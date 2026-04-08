@@ -1,3 +1,10 @@
+# @vx/INFO: Add files here to ignore them from @vx/ws handling
+
+.vezham
+vx/bin
+
+#  --- END of @vx/fe-kit-config ---
+
 **/.temp
 **/.next
 **/.swc

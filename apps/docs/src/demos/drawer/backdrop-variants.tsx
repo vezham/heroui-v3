@@ -1,4 +1,4 @@
-import {Button, Drawer} from "@heroui/react";
+import {Button, Drawer} from "@vx-oss/heroui-v3-react";
 
 export function BackdropVariants() {
   const variants = ["opaque", "blur", "transparent"] as const;

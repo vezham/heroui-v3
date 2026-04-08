@@ -4,7 +4,7 @@ import type {ButtonProps} from "../button";
 import type {ButtonGroupVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {buttonGroupVariants} from "@heroui/styles";
+import {buttonGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React, {Children, createContext, isValidElement, useContext} from "react";
 import {
   Group,

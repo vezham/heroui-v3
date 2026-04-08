@@ -4,7 +4,7 @@ import type {CSSProperties} from "react";
 import type {Color} from "react-aria-components";
 
 import {Palette} from "@gravity-ui/icons";
-import {ColorSwatchPicker, Spinner, Tabs, buttonVariants} from "@heroui/react";
+import {ColorSwatchPicker, Spinner, Tabs, buttonVariants} from "@vx-oss/heroui-v3-react";
 import {converter} from "culori";
 import LinkRoot from "fumadocs-core/link";
 import {useTheme} from "next-themes";

@@ -1,4 +1,4 @@
-import {Meter} from "@heroui/react";
+import {Meter} from "@vx-oss/heroui-v3-react";
 
 export function WithoutLabel() {
   return (

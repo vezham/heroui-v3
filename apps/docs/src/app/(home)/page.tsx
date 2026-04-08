@@ -1,5 +1,5 @@
 import {Rocket} from "@gravity-ui/icons";
-import {buttonVariants} from "@heroui/react";
+import {buttonVariants} from "@vx-oss/heroui-v3-react";
 import LinkRoot from "fumadocs-core/link";
 
 import {Footer} from "@/components/footer";
@@ -48,7 +48,7 @@ export default function HomePage() {
           </div>
           <a
             className="mt-2 flex items-center justify-around gap-2 text-xs text-muted transition-colors hover:text-foreground lg:mt-4"
-            href="https://github.com/heroui-inc/heroui"
+            href="https://github.com/vezham/heroui-v3"
             rel="noopener noreferrer"
             target="_blank"
           >

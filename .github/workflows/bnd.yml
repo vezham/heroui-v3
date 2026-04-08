@@ -8,9 +8,9 @@ on:
   push:
     branches: [timeline]
     paths:
-      - '.github/workflows/bnd.yml'
-      - '.changeset/**'
-      - 'packages/**'
+      - ".github/workflows/bnd.yml"
+      - ".changeset/**"
+      - "packages/**"
 
 run-name: >
   📦 BnD • ${{

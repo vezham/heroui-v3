@@ -1,6 +1,6 @@
 "use client";
 
-import {ColorSlider, Label} from "@heroui/react";
+import {ColorSlider, Label} from "@vx-oss/heroui-v3-react";
 
 export function CustomRenderFunction() {
   return (

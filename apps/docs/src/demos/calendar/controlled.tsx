@@ -2,7 +2,6 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Button, ButtonGroup, Calendar, Description} from "@heroui/react";
 import {
   getLocalTimeZone,
   parseDate,
@@ -10,6 +9,7 @@ import {
   startOfWeek,
   today,
 } from "@internationalized/date";
+import {Button, ButtonGroup, Calendar, Description} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 import {useLocale} from "react-aria-components";
 

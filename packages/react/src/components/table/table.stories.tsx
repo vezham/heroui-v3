@@ -1,8 +1,8 @@
 import type {Meta, StoryObj} from "@storybook/react";
 import type {Selection, SortDescriptor} from "react-aria-components";
 
-import {cn} from "@heroui/styles";
 import {Icon} from "@iconify/react";
+import {cn} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 import {TableLayout, Virtualizer} from "react-aria-components";
 

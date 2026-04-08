@@ -1,7 +1,7 @@
 "use client";
 
-import {RangeCalendar} from "@heroui/react";
 import {getLocalTimeZone} from "@internationalized/date";
+import {RangeCalendar} from "@vx-oss/heroui-v3-react";
 import React from "react";
 import {RangeCalendarStateContext, useLocale} from "react-aria-components";
 

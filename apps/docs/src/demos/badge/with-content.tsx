@@ -1,5 +1,5 @@
 import {Bell} from "@gravity-ui/icons";
-import {Avatar, Badge} from "@heroui/react";
+import {Avatar, Badge} from "@vx-oss/heroui-v3-react";
 
 const AVATAR_URL = "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg";
 

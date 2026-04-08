@@ -1,5 +1,5 @@
 import {Bold, Italic, Underline} from "@gravity-ui/icons";
-import {ToggleButton, ToggleButtonGroup} from "@heroui/react";
+import {ToggleButton, ToggleButtonGroup} from "@vx-oss/heroui-v3-react";
 
 export function Disabled() {
   return (

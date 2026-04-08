@@ -1,8 +1,14 @@
 "use client";
 
-import type {TimeValue} from "@heroui/react";
 import type {DateValue} from "@internationalized/date";
+import type {TimeValue} from "@vx-oss/heroui-v3-react";
 
+import {
+  DateFormatter,
+  getLocalTimeZone,
+  parseDate,
+  parseZonedDateTime,
+} from "@internationalized/date";
 import {
   DateField,
   DateRangePicker,
@@ -14,13 +20,7 @@ import {
   Switch,
   TimeField,
   useLocale,
-} from "@heroui/react";
-import {
-  DateFormatter,
-  getLocalTimeZone,
-  parseDate,
-  parseZonedDateTime,
-} from "@internationalized/date";
+} from "@vx-oss/heroui-v3-react";
 import {useMemo, useState} from "react";
 
 type Granularity = "day" | "hour" | "minute" | "second";

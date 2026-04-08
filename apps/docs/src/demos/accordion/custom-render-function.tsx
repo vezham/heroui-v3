@@ -9,7 +9,7 @@ import {
   Receipt,
   ShoppingBag,
 } from "@gravity-ui/icons";
-import {Accordion} from "@heroui/react";
+import {Accordion} from "@vx-oss/heroui-v3-react";
 
 const items = [
   {

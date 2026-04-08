@@ -1,4 +1,4 @@
-import {ProgressCircle} from "@heroui/react";
+import {ProgressCircle} from "@vx-oss/heroui-v3-react";
 
 export function Sizes() {
   return (

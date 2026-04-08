@@ -1,4 +1,4 @@
-import {Table} from "@heroui/react";
+import {Table} from "@vx-oss/heroui-v3-react";
 
 export function Basic() {
   return (

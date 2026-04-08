@@ -1,6 +1,6 @@
 "use client";
 
-import {Link} from "@heroui/react";
+import {Link} from "@vx-oss/heroui-v3-react";
 
 export function CustomRenderFunction() {
   return (

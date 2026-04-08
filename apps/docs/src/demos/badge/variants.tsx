@@ -1,4 +1,4 @@
-import {Avatar, Badge, Separator} from "@heroui/react";
+import {Avatar, Badge, Separator} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 const AVATAR_URL = "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/green.jpg";

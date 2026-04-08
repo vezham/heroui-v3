@@ -1,6 +1,6 @@
 "use client";
 
-import {ScrollShadow} from "@heroui/react";
+import {ScrollShadow} from "@vx-oss/heroui-v3-react";
 
 import {cn} from "@/utils/cn";
 

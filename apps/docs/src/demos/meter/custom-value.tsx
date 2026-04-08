@@ -1,4 +1,4 @@
-import {Label, Meter} from "@heroui/react";
+import {Label, Meter} from "@vx-oss/heroui-v3-react";
 
 export function CustomValue() {
   return (

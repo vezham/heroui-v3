@@ -1,6 +1,6 @@
 "use client";
 
-import {Button, Drawer, useOverlayState} from "@heroui/react";
+import {Button, Drawer, useOverlayState} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 export function Controlled() {

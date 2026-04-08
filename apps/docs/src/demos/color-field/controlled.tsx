@@ -2,7 +2,14 @@
 
 import type {Color} from "@vx-oss/heroui-v3-react";
 
-import {Button, ColorField, ColorSwatch, Description, Label, parseColor} from "@heroui/react";
+import {
+  Button,
+  ColorField,
+  ColorSwatch,
+  Description,
+  Label,
+  parseColor,
+} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function Controlled() {

@@ -1,4 +1,4 @@
-import {ColorField, Label} from "@heroui/react";
+import {ColorField, Label} from "@vx-oss/heroui-v3-react";
 
 export function FullWidth() {
   return (

@@ -96,7 +96,7 @@ See the [Windsurf MCP documentation](https://docs.windsurf.com/windsurf/cascade/
   "context_servers": {
     "heroui-native": {
       "command": "npx",
-      "args": ["-y", "@heroui/native-mcp@latest"],
+      "args": ["-y", "@vx-oss/heroui-v3-native-mcp@latest"],
       "env": {}
     }
   }
@@ -130,7 +130,7 @@ See the [VS Code MCP documentation](https://code.visualstudio.com/docs/copilot/c
 ```toml title="config.toml"
 [mcp_servers.heroui-native]
 command = "npx"
-args = ["-y", "@heroui/native-mcp@latest"]
+args = ["-y", "@vx-oss/heroui-v3-native-mcp@latest"]
 ```
 
 After adding the configuration, restart Codex and run `/mcp` in the TUI to verify the server is active.
@@ -145,7 +145,7 @@ See the [Codex MCP documentation](https://developers.openai.com/codex/mcp) for m
   "mcp": {
     "heroui-native": {
       "type": "local",
-      "command": ["npx", "-y", "@heroui/native-mcp@latest"]
+      "command": ["npx", "-y", "@vx-oss/heroui-v3-native-mcp@latest"]
     }
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import {Checkbox, CheckboxGroup, Description, Label} from "@heroui/react";
+import {Checkbox, CheckboxGroup, Description, Label} from "@vx-oss/heroui-v3-react";
 
 export function CustomRenderFunction() {
   return (

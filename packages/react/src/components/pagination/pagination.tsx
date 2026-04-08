@@ -1,9 +1,9 @@
 "use client";
 
-import type {PaginationVariants} from "@heroui/styles";
+import type {PaginationVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {paginationVariants} from "@heroui/styles";
+import {paginationVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components";
 

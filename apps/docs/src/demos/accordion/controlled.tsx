@@ -1,7 +1,7 @@
 "use client";
 
 import {ChevronDown, ChevronUp} from "@gravity-ui/icons";
-import {Accordion, Button, useDisclosureGroupNavigation} from "@heroui/react";
+import {Accordion, Button, useDisclosureGroupNavigation} from "@vx-oss/heroui-v3-react";
 import React from "react";
 
 const items = [

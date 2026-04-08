@@ -1,9 +1,9 @@
 "use client";
 
-import type {Selection, SortDescriptor} from "@heroui/react";
+import type {Selection, SortDescriptor} from "@vx-oss/heroui-v3-react";
 
-import {Avatar, Button, Checkbox, Chip, Table, cn} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {Avatar, Button, Checkbox, Chip, Table, cn} from "@vx-oss/heroui-v3-react";
 import {useMemo, useState} from "react";
 
 interface User {

@@ -2,8 +2,8 @@
 
 import type {DateValue} from "@internationalized/date";
 
-import {Calendar, Description} from "@heroui/react";
 import {isWeekend} from "@internationalized/date";
+import {Calendar, Description} from "@vx-oss/heroui-v3-react";
 import {useLocale} from "react-aria-components";
 
 export function UnavailableDates() {

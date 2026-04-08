@@ -25,22 +25,22 @@ Update to the latest version:
 <Tabs items={["npm", "pnpm", "yarn", "bun"]}>
   <Tab value="npm">
     ```bash
-    npm i @heroui/styles@rc @heroui/react@rc
+    npm i @vx-oss/heroui-v3-styles@rc @vx-oss/heroui-v3-react@rc
     ```
   </Tab>
   <Tab value="pnpm">
     ```bash
-    pnpm add @heroui/styles@rc @heroui/react@rc
+    pnpm add @vx-oss/heroui-v3-styles@rc @vx-oss/heroui-v3-react@rc
     ```
   </Tab>
   <Tab value="yarn">
     ```bash
-    yarn add @heroui/styles@rc @heroui/react@rc
+    yarn add @vx-oss/heroui-v3-styles@rc @vx-oss/heroui-v3-react@rc
     ```
   </Tab>
   <Tab value="bun">
     ```bash
-    bun add @heroui/styles@rc @heroui/react@rc
+    bun add @vx-oss/heroui-v3-styles@rc @vx-oss/heroui-v3-react@rc
     ```
   </Tab>
 </Tabs>
@@ -183,7 +183,7 @@ New `ButtonGroup.Separator` sub-component adds an explicit visual divider betwee
 
 ### Table & ListBox Virtualization
 
-Table and ListBox now support virtualization via React Aria's `Virtualizer` for large datasets. `Virtualizer`, `TableLayout`, and `ListLayout` are re-exported from `@heroui/react`.
+Table and ListBox now support virtualization via React Aria's `Virtualizer` for large datasets. `Virtualizer`, `TableLayout`, and `ListLayout` are re-exported from `@vx-oss/heroui-v3-react`.
 
 <ComponentPreview
   name="table-virtualization"
@@ -203,14 +203,14 @@ Focus rings on grouped buttons now use `ring-inset` so they stay within button b
 
 ### Granular Component Imports
 
-`@heroui/react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/heroui-inc/heroui/pull/6301)):
+`@vx-oss/heroui-v3-react` now supports per-component subpath entrypoints for more explicit imports ([#6301](https://github.com/vezham/heroui-v3/pull/6301)):
 
 ```tsx
 // Before — root entrypoint
-import { Button } from "@heroui/react";
+import { Button } from "@vx-oss/heroui-v3-react";
 
 // After — granular subpath import
-import { Button } from "@heroui/react/button";
+import { Button } from "@vx-oss/heroui-v3-react/button";
 ```
 
 ## Dependencies
@@ -229,17 +229,17 @@ Upgraded `react-aria-components` from v1.15.1 to v1.16.0 and related packages:
 
 ## Bug Fixes
 
-- **InputGroup**: Focus styles now trigger only when the actual input/textarea is focused (`:has([data-slot]:focus)`) instead of any focusable child via `:focus-within` ([#6274](https://github.com/heroui-inc/heroui/pull/6274))
-- **Avatar**: Fallback element inherits `border-radius` from the parent instead of hardcoding `rounded-full`, so `className` overrides apply correctly ([#6300](https://github.com/heroui-inc/heroui/pull/6300))
-- **Modal & AlertDialog**: Backdrop click events no longer propagate through portals to parent elements ([#6297](https://github.com/heroui-inc/heroui/pull/6297))
-- **Table**: Fixed header rounding and background color bleeding in Firefox ([#6298](https://github.com/heroui-inc/heroui/pull/6298))
+- **InputGroup**: Focus styles now trigger only when the actual input/textarea is focused (`:has([data-slot]:focus)`) instead of any focusable child via `:focus-within` ([#6274](https://github.com/vezham/heroui-v3/pull/6274))
+- **Avatar**: Fallback element inherits `border-radius` from the parent instead of hardcoding `rounded-full`, so `className` overrides apply correctly ([#6300](https://github.com/vezham/heroui-v3/pull/6300))
+- **Modal & AlertDialog**: Backdrop click events no longer propagate through portals to parent elements ([#6297](https://github.com/vezham/heroui-v3/pull/6297))
+- **Table**: Fixed header rounding and background color bleeding in Firefox ([#6298](https://github.com/vezham/heroui-v3/pull/6298))
 
 ## Links
 
 - [Component Docs](/docs/react/components)
 - [Figma Kit V3](https://www.figma.com/community/file/1546526812159103429/heroui-figma-kit-v3)
-- [GitHub Repository](https://github.com/heroui-inc/heroui)
-- [GitHub PR #6285](https://github.com/heroui-inc/heroui/pull/6285)
+- [GitHub Repository](https://github.com/vezham/heroui-v3)
+- [GitHub PR #6285](https://github.com/vezham/heroui-v3/pull/6285)
 
 ## Contributors
 

@@ -94,6 +94,6 @@ export type {
 /* -------------------------------------------------------------------------------------------------
  * Variants
  * -----------------------------------------------------------------------------------------------*/
-export {tableVariants} from "@heroui/styles";
+export {tableVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {TableVariants} from "@heroui/styles";
+export type {TableVariants} from "@vx-oss/heroui-v3-styles";
