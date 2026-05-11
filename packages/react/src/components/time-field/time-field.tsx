@@ -2,11 +2,11 @@
 
 import type {TimeFieldVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
-import type {TimeValue} from "react-aria-components";
+import type {TimeValue} from "react-aria-components/TimeField";
 
 import {timeFieldVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
-import {TimeField as TimeFieldPrimitive} from "react-aria-components";
+import {TimeField as TimeFieldPrimitive} from "react-aria-components/TimeField";
 
 import {dataAttr} from "../../utils/assertion";
 import {composeTwRenderProps} from "../../utils/compose";

@@ -2,11 +2,11 @@
 
 import type {ColorFieldVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
-import type {Color} from "react-aria-components";
+import type {Color} from "react-aria-components/ColorArea";
 
 import {colorFieldVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
-import {ColorField as ColorFieldPrimitive} from "react-aria-components";
+import {ColorField as ColorFieldPrimitive} from "react-aria-components/ColorField";
 
 import {dataAttr} from "../../utils/assertion";
 import {composeTwRenderProps} from "../../utils/compose";

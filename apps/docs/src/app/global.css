@@ -5,7 +5,8 @@
 @import "tailwindcss";
 @import "fumadocs-ui/css/black.css";
 @import "fumadocs-ui/css/preset.css";
-@import "@vx-oss/heroui-v3-styles";
+@import "@heroui/styles";
+@import "../styles/theme-presets.css";
 
 @keyframes float-stars {
   0% {

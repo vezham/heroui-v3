@@ -1,23 +1,25 @@
 "use client";
 
-import type {DateInputGroupVariants} from "@vx-oss/heroui-v3-styles";
-import type {ComponentPropsWithRef} from "react";
+import type {DOMRenderProps} from "../../utils/dom";
+import type {DateInputGroupVariants} from "@heroui/styles";
+import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {
   DateInputProps as DateInputPrimitiveProps,
   DateSegmentProps as DateSegmentPrimitiveProps,
   DateInputProps as TimeInputPrimitiveProps,
   DateSegmentProps as TimeSegmentPrimitiveProps,
-} from "react-aria-components";
+} from "react-aria-components/DateField";
 
-import {dateInputGroupVariants} from "@vx-oss/heroui-v3-styles";
+import {dateInputGroupVariants} from "@heroui/styles";
 import React, {createContext, useContext} from "react";
 import {
   DateInput as DateInputPrimitive,
   DateSegment as DateSegmentPrimitive,
-  Group as GroupPrimitive,
-} from "react-aria-components";
+} from "react-aria-components/DateField";
+import {Group as GroupPrimitive} from "react-aria-components/Group";
 
 import {composeSlotClassName, composeTwRenderProps} from "../../utils/compose";
+import {dom} from "../../utils/dom";
 
 /* -------------------------------------------------------------------------------------------------
  * DateInputGroup Context
@@ -62,19 +64,29 @@ const DateInputGroupRoot = ({
 /* -------------------------------------------------------------------------------------------------
  * DateInputGroup Prefix
  * -----------------------------------------------------------------------------------------------*/
-interface DateInputGroupPrefixProps extends ComponentPropsWithRef<"div"> {}
+interface DateInputGroupPrefixProps<
+  E extends keyof React.JSX.IntrinsicElements = "div",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
+  className?: string;
+}
 
-const DateInputGroupPrefix = ({children, className, ...props}: DateInputGroupPrefixProps) => {
+const DateInputGroupPrefix = <E extends keyof React.JSX.IntrinsicElements = "div">({
+  children,
+  className,
+  ...props
+}: DateInputGroupPrefixProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof DateInputGroupPrefixProps<E>>) => {
   const {slots} = useContext(DateInputGroupContext);
 
   return (
-    <div
+    <dom.div
       className={composeSlotClassName(slots?.prefix, className)}
       data-slot="date-input-group-prefix"
-      {...props}
+      {...(props as any)}
     >
       {children}
-    </div>
+    </dom.div>
   );
 };
 
@@ -131,42 +143,58 @@ const DateInputGroupSegment = ({className, segment, ...props}: DateInputGroupSeg
 /* -------------------------------------------------------------------------------------------------
  * DateInputGroup InputContainer
  * -----------------------------------------------------------------------------------------------*/
-interface DateInputGroupInputContainerProps extends ComponentPropsWithRef<"div"> {}
+interface DateInputGroupInputContainerProps<
+  E extends keyof React.JSX.IntrinsicElements = "div",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
+  className?: string;
+}
 
-const DateInputGroupInputContainer = ({
+const DateInputGroupInputContainer = <E extends keyof React.JSX.IntrinsicElements = "div">({
   children,
   className,
   ...props
-}: DateInputGroupInputContainerProps) => {
+}: DateInputGroupInputContainerProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof DateInputGroupInputContainerProps<E>>) => {
   const {slots} = useContext(DateInputGroupContext);
 
   return (
-    <div
+    <dom.div
       className={composeSlotClassName(slots?.inputContainer, className)}
       data-slot="date-input-group-input-container"
-      {...props}
+      {...(props as any)}
     >
       {children}
-    </div>
+    </dom.div>
   );
 };
 
 /* -------------------------------------------------------------------------------------------------
  * DateInputGroup Suffix
  * -----------------------------------------------------------------------------------------------*/
-interface DateInputGroupSuffixProps extends ComponentPropsWithRef<"div"> {}
+interface DateInputGroupSuffixProps<
+  E extends keyof React.JSX.IntrinsicElements = "div",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
+  className?: string;
+}
 
-const DateInputGroupSuffix = ({children, className, ...props}: DateInputGroupSuffixProps) => {
+const DateInputGroupSuffix = <E extends keyof React.JSX.IntrinsicElements = "div">({
+  children,
+  className,
+  ...props
+}: DateInputGroupSuffixProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof DateInputGroupSuffixProps<E>>) => {
   const {slots} = useContext(DateInputGroupContext);
 
   return (
-    <div
+    <dom.div
       className={composeSlotClassName(slots?.suffix, className)}
       data-slot="date-input-group-suffix"
-      {...props}
+      {...(props as any)}
     >
       {children}
-    </div>
+    </dom.div>
   );
 };
 

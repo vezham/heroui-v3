@@ -1,11 +1,11 @@
 "use client";
 
-import type {ErrorMessageVariants} from "@vx-oss/heroui-v3-styles";
+import type {ErrorMessageVariants} from "@heroui/styles";
 import type {ComponentPropsWithRef} from "react";
-import type {TextProps} from "react-aria-components";
+import type {TextProps} from "react-aria-components/Text";
 
-import {errorMessageVariants} from "@vx-oss/heroui-v3-styles";
-import {Text} from "react-aria-components";
+import {errorMessageVariants} from "@heroui/styles";
+import {Text} from "react-aria-components/Text";
 
 /* -------------------------------------------------------------------------------------------------
  * Error Message Root

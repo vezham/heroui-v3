@@ -1,25 +1,27 @@
 "use client";
 
 import type {Booleanish} from "../../utils/assertion";
+import type {DOMRenderProps} from "../../utils/dom";
 import type {SurfaceVariants} from "../surface";
-import type {AutocompleteVariants} from "@vx-oss/heroui-v3-styles";
-import type {ComponentPropsWithRef, RefObject} from "react";
+import type {AutocompleteVariants} from "@heroui/styles";
+import type {ComponentPropsWithRef, ReactNode, RefObject} from "react";
 
+import {autocompleteVariants} from "@heroui/styles";
 import {mergeRefs, useResizeObserver} from "@react-aria/utils";
-import {autocompleteVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useCallback, useContext, useRef, useState} from "react";
+import {Autocomplete as AutocompletePrimitive} from "react-aria-components/Autocomplete";
+import {Button as ButtonPrimitive} from "react-aria-components/Button";
+import {Group as GroupPrimitive} from "react-aria-components/Group";
+import {Popover as PopoverPrimitive} from "react-aria-components/Popover";
 import {
-  Autocomplete as AutocompletePrimitive,
-  Button as ButtonPrimitive,
-  Group as GroupPrimitive,
-  Popover as PopoverPrimitive,
   Select as SelectPrimitive,
   SelectStateContext,
   SelectValue as SelectValuePrimitive,
-} from "react-aria-components";
+} from "react-aria-components/Select";
 
 import {dataAttr} from "../../utils/assertion";
 import {composeSlotClassName, composeTwRenderProps} from "../../utils/compose";
+import {dom} from "../../utils/dom";
 import {CloseIcon, IconChevronDown} from "../icons";
 import {SurfaceContext} from "../surface";
 
@@ -31,11 +33,13 @@ type AutocompleteContext = {
   onClear?: () => void;
   triggerRef: RefObject<HTMLElement | null>;
   clearButtonRef: RefObject<HTMLButtonElement | null>;
+  isDisabled?: boolean;
 };
 
 const AutocompleteContext = createContext<AutocompleteContext>({
   triggerRef: {current: null} as RefObject<HTMLElement | null>,
   clearButtonRef: {current: null} as RefObject<HTMLButtonElement | null>,
+  isDisabled: false,
 });
 
 /* -------------------------------------------------------------------------------------------------
@@ -52,6 +56,7 @@ const AutocompleteRoot = <T extends object = object, M extends "single" | "multi
   children,
   className,
   fullWidth,
+  isDisabled,
   onClear,
   variant,
   ...props
@@ -64,11 +69,12 @@ const AutocompleteRoot = <T extends object = object, M extends "single" | "multi
   const clearButtonRef = useRef<HTMLButtonElement | null>(null);
 
   return (
-    <AutocompleteContext value={{slots, triggerRef, clearButtonRef, onClear}}>
+    <AutocompleteContext value={{slots, triggerRef, clearButtonRef, onClear, isDisabled}}>
       <SelectPrimitive
         data-slot="autocomplete"
         {...props}
         className={composeTwRenderProps(className, slots?.base())}
+        isDisabled={isDisabled}
       >
         {(values) => <>{typeof children === "function" ? children(values) : children}</>}
       </SelectPrimitive>
@@ -82,9 +88,15 @@ const AutocompleteRoot = <T extends object = object, M extends "single" | "multi
 interface AutocompleteTriggerProps extends ComponentPropsWithRef<typeof GroupPrimitive> {}
 
 const AutocompleteTrigger = React.forwardRef<HTMLDivElement, AutocompleteTriggerProps>(
-  ({children, className, onClick, ...props}, ref) => {
-    const {clearButtonRef, slots, triggerRef} = useContext(AutocompleteContext);
+  ({children, className, isDisabled: isDisabledProp, onClick, ...props}, ref) => {
+    const {
+      clearButtonRef,
+      isDisabled: rootDisabled,
+      slots,
+      triggerRef,
+    } = useContext(AutocompleteContext);
     const state = useContext(SelectStateContext);
+    const isDisabled = isDisabledProp ?? rootDisabled ?? false;
 
     // Callback ref to update context ref
     const contextRefCallback = React.useCallback(
@@ -111,6 +123,7 @@ const AutocompleteTrigger = React.forwardRef<HTMLDivElement, AutocompleteTrigger
         ref={mergedRef}
         className={composeTwRenderProps(className, slots?.trigger())}
         data-slot="autocomplete-trigger"
+        isDisabled={isDisabled}
         onClick={handleClick}
         {...props}
       >
@@ -144,11 +157,19 @@ const AutocompleteValue = ({children, className, ...props}: AutocompleteValuePro
 /* -------------------------------------------------------------------------------------------------
  * Autocomplete Indicator
  * -----------------------------------------------------------------------------------------------*/
-interface AutocompleteIndicatorProps extends ComponentPropsWithRef<"svg"> {
+interface AutocompleteIndicatorProps<
+  E extends keyof React.JSX.IntrinsicElements = "svg",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
   className?: string;
 }
 
-const AutocompleteIndicator = ({children, className, ...props}: AutocompleteIndicatorProps) => {
+const AutocompleteIndicator = <E extends keyof React.JSX.IntrinsicElements = "svg">({
+  children,
+  className,
+  ...props
+}: AutocompleteIndicatorProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof AutocompleteIndicatorProps<E>>) => {
   const {slots} = useContext(AutocompleteContext);
   const state = useContext(SelectStateContext);
 
@@ -160,7 +181,7 @@ const AutocompleteIndicator = ({children, className, ...props}: AutocompleteIndi
         "data-open"?: Booleanish;
       }>,
       {
-        ...props,
+        ...(props as any),
         className: composeSlotClassName(slots?.indicator, className),
         "data-slot": "autocomplete-indicator",
         "data-open": dataAttr(state?.isOpen),
@@ -174,7 +195,7 @@ const AutocompleteIndicator = ({children, className, ...props}: AutocompleteIndi
         className={composeSlotClassName(slots?.indicator, className)}
         data-open={dataAttr(state?.isOpen)}
         data-slot="autocomplete-default-indicator"
-        {...props}
+        {...(props as any)}
       />
     </ButtonPrimitive>
   );
@@ -249,17 +270,22 @@ const AutocompleteFilter = ({children, ...props}: AutocompleteFilterProps) => {
 /* -------------------------------------------------------------------------------------------------
  * Autocomplete Clear Button
  * -----------------------------------------------------------------------------------------------*/
-interface AutocompleteClearButtonProps extends ComponentPropsWithRef<"button"> {}
+interface AutocompleteClearButtonProps<
+  E extends keyof React.JSX.IntrinsicElements = "button",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
+  className?: string;
+}
 
-const AutocompleteClearButton = ({
+const AutocompleteClearButton = <E extends keyof React.JSX.IntrinsicElements = "button">({
   className,
   onClick,
   ref,
   ...props
-}: AutocompleteClearButtonProps) => {
-  const {slots} = useContext(AutocompleteContext);
+}: AutocompleteClearButtonProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof AutocompleteClearButtonProps<E>>) => {
+  const {clearButtonRef, isDisabled, onClear, slots} = useContext(AutocompleteContext);
   const state = useContext(SelectStateContext);
-  const {clearButtonRef, onClear} = useContext(AutocompleteContext);
 
   const clearButtonRefCallback = React.useCallback(
     (node: HTMLButtonElement | null) => {
@@ -269,25 +295,27 @@ const AutocompleteClearButton = ({
   );
 
   // Merge context ref callback with user-provided ref
-  const mergedRef = mergeRefs(clearButtonRefCallback, ref);
+  const mergedRef = mergeRefs(clearButtonRefCallback, ref as any);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     state?.selectionManager.setSelectedKeys(new Set());
     onClear?.();
-    onClick?.(e);
+    onClick?.(e as any);
   };
 
   return (
-    <button
+    <dom.button
       ref={mergedRef}
+      aria-label="Clear selection"
       className={slots?.clearButton({className})}
       data-empty={dataAttr(state?.selectionManager.selectedKeys.size === 0)}
       data-slot="autocomplete-clear-button"
+      disabled={isDisabled ?? false}
       onClick={handleClick}
-      {...props}
+      {...(props as any)}
     >
       <CloseIcon data-slot="autocomplete-clear-button-icon" />
-    </button>
+    </dom.button>
   );
 };
 

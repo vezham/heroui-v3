@@ -1,16 +1,17 @@
 "use client";
 
+import type {DOMRenderProps} from "../../utils/dom";
+import type {CalendarVariants} from "@heroui/styles";
 import type {CalendarIdentifier} from "@internationalized/date";
-import type {CalendarVariants} from "@vx-oss/heroui-v3-styles";
-import type {ComponentPropsWithRef} from "react";
-import type {DateValue} from "react-aria-components";
+import type {ComponentPropsWithRef, ReactNode} from "react";
+import type {DateValue} from "react-aria-components/Calendar";
 
+import {calendarVariants} from "@heroui/styles";
 import {CalendarDate, DateFormatter, createCalendar} from "@internationalized/date";
 import {useControlledState} from "@react-stately/utils";
-import {calendarVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
+import {Button as ButtonPrimitive} from "react-aria-components/Button";
 import {
-  Button as ButtonPrimitive,
   CalendarCell as CalendarCellPrimitive,
   CalendarGridBody as CalendarGridBodyPrimitive,
   CalendarGridHeader as CalendarGridHeaderPrimitive,
@@ -19,11 +20,12 @@ import {
   Calendar as CalendarPrimitive,
   CalendarStateContext,
   Heading as HeadingPrimitive,
-  useLocale,
-} from "react-aria-components";
+} from "react-aria-components/Calendar";
+import {useLocale} from "react-aria-components/I18nProvider";
 
 import {getGregorianYearOffset} from "../../utils/calendar";
 import {composeSlotClassName, composeTwRenderProps} from "../../utils/compose";
+import {dom} from "../../utils/dom";
 import {
   YearPickerContext,
   YearPickerStateContext,
@@ -136,21 +138,28 @@ CalendarRoot.displayName = "HeroUI.Calendar";
 /* -------------------------------------------------------------------------------------------------
 | * Calendar Header
 | * -----------------------------------------------------------------------------------------------*/
-interface CalendarHeaderProps extends ComponentPropsWithRef<"header"> {
+interface CalendarHeaderProps<
+  E extends keyof React.JSX.IntrinsicElements = "header",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
   className?: string;
 }
 
-const CalendarHeader = ({children, className, ...props}: CalendarHeaderProps) => {
+const CalendarHeader = <E extends keyof React.JSX.IntrinsicElements = "header">({
+  children,
+  className,
+  ...props
+}: CalendarHeaderProps<E> & Omit<React.JSX.IntrinsicElements[E], keyof CalendarHeaderProps<E>>) => {
   const {slots} = useContext(CalendarContext);
 
   return (
-    <header
+    <dom.header
       className={composeSlotClassName(slots?.header, className)}
       data-slot="calendar-header"
-      {...props}
+      {...(props as any)}
     >
       {children}
-    </header>
+    </dom.header>
   );
 };
 
@@ -326,17 +335,26 @@ CalendarCell.displayName = "HeroUI.Calendar.Cell";
 /* -------------------------------------------------------------------------------------------------
 | * Calendar Cell Indicator
 | * -----------------------------------------------------------------------------------------------*/
-interface CalendarCellIndicatorProps extends ComponentPropsWithRef<"span"> {}
+interface CalendarCellIndicatorProps<
+  E extends keyof React.JSX.IntrinsicElements = "span",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
+  className?: string;
+}
 
-const CalendarCellIndicator = ({className, ...props}: CalendarCellIndicatorProps) => {
+const CalendarCellIndicator = <E extends keyof React.JSX.IntrinsicElements = "span">({
+  className,
+  ...props
+}: CalendarCellIndicatorProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof CalendarCellIndicatorProps<E>>) => {
   const {slots} = useContext(CalendarContext);
 
   return (
-    <span
+    <dom.span
       aria-hidden="true"
       className={composeSlotClassName(slots?.cellIndicator, className)}
       data-slot="calendar-cell-indicator"
-      {...props}
+      {...(props as any)}
     />
   );
 };

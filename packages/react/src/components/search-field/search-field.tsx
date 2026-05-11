@@ -1,15 +1,14 @@
 "use client";
 
-import type {SearchFieldVariants} from "@vx-oss/heroui-v3-styles";
+import type {DOMRenderProps} from "../../utils/dom";
+import type {SearchFieldVariants} from "@heroui/styles";
 import type {ComponentPropsWithRef} from "react";
 
-import {searchFieldVariants} from "@vx-oss/heroui-v3-styles";
+import {searchFieldVariants} from "@heroui/styles";
 import React, {createContext, useContext} from "react";
-import {
-  Group as GroupPrimitive,
-  Input as InputPrimitive,
-  SearchField as SearchFieldPrimitive,
-} from "react-aria-components";
+import {Group as GroupPrimitive} from "react-aria-components/Group";
+import {Input as InputPrimitive} from "react-aria-components/Input";
+import {SearchField as SearchFieldPrimitive} from "react-aria-components/SearchField";
 
 import {composeSlotClassName, composeTwRenderProps} from "../../utils/compose";
 import {CloseButton} from "../close-button";
@@ -94,11 +93,19 @@ const SearchFieldInput = ({className, ...props}: SearchFieldInputProps) => {
 /* -------------------------------------------------------------------------------------------------
  * SearchField Search Icon
  * -----------------------------------------------------------------------------------------------*/
-interface SearchFieldSearchIconProps extends ComponentPropsWithRef<"svg"> {
+interface SearchFieldSearchIconProps<
+  E extends keyof React.JSX.IntrinsicElements = "svg",
+> extends DOMRenderProps<E, undefined> {
   children?: React.ReactNode;
+  className?: string;
 }
 
-const SearchFieldSearchIcon = ({children, className, ...props}: SearchFieldSearchIconProps) => {
+const SearchFieldSearchIcon = <E extends keyof React.JSX.IntrinsicElements = "svg">({
+  children,
+  className,
+  ...props
+}: SearchFieldSearchIconProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof SearchFieldSearchIconProps<E>>) => {
   const {slots} = useContext(SearchFieldContext);
 
   if (children && React.isValidElement(children)) {
@@ -108,7 +115,7 @@ const SearchFieldSearchIcon = ({children, className, ...props}: SearchFieldSearc
         "data-slot"?: string;
       }>,
       {
-        ...props,
+        ...(props as any),
         className: composeSlotClassName(slots?.searchIcon, className),
         "data-slot": "search-field-search-icon",
       },
@@ -119,7 +126,7 @@ const SearchFieldSearchIcon = ({children, className, ...props}: SearchFieldSearc
     <IconSearch
       className={composeSlotClassName(slots?.searchIcon, className)}
       data-slot="search-field-search-icon"
-      {...props}
+      {...(props as any)}
     />
   );
 };

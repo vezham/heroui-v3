@@ -4,7 +4,7 @@ import type {Key} from "@vx-oss/heroui-v3-react";
 import {Icon} from "@iconify/react";
 import {useAsyncList} from "@react-stately/data";
 import React, {useState} from "react";
-import {useFilter} from "react-aria-components";
+import {useFilter} from "react-aria-components/Autocomplete";
 import {cn} from "tailwind-variants";
 
 import {Avatar, AvatarFallback, AvatarImage} from "../avatar";

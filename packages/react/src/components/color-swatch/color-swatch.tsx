@@ -1,10 +1,10 @@
 "use client";
 
-import type {ColorSwatchVariants} from "@vx-oss/heroui-v3-styles";
+import type {ColorSwatchVariants} from "@heroui/styles";
 import type {CSSProperties, ComponentPropsWithRef} from "react";
 
-import {colorSwatchVariants} from "@vx-oss/heroui-v3-styles";
-import {ColorSwatch as ColorSwatchPrimitive} from "react-aria-components";
+import {colorSwatchVariants} from "@heroui/styles";
+import {ColorSwatch as ColorSwatchPrimitive} from "react-aria-components/ColorSwatch";
 
 import {composeTwRenderProps} from "../../utils/compose";
 

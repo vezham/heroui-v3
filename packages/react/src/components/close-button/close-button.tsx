@@ -5,7 +5,7 @@ import type {ComponentPropsWithRef} from "react";
 
 import {closeButtonVariants} from "@vx-oss/heroui-v3-styles";
 import {useMemo} from "react";
-import {Button as ButtonPrimitive} from "react-aria-components";
+import {Button as ButtonPrimitive} from "react-aria-components/Button";
 
 import {composeTwRenderProps} from "../../utils";
 import {CloseIcon} from "../icons";

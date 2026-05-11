@@ -1,18 +1,18 @@
 "use client";
 
+import type {DOMRenderProps} from "../../utils/dom";
 import type {ButtonProps} from "../button";
-import type {ButtonGroupVariants} from "@vx-oss/heroui-v3-styles";
-import type {ComponentPropsWithRef} from "react";
+import type {ButtonGroupVariants} from "@heroui/styles";
+import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {buttonGroupVariants} from "@vx-oss/heroui-v3-styles";
+import {buttonGroupVariants} from "@heroui/styles";
 import React, {Children, createContext, isValidElement, useContext} from "react";
-import {
-  Group,
-  ToggleButtonGroupContext as RACToggleButtonGroupContext,
-  useSlottedContext,
-} from "react-aria-components";
+import {Group} from "react-aria-components/Group";
+import {useSlottedContext} from "react-aria-components/slots";
+import {ToggleButtonGroupContext as RACToggleButtonGroupContext} from "react-aria-components/ToggleButtonGroup";
 
 import {composeSlotClassName, composeTwRenderProps} from "../../utils";
+import {dom} from "../../utils/dom";
 
 /* -------------------------------------------------------------------------------------------------
  * ButtonGroup Context
@@ -89,19 +89,26 @@ const ButtonGroupRoot = ({
 /* -------------------------------------------------------------------------------------------------
  * ButtonGroup Separator
  * -----------------------------------------------------------------------------------------------*/
-interface ButtonGroupSeparatorProps extends ComponentPropsWithRef<"span"> {
+interface ButtonGroupSeparatorProps<
+  E extends keyof React.JSX.IntrinsicElements = "span",
+> extends DOMRenderProps<E, undefined> {
+  children?: ReactNode;
   className?: string;
 }
 
-const ButtonGroupSeparator = ({className, ...props}: ButtonGroupSeparatorProps) => {
+const ButtonGroupSeparator = <E extends keyof React.JSX.IntrinsicElements = "span">({
+  className,
+  ...props
+}: ButtonGroupSeparatorProps<E> &
+  Omit<React.JSX.IntrinsicElements[E], keyof ButtonGroupSeparatorProps<E>>) => {
   const {slots} = useContext(ButtonGroupContext);
 
   return (
-    <span
+    <dom.span
       aria-hidden="true"
       className={composeSlotClassName(slots?.separator, className)}
       data-slot="button-group-separator"
-      {...props}
+      {...(props as any)}
     />
   );
 };

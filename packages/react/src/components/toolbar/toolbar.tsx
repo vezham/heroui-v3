@@ -5,11 +5,9 @@ import type {ComponentPropsWithRef} from "react";
 
 import {toolbarVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
-import {
-  SeparatorContext,
-  ToggleButtonGroupContext,
-  Toolbar as ToolbarPrimitive,
-} from "react-aria-components";
+import {SeparatorContext} from "react-aria-components/Separator";
+import {ToggleButtonGroupContext} from "react-aria-components/ToggleButtonGroup";
+import {Toolbar as ToolbarPrimitive} from "react-aria-components/Toolbar";
 
 import {composeTwRenderProps} from "../../utils";
 

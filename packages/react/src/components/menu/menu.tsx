@@ -5,7 +5,7 @@ import type {ComponentPropsWithRef} from "react";
 
 import {menuVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
-import {Menu as MenuPrimitive} from "react-aria-components";
+import {Menu as MenuPrimitive} from "react-aria-components/Menu";
 
 import {composeTwRenderProps} from "../../utils";
 

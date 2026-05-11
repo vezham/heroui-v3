@@ -21,7 +21,7 @@
 .tabs__list {
   @apply inline-flex bg-default p-1;
 
-  border-radius: calc(var(--radius-2xl) + 0.25rem);
+  border-radius: calc(var(--radius) * 2.5);
 
   /* Horizontal orientation */
   &[data-orientation="horizontal"] {
@@ -96,9 +96,7 @@
 
 /* Tab separator */
 .tabs__separator {
-  @apply bg-muted/25;
-
-  border-radius: 4px;
+  @apply rounded-sm bg-muted/25;
   position: absolute;
   pointer-events: none;
 
@@ -178,7 +176,7 @@
 
 .tabs--secondary {
   /* Tab list - remove background, add bottom/left border */
-  .tabs__list {
+  > .tabs__list-container > .tabs__list {
     @apply bg-transparent p-0;
 
     border-radius: 0;
@@ -204,7 +202,7 @@
   }
 
   /* Tab - adjust for secondary variant */
-  .tabs__tab {
+  > .tabs__list-container .tabs__tab {
     @apply rounded-none;
 
     /* Selected state - use text-foreground */
@@ -214,12 +212,12 @@
   }
 
   /* Hide separators in secondary variant */
-  .tabs__separator {
+  > .tabs__list-container .tabs__separator {
     display: none;
   }
 
   /* Tab indicator - line style */
-  .tabs__indicator {
+  > .tabs__list-container .tabs__indicator {
     @apply bg-accent;
 
     box-shadow: none;
@@ -227,14 +225,14 @@
   }
 
   /* Horizontal orientation - bottom line indicator */
-  &[data-orientation="horizontal"] .tabs__indicator {
+  &[data-orientation="horizontal"] > .tabs__list-container .tabs__indicator {
     top: auto;
     bottom: 0;
     height: 2px;
   }
 
   /* Vertical orientation - left line indicator */
-  &[data-orientation="vertical"] .tabs__indicator {
+  &[data-orientation="vertical"] > .tabs__list-container .tabs__indicator {
     left: 0;
     top: 0;
     width: 2px;

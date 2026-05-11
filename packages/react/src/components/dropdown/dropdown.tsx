@@ -6,13 +6,13 @@ import type {ComponentPropsWithRef} from "react";
 
 import {dropdownVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
+import {Button} from "react-aria-components/Button";
 import {
-  Button,
   Menu as MenuPrimitive,
   MenuTrigger as MenuTriggerPrimitive,
   Popover as PopoverPrimitive,
   SubmenuTrigger as SubmenuTriggerPrimitive,
-} from "react-aria-components";
+} from "react-aria-components/Menu";
 
 import {composeTwRenderProps} from "../../utils/compose";
 import {MenuItemIndicator, MenuItemRoot, MenuItemSubmenuIndicator} from "../menu-item";

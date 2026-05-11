@@ -2,11 +2,11 @@
 
 import type {DateFieldVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
-import type {DateValue} from "react-aria-components";
+import type {DateValue} from "react-aria-components/Calendar";
 
 import {dateFieldVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
-import {DateField as DateFieldPrimitive} from "react-aria-components";
+import {DateField as DateFieldPrimitive} from "react-aria-components/DateField";
 
 import {dataAttr} from "../../utils/assertion";
 import {composeTwRenderProps} from "../../utils/compose";

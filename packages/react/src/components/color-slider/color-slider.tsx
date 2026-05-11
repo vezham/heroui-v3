@@ -2,7 +2,7 @@
 
 import type {ColorSliderVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
-import type {ColorSliderRenderProps, ColorSpace} from "react-aria-components";
+import type {ColorSliderRenderProps, ColorSpace} from "react-aria-components/ColorSlider";
 
 import {colorSliderVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
@@ -11,7 +11,7 @@ import {
   ColorThumb as ColorThumbPrimitive,
   SliderOutput as SliderOutputPrimitive,
   SliderTrack as SliderTrackPrimitive,
-} from "react-aria-components";
+} from "react-aria-components/ColorSlider";
 
 import {composeTwRenderProps} from "../../utils/compose";
 

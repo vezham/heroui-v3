@@ -1,6 +1,6 @@
 "use client";
 
-import {composeRenderProps} from "react-aria-components";
+import {composeRenderProps} from "react-aria-components/composeRenderProps";
 import {cx} from "tailwind-variants";
 
 // Re-export utility classes from @vx-oss/heroui-v3-styles for backward compatibility
