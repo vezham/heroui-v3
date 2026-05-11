@@ -8,7 +8,7 @@ export const RAW_GITHUB_URL = "https://raw.githubusercontent.com";
 
 export const REPO_NAME = "vezham/heroui-v3";
 
-export const REPO_NAME_NATIVE = "vezham/heroui-v3-native";
+export const REPO_NAME_NATIVE = "vezham/heroui-native";
 
 export const ISSUE_REPORT_URL = `${GITHUB_URL}/${REPO_NAME}/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D+-+`;
 

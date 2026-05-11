@@ -28,7 +28,7 @@ curl -fsSL https://heroui.com/install | bash -s heroui-native
 | ------------ | -------------------- | ----------------------------------- |
 | **Styling**  | Tailwind CSS v4      | Uniwind (Tailwind for React Native) |
 | **Colors**   | oklch format         | HSL format                          |
-| **Package**  | `@vx-oss/heroui-v3-react@beta` | `heroui-native`                     |
+| **Package**  | `@vx-oss/heroui-v3-react` 	  | `heroui-native`                     |
 | **Platform** | Web browsers         | iOS & Android                       |
 
 ```tsx

@@ -9,6 +9,10 @@
    [*] heroui-inc/heroui [->] vezham/heroui-v3 [!githubusercontent]
    [*] github.com/heroui-inc/heroui [->] github.com/vezham/heroui-v3
 
+   [*] github.com/vezham/heroui-v3-native [->] github.com/vezham/heroui-native
+   [*] github.com/vezham/heroui-v3-cli [->] github.com/vezham/heroui-cli
+   [*] github.com/vezham/heroui-v3-mcp [->] github.com/vezham/heroui-mcp
+
 2. vx, .vezham, CHANGELOG.md
    [*] "homepage": "https://heroui.com" [->] "homepage": "https://vezham.com"
    [*] "author": "HeroUI <support@heroui.com>" [->] "author": "Vx OSS Devs <oss-developers@vezham.com>"
