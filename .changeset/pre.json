@@ -1,5 +1,5 @@
 {
-  "mode": "pre",
+  "mode": "exit",
   "tag": "beta",
   "initialVersions": {
     "@vx-oss/heroui-v3-react": "3.0.0-beta.6",
