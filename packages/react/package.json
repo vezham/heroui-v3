@@ -1,6 +1,6 @@
 {
   "name": "@vx-oss/heroui-v3-react",
-  "version": "3.0.3-beta.0",
+  "version": "3.0.3",
   "description": "🚀 Beautiful and modern React UI library built with Tailwind CSS 4.0.",
   "license": "MIT",
   "type": "module",
