@@ -2,12 +2,12 @@
 
 import type {DOMRenderProps} from "../../utils/dom";
 import type {SurfaceVariants} from "../surface";
-import type {DateRangePickerVariants} from "@heroui/styles";
+import type {DateRangePickerVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {DateValue} from "react-aria-components/Calendar";
 
-import {dateRangePickerVariants} from "@heroui/styles";
 import {mergeRefs} from "@react-aria/utils";
+import {dateRangePickerVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext, useEffect, useRef} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 import {

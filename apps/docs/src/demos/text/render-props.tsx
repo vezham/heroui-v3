@@ -1,6 +1,6 @@
 "use client";
 
-import {Text} from "@heroui/react";
+import {Text} from "@vx-oss/heroui-v3-react";
 
 export const RenderProps = () => {
   return (

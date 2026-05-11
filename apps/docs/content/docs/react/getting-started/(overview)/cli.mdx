@@ -70,10 +70,10 @@ Options:
 
 Commands:
   init [options] [projectName]   Initializes a new project
-  install [options]              Installs @heroui/react and @heroui/styles to your project
-  upgrade [options]              Upgrades @heroui/react and @heroui/styles to the latest versions
-  uninstall [options]            Uninstall @heroui/react and @heroui/styles from the project
-  list [options]                 Lists installed HeroUI packages (@heroui/react, @heroui/styles)
+  install [options]              Installs @vx-oss/heroui-v3-react and @vx-oss/heroui-v3-styles to your project
+  upgrade [options]              Upgrades @vx-oss/heroui-v3-react and @vx-oss/heroui-v3-styles to the latest versions
+  uninstall [options]            Uninstall @vx-oss/heroui-v3-react and @vx-oss/heroui-v3-styles from the project
+  list [options]                 Lists installed HeroUI packages (@vx-oss/heroui-v3-react, @vx-oss/heroui-v3-styles)
   env [options]                  Displays debugging information for the local environment
   doctor [options]               Checks for issues in the project
   help [command]                 Display help for command
@@ -153,7 +153,7 @@ npm run dev
 
 ### Install
 
-Install `@heroui/react` and `@heroui/styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
+Install `@vx-oss/heroui-v3-react` and `@vx-oss/heroui-v3-styles` to your project, along with their peer dependencies. If they are already installed, the command does nothing.
 
 ```bash
 heroui install [options]
@@ -173,8 +173,8 @@ HeroUI CLI <version>
 ╭─────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version        │   Status   │   Docs                 │
 │─────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0          │   stable   │   https://heroui.com   │
-│   @heroui/styles   │   3.0.0          │   stable   │   https://heroui.com   │
+│   @vx-oss/heroui-v3-react    │   3.0.0          │   stable   │   https://heroui.com   │
+│   @vx-oss/heroui-v3-styles   │   3.0.0          │   stable   │   https://heroui.com   │
 ╰─────────────────────────────────────────────────────────────────────────────╯
 
 ╭─────────────── PeerDependencies ────────────────╮
@@ -186,13 +186,13 @@ HeroUI CLI <version>
 ❯   Yes
     No
 
-✅ @heroui/react and @heroui/styles installed successfully
+✅ @vx-oss/heroui-v3-react and @vx-oss/heroui-v3-styles installed successfully
 ```
 
 ### upgrade
 
 
-Upgrade `@heroui/react` and `@heroui/styles` with their peer dependencies to the latest versions.
+Upgrade `@vx-oss/heroui-v3-react` and `@vx-oss/heroui-v3-styles` with their peer dependencies to the latest versions.
 
 ```bash
 heroui upgrade [options]
@@ -208,8 +208,8 @@ heroui upgrade [options]
 HeroUI CLI <version>
 
 ╭──────────────────────────── Upgrade ────────────────────────────╮
-│  @heroui/react               ^3.0.0  ->  ^3.1.0                │
-│  @heroui/styles              ^3.0.0  ->  ^3.1.0                │
+│  @vx-oss/heroui-v3-react               ^3.0.0  ->  ^3.1.0                │
+│  @vx-oss/heroui-v3-styles              ^3.0.0  ->  ^3.1.0                │
 ╰─────────────────────────────────────────────────────────────────╯
 
 ? Would you like to proceed with the upgrade? › - Use arrow-keys. Return to submit.
@@ -221,7 +221,7 @@ HeroUI CLI <version>
 
 ### uninstall
 
-Uninstall `@heroui/react` and `@heroui/styles` from your project. Peer dependencies will not be uninstalled.
+Uninstall `@vx-oss/heroui-v3-react` and `@vx-oss/heroui-v3-styles` from your project. Peer dependencies will not be uninstalled.
 
 ```bash
 heroui uninstall [options]
@@ -240,19 +240,19 @@ HeroUI CLI <version>
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version   │   Status   │   Docs                               │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0     │   stable   │   https://heroui.com                 │
-│   @heroui/styles   │   3.0.0     │   stable   │   https://heroui.com                 │
+│   @vx-oss/heroui-v3-react    │   3.0.0     │   stable   │   https://heroui.com                 │
+│   @vx-oss/heroui-v3-styles   │   3.0.0     │   stable   │   https://heroui.com                 │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ? Confirm uninstallation of these packages: › - Use arrow-keys. Return to submit.
 ❯   Yes
     No
 
-✅ Successfully uninstalled: @heroui/react, @heroui/styles
+✅ Successfully uninstalled: @vx-oss/heroui-v3-react, @vx-oss/heroui-v3-styles
 ```
 
 ### list
 
-List the installed HeroUI packages (`@heroui/react`, `@heroui/styles`).
+List the installed HeroUI packages (`@vx-oss/heroui-v3-react`, `@vx-oss/heroui-v3-styles`).
 
 ```bash
 heroui list [options]
@@ -272,15 +272,15 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @vx-oss/heroui-v3-react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @vx-oss/heroui-v3-styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 ### doctor
 
 Check for issues in your project.
-- Check whether `@heroui/react` and `@heroui/styles` are installed
+- Check whether `@vx-oss/heroui-v3-react` and `@vx-oss/heroui-v3-styles` are installed
 - Check whether `required peer dependencies` are installed and matched minimal requirements in the project
 
 
@@ -304,7 +304,7 @@ HeroUI CLI: ❌ Your project has 1 issue that require attention
 ❗️Issue 1: missingHeroUIPackages
 
 The following HeroUI packages are not installed:
-- @heroui/styles
+- @vx-oss/heroui-v3-styles
 
 Run `heroui install` to install them.
 ```
@@ -339,8 +339,8 @@ Current installed packages:
 ╭──────────────────────────────────────────────────────────────────────────────────────╮
 │   Package          │   Version          │   Status   │   Docs                        │
 │──────────────────────────────────────────────────────────────────────────────────────│
-│   @heroui/react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
-│   @heroui/styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @vx-oss/heroui-v3-react    │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
+│   @vx-oss/heroui-v3-styles   │   3.0.0 🚀latest   │   stable   │   https://heroui.com          │
 ╰──────────────────────────────────────────────────────────────────────────────────────╯
 
 Environment Info:
@@ -353,5 +353,5 @@ Environment Info:
 
 ## Reporting issues
 
-If you found a bug, please report it in [heroui-cli Issues](https://github.com/heroui-inc/heroui-cli/issues).
+If you found a bug, please report it in [heroui-cli Issues](https://github.com/vezham/heroui-cli/issues).
 

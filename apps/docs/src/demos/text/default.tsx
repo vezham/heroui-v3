@@ -1,4 +1,4 @@
-import {Text} from "@heroui/react";
+import {Text} from "@vx-oss/heroui-v3-react";
 
 export const Default = () => {
   return (
@@ -14,7 +14,7 @@ export const Default = () => {
       <Text color="muted" type="body-sm">
         Smaller muted body copy for secondary descriptions.
       </Text>
-      <Text type="code">pnpm add @heroui/react</Text>
+      <Text type="code">pnpm add @vx-oss/heroui-v3-react</Text>
     </div>
   );
 };

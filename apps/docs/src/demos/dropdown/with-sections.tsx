@@ -1,7 +1,15 @@
 "use client";
 
 import {EllipsisVertical, Pencil, SquarePlus, TrashBin} from "@gravity-ui/icons";
-import {Button, Description, Dropdown, Header, Kbd, Label, Separator} from "@heroui/react";
+import {
+  Button,
+  Description,
+  Dropdown,
+  Header,
+  Kbd,
+  Label,
+  Separator,
+} from "@vx-oss/heroui-v3-react";
 
 export function WithSections() {
   return (

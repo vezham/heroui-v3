@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {SliderVariants} from "@heroui/styles";
+import type {SliderVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef} from "react";
 import type {SliderRenderProps} from "react-aria-components/Slider";
 
-import {sliderVariants} from "@heroui/styles";
+import {sliderVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   SliderOutput as SliderOutputPrimitive,

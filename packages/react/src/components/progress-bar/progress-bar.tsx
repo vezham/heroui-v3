@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {ProgressBarVariants} from "@heroui/styles";
+import type {ProgressBarVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {ProgressBarRenderProps} from "react-aria-components/ProgressBar";
 
-import {progressBarVariants} from "@heroui/styles";
+import {progressBarVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {ProgressBar as ProgressBarPrimitive} from "react-aria-components/ProgressBar";
 

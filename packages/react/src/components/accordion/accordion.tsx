@@ -2,10 +2,10 @@
 
 import type {Booleanish} from "../../utils/assertion";
 import type {DOMRenderProps} from "../../utils/dom";
-import type {AccordionVariants} from "@heroui/styles";
+import type {AccordionVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {accordionVariants} from "@heroui/styles";
+import {accordionVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Button} from "react-aria-components/Button";
 import {

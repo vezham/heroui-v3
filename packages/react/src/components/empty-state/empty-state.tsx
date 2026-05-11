@@ -1,7 +1,7 @@
 import type {DOMRenderProps} from "../../utils/dom";
 import type {ReactNode} from "react";
 
-import {emptyStateVariants} from "@heroui/styles";
+import {emptyStateVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 
 import {dom} from "../../utils/dom";

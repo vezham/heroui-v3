@@ -1,4 +1,4 @@
-import {Text} from "@heroui/react";
+import {Text} from "@vx-oss/heroui-v3-react";
 
 const scale = [
   {
@@ -58,7 +58,7 @@ const scale = [
   {
     label: "code",
     meta: "14px / mono",
-    sample: "pnpm add @heroui/react",
+    sample: "pnpm add @vx-oss/heroui-v3-react",
     type: "code" as const,
   },
 ] as const;

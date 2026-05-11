@@ -1,10 +1,10 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {TooltipVariants} from "@heroui/styles";
+import type {TooltipVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {tooltipVariants} from "@heroui/styles";
+import {tooltipVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Focusable as FocusablePrimitive} from "react-aria-components/Focusable";
 import {

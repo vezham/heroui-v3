@@ -1,9 +1,9 @@
 "use client";
 
-import type {Selection} from "@heroui/react";
+import type {Selection} from "@vx-oss/heroui-v3-react";
 
-import {Button, Table, cn} from "@heroui/react";
 import {Icon} from "@iconify/react";
+import {Button, Table, cn} from "@vx-oss/heroui-v3-react";
 import {useState} from "react";
 
 export function ExpandableRows() {

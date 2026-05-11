@@ -1,10 +1,10 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {BadgeVariants} from "@heroui/styles";
+import type {BadgeVariants} from "@vx-oss/heroui-v3-styles";
 import type {ReactNode} from "react";
 
-import {badgeVariants} from "@heroui/styles";
+import {badgeVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {cx} from "tailwind-variants";
 

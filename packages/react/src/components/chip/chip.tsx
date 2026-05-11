@@ -1,10 +1,10 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {ChipVariants} from "@heroui/styles";
+import type {ChipVariants} from "@vx-oss/heroui-v3-styles";
 import type {ReactNode} from "react";
 
-import {chipVariants} from "@heroui/styles";
+import {chipVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 
 import {composeSlotClassName} from "../../utils/compose";

@@ -2,10 +2,10 @@
 
 import type {DOMRenderProps} from "../../utils/dom";
 import type {ButtonProps} from "../button";
-import type {ButtonGroupVariants} from "@heroui/styles";
+import type {ButtonGroupVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 
-import {buttonGroupVariants} from "@heroui/styles";
+import {buttonGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React, {Children, createContext, isValidElement, useContext} from "react";
 import {Group} from "react-aria-components/Group";
 import {useSlottedContext} from "react-aria-components/slots";

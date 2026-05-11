@@ -1,9 +1,9 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {SkeletonVariants} from "@heroui/styles";
+import type {SkeletonVariants} from "@vx-oss/heroui-v3-styles";
 
-import {skeletonVariants} from "@heroui/styles";
+import {skeletonVariants} from "@vx-oss/heroui-v3-styles";
 import React from "react";
 
 import {useCSSVariable} from "../../hooks/use-css-variable";

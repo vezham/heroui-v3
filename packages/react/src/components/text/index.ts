@@ -30,6 +30,6 @@ export type {
   TextRootProps as TextProps,
 } from "./text";
 
-export {textVariants} from "@heroui/styles";
+export {textVariants} from "@vx-oss/heroui-v3-styles";
 
-export type {TextVariants} from "@heroui/styles";
+export type {TextVariants} from "@vx-oss/heroui-v3-styles";

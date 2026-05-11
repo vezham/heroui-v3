@@ -1,6 +1,6 @@
 "use client";
 
-import {Chip, Tooltip, toast} from "@heroui/react";
+import {Chip, Tooltip, toast} from "@vx-oss/heroui-v3-react";
 import {converter, parse} from "culori";
 import * as React from "react";
 

@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {ColorInputGroupVariants} from "@heroui/styles";
+import type {ColorInputGroupVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {InputProps as InputPrimitiveProps} from "react-aria-components/Input";
 
-import {colorInputGroupVariants} from "@heroui/styles";
+import {colorInputGroupVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Group as GroupPrimitive} from "react-aria-components/Group";
 import {Input as InputPrimitive} from "react-aria-components/Input";

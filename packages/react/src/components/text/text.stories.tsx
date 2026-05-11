@@ -92,7 +92,7 @@ export const InlineCode: Story = {
   render: () => (
     <div className="flex max-w-2xl flex-col gap-4">
       <Text.Paragraph>
-        Install the package with <Text.Code>pnpm add @heroui/react</Text.Code> and import{" "}
+        Install the package with <Text.Code>pnpm add @vx-oss/heroui-v3-react</Text.Code> and import{" "}
         <Text.Code>{"<Text>"}</Text.Code> from the library.
       </Text.Paragraph>
       <Text.Paragraph size="sm">
@@ -251,10 +251,10 @@ export const ProseBlock: Story = {
       <h2>Installation</h2>
       <p>
         Add the library to your project using your preferred package manager. The{" "}
-        <code>@heroui/react</code> package includes every component:
+        <code>@vx-oss/heroui-v3-react</code> package includes every component:
       </p>
       <pre>
-        <code>pnpm add @heroui/react</code>
+        <code>pnpm add @vx-oss/heroui-v3-react</code>
       </pre>
 
       <h3>Quick Setup</h3>

@@ -2,11 +2,11 @@
 
 import type {StatelyToastQueue, ToastContentValue} from "./toast-queue";
 import type {DOMRenderProps} from "../../utils/dom";
-import type {ToastVariants} from "@heroui/styles";
+import type {ToastVariants} from "@vx-oss/heroui-v3-styles";
 import type {CSSProperties, ComponentPropsWithRef, ReactNode} from "react";
 import type {QueuedToast, ToastProps as ToastPrimitiveProps} from "react-aria-components/Toast";
 
-import {toastVariants} from "@heroui/styles";
+import {toastVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useCallback, useContext, useEffect, useMemo, useRef} from "react";
 import {Text as TextPrimitive} from "react-aria-components/Text";
 import {

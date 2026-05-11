@@ -1,12 +1,12 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {AlertDialogVariants} from "@heroui/styles";
+import type {AlertDialogVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, HTMLAttributes, ReactNode} from "react";
 import type {ButtonProps as ButtonPrimitiveProps} from "react-aria-components/Button";
 import type {DialogProps as DialogPrimitiveProps} from "react-aria-components/Dialog";
 
-import {alertDialogVariants} from "@heroui/styles";
+import {alertDialogVariants} from "@vx-oss/heroui-v3-styles";
 import {createContext, useContext, useMemo} from "react";
 import {
   DialogTrigger as AlertDialogTriggerPrimitive,

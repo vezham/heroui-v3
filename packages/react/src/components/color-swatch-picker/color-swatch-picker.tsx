@@ -1,11 +1,11 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {ColorSwatchPickerVariants} from "@heroui/styles";
+import type {ColorSwatchPickerVariants} from "@vx-oss/heroui-v3-styles";
 import type {CSSProperties, ComponentPropsWithRef} from "react";
 import type {ColorSwatchPickerItemRenderProps} from "react-aria-components/ColorSwatchPicker";
 
-import {colorSwatchPickerVariants} from "@heroui/styles";
+import {colorSwatchPickerVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {
   ColorSwatchPickerItem as ColorSwatchPickerItemPrimitive,

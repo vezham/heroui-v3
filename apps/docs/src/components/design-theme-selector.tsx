@@ -4,7 +4,7 @@ import type {ThemeId} from "@/app/themes/constants";
 import type {StaticImageData} from "next/image";
 
 import {BucketPaint, Palette} from "@gravity-ui/icons";
-import {Button, ListBox, Popover, buttonVariants} from "@heroui/react";
+import {Button, ListBox, Popover, buttonVariants} from "@vx-oss/heroui-v3-react";
 import LinkRoot from "fumadocs-core/link";
 import Image from "next/image";
 import {useCallback, useEffect, useMemo, useState} from "react";

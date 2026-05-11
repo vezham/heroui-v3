@@ -1,14 +1,14 @@
 "use client";
 
 import type {DOMRenderProps} from "../../utils/dom";
-import type {RangeCalendarVariants} from "@heroui/styles";
 import type {CalendarIdentifier} from "@internationalized/date";
+import type {RangeCalendarVariants} from "@vx-oss/heroui-v3-styles";
 import type {ComponentPropsWithRef, ReactNode} from "react";
 import type {DateValue} from "react-aria-components/Calendar";
 
-import {rangeCalendarVariants} from "@heroui/styles";
 import {CalendarDate, DateFormatter, createCalendar} from "@internationalized/date";
 import {useControlledState} from "@react-stately/utils";
+import {rangeCalendarVariants} from "@vx-oss/heroui-v3-styles";
 import React, {createContext, useContext} from "react";
 import {Button as ButtonPrimitive} from "react-aria-components/Button";
 import {Heading as HeadingPrimitive} from "react-aria-components/Heading";
